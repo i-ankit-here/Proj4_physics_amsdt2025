@@ -70,11 +70,8 @@ function Slider() {
   ];
 
   useEffect(() => {
-    // Set initial slides to 'invitations'
+    // Set initial slides to 'inaugural'
     setSlides(inaugural);
-
-
-
   }, []);
 
   useEffect(() => {
@@ -103,56 +100,87 @@ function Slider() {
   };
 
   return (
-    <div className="bg-white container space-y-8 lg:max-w-7xl mx-auto px-8 sm:px-10 lg:px-8 mb-32 sm:mb-10">
+    <div className="bg-black container space-y-8 lg:max-w-7xl mx-auto px-8 sm:px-10 lg:px-8 mb-32 sm:mb-10">
       <div className="h-[420px] w-full md:h-[520px] lg:h-[680px] m-auto py-16 relative group">
-
-        <h2 className="text-4xl font-sans font-bold text-center text-gray-950 mb-3">Image Gallery</h2>
+        <h2 className="text-4xl font-sans font-bold text-center text-[#00ff4c] mb-3">Image Gallery</h2>
+        
         <div className="flex justify-center space-x-4 mb-3 font-sans flex-wrap">
+          <button 
+            onClick={() => handleSetSlides(inaugural, "Inaugural Function")}
+            className={`px-4 py-1 rounded-lg mb-2 transition-all ${
+              heading === "Inaugural Function"
+                ? "bg-[#00ff4c] text-black font-bold"
+                : "bg-[#002a00] text-[#00ff4c] border border-[#00ff4c] hover:bg-[#00ff4c20] font-semibold"
+            }`}
+          >
+            Inaugural Function
+          </button>
+          
+          <button 
+            onClick={() => handleSetSlides(day1, "Day1")} 
+            className={`px-4 py-1 rounded-lg mb-2 transition-all ${
+              heading === "Day1"
+                ? "bg-[#00ff4c] text-black font-bold"
+                : "bg-[#002a00] text-[#00ff4c] border border-[#00ff4c] hover:bg-[#00ff4c20] font-semibold"
+            }`}
+          >
+            Day 1
+          </button>
 
-
-          <button onClick={() => handleSetSlides(inaugural, "Inaugural Function")}
-            className={`px-4 py-1 rounded-lg  mb-2 ${heading === "Inaugural Function"
-              ? "bg-accent-500 text-white font-bold"
-              : "bg-accent-100 text-gray-700 font-semibold"
-              }`}>Inaugural Function</button>
-          <button onClick={() => handleSetSlides(day1, "Day1")} className={`px-4 py-1 rounded-lg  mb-2 ${heading === "Day1"
-            ? "bg-accent-500 text-white font-bold"
-            : "bg-accent-100 text-gray-700 font-semibold"
-            }`}>Day 1 </button>
-
-          <button onClick={() => handleSetSlides(day2, "Day2")} className={`px-4 py-1 rounded-lg  mb-2 ${heading === "Day2"
-            ? "bg-accent-500 text-white font-bold"
-            : "bg-accent-100 text-gray-700 font-semibold"
-            }`}>Day 2 </button>
-          <button onClick={() => handleSetSlides(day3, "Day3")} className={`px-4 py-1 rounded-lg  mb-2 ${heading === "Day3"
-            ? "bg-accent-500 text-white font-bold"
-            : "bg-accent-100 text-gray-700 font-semibold"
-            }`}>Day 3</button>
-          <button onClick={() => handleSetSlides(invitations, "Invitations")} className={`px-4 py-1 rounded-lg  mb-2 ${heading === "Invitations"
-            ? "bg-accent-500 text-white font-bold"
-            : "bg-accent-100 text-gray-700 font-semibold"
-            }`}>Invitations</button>
-
+          <button 
+            onClick={() => handleSetSlides(day2, "Day2")} 
+            className={`px-4 py-1 rounded-lg mb-2 transition-all ${
+              heading === "Day2"
+                ? "bg-[#00ff4c] text-black font-bold"
+                : "bg-[#002a00] text-[#00ff4c] border border-[#00ff4c] hover:bg-[#00ff4c20] font-semibold"
+            }`}
+          >
+            Day 2
+          </button>
+          
+          <button 
+            onClick={() => handleSetSlides(day3, "Day3")} 
+            className={`px-4 py-1 rounded-lg mb-2 transition-all ${
+              heading === "Day3"
+                ? "bg-[#00ff4c] text-black font-bold"
+                : "bg-[#002a00] text-[#00ff4c] border border-[#00ff4c] hover:bg-[#00ff4c20] font-semibold"
+            }`}
+          >
+            Day 3
+          </button>
+          
+          <button 
+            onClick={() => handleSetSlides(invitations, "Invitations")} 
+            className={`px-4 py-1 rounded-lg mb-2 transition-all ${
+              heading === "Invitations"
+                ? "bg-[#00ff4c] text-black font-bold"
+                : "bg-[#002a00] text-[#00ff4c] border border-[#00ff4c] hover:bg-[#00ff4c20] font-semibold"
+            }`}
+          >
+            Invitations
+          </button>
         </div>
 
         {slides.length > 0 && slides[currentIndex] && (
           <div
             style={{ backgroundImage: `url(${slides[currentIndex].imgLink})` }}
-            className="w-full h-full rounded-2xl bg-center bg-cover relative border-2 border-accent-500 shadow-lg shadow-accent-500"
+            className="w-full h-full rounded-2xl bg-center bg-cover relative border-2 border-[#00ff4c] shadow-lg shadow-[#00ff4c]/30"
           >
             {slides[currentIndex].name && (
-              <div className="absolute text-sm lg:text-xl font-sans font-medium bottom-0 left-0 right-0 bg-black/50 text-white text-center p-2">
+              <div className="absolute text-sm lg:text-xl font-sans font-medium bottom-0 left-0 right-0 bg-black/70 text-white text-center p-2 backdrop-blur-sm">
                 {slides[currentIndex].name}
               </div>
             )}
+            
             <div
-              className="hidden group-hover:block absolute top-[50%] -translate-x-0 left-5 rounded-full p-2 bg-black/30 text-white hover:bg-white hover:text-black cursor-pointer"
+              className="hidden group-hover:block absolute top-[50%] -translate-x-0 left-5 rounded-full p-2 bg-black/50 text-[#00ff4c] hover:bg-[#00ff4c] hover:text-black cursor-pointer transition-all"
               onClick={prevSlide}
             >
               <BsChevronCompactLeft className="w-4 h-4 md:w-8 md:h-8" />
             </div>
+            
             <div
-              className="hidden group-hover:block absolute top-[50%] -translate-x-0 right-5 rounded-full p-2 bg-black/30 text-white hover:bg-white hover:text-black cursor-pointer"
+              className="hidden group-hover:block absolute top-[50%] -translate-x-0 right-5 rounded-full p-2 bg-black/50 text-[#00ff4c] hover:bg-[#00ff4c] hover:text-black cursor-pointer transition-all"
               onClick={nextSlide}
             >
               <BsChevronCompactRight className="w-4 h-4 md:w-8 md:h-8" />
@@ -160,13 +188,14 @@ function Slider() {
           </div>
         )}
 
-        <div className="flex justify-center py-2 ">
+        <div className="flex justify-center py-2">
           {slides.map((_, index) => (
             <RxDotFilled
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`text-2xl cursor-pointer ${index === currentIndex ? "text-accent-500 " : "text-black"
-                }`}
+              className={`text-2xl cursor-pointer transition-all ${
+                index === currentIndex ? "text-[#00ff4c] scale-125" : "text-gray-400 hover:text-[#00ff4c]/70"
+              }`}
             />
           ))}
         </div>

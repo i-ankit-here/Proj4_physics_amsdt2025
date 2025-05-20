@@ -12,15 +12,8 @@ import { IoMdHome } from "react-icons/io";
 
 const navigation = [
   { name:<IoMdHome className="h-5 w-5" />   , href: "/", current: true },
-  { name: "Publication Partners", href: "", current: false,
-    subItems: [
-      { name: "Springer-Biomass Conversion and Biorefinery", href: "https://chemcon2024.com/news/66d12dad9bc0213cd4814a4d " },
-      { name: "Taylor & Francis - Indian Chemical Engineer", href: "https://chemcon2024.com/news/66d12dad9bc0213cd4814a4d " },
-      { name: "Elsvier-Chemical Engineering and processing - Processes Intensification", href: "https://chemcon2024.com/news/66d12dad9bc0213cd4814a4d " }
-    ],
-   },
-  { name: "Events", href: "/events", current: false },
-  { name: "Sponsors", href: "/sponsorship", current: false },
+  { name: "Paper tracks", href: "/tracks", current: false },
+  { name: "Abstract Submission ", href: "/submission", current: false },
   {
     name: "Committees",
     href: "",
@@ -30,23 +23,7 @@ const navigation = [
       { name: "Local Organising Committee", href: "/localcommittee" },
     ],
   },
-  {
-    name: "Joint symposium",
-    href: "",
-    current: false,
-    subItems: [
-      { name: "US symposium", href: "" },
-      { name: "Indo-Canadian symposium", href: "" },
-    ],
-  },
   { name: "Location", href: "/location", current: false },
-  { name: "Accommodation", href: "/accommodation", current: false,
-    subItems: [
-      { name: "Hotels in Jalandhar", href: "/hotelslist" },   //here update link afterwards
-      { name: "Hostel accomodation for UG/PG Students", href: "/accommodation" },
-    ],
-  },
-  
   { name: "Registration", href: "", current: false,
     subItems: [
       { name: "Registration Fee", href: "/registrationfee" },
@@ -55,8 +32,6 @@ const navigation = [
       { name: "Frequently Asked Questions (FAQ)", href: "/registrationfaq" },
     ],
    },
-  { name: "Souvenir", href: "/souvenir", current: false },
-  { name: "FAQs", href: "/registrationfaq", current: false},
 ];
 
 function classNames(...classes) {

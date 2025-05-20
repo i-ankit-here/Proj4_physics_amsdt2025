@@ -24,21 +24,21 @@ function VideoGallery() {
   // };
 
   return (
-    <div className="bg-white container space-y-8 lg:max-w-7xl mx-auto px-8 sm:px-10 lg:px-8  mb-28 sm:mb-5 ">
+    <div className="bg-black container space-y-8 lg:max-w-7xl mx-auto px-8 sm:px-10 lg:px-8 mb-28 sm:mb-5">
       <div className="h-[420px] w-full md:h-[520px] lg:h-[680px] m-auto relative group pb-16">
-        <h2 className="text-4xl font-sans font-bold text-center text-gray-950 mb-3">
+        <h2 className="text-4xl font-sans font-bold text-center text-[#00ff4c] mb-6">
           Video Gallery
         </h2>
 
-        <div className="flex justify-center space-x-4 mb-3 font-sans flex-wrap">
+        <div className="flex justify-center space-x-4 mb-5 font-sans flex-wrap">
           {videos.map((video, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`px-4 py-1 rounded-lg mb-2 ${
+              className={`px-4 py-2 rounded-lg mb-2 transition-all ${
                 currentIndex === index
-                  ? "bg-violet-700 text-white font-bold"
-                  : "bg-violet-100 text-gray-700 font-semibold"
+                  ? "bg-[#00ff4c] text-black font-bold"
+                  : "bg-[#002a00] text-[#00ff4c] border border-[#00ff4c] hover:bg-[#00ff4c20] font-semibold"
               }`}
             >
               {video.name}
@@ -47,7 +47,7 @@ function VideoGallery() {
         </div>
 
         {videos.length > 0 && (
-          <div className="w-full h-full rounded-2xl bg-center bg-cover relative border-2 border-violet-700 shadow-lg shadow-violet-700">
+          <div className="w-full h-full rounded-2xl bg-center bg-cover relative border-2 border-[#00ff4c] shadow-lg shadow-[#00ff4c]/30">
             <iframe
               width="100%"
               height="100%"
@@ -59,7 +59,7 @@ function VideoGallery() {
               className="rounded-2xl"
             ></iframe>
             {videos[currentIndex].name && (
-              <div className="absolute text-sm lg:text-xl font-sans font-medium bottom-0 left-0 right-0 bg-black/50 text-white text-center p-2">
+              <div className="absolute text-sm lg:text-xl font-sans font-medium bottom-0 left-0 right-0 bg-black/70 text-white text-center p-2 backdrop-blur-sm border-t border-[#00ff4c]/50">
                 {videos[currentIndex].name}
               </div>
             )}
@@ -78,13 +78,13 @@ function VideoGallery() {
           </div>
         )}
 
-        <div className="flex justify-center py-2">
+        <div className="flex justify-center py-3">
           {videos.map((_, index) => (
             <RxDotFilled
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`text-2xl cursor-pointer ${
-                index === currentIndex ? "text-violet-700" : "text-black"
+              className={`text-2xl cursor-pointer transition-all ${
+                index === currentIndex ? "text-[#00ff4c] scale-125" : "text-gray-400 hover:text-[#00ff4c]/70"
               }`}
             />
           ))}
