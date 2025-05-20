@@ -10,6 +10,8 @@ const Timeline = forwardRef((props, ref) => {
   const [data, setData] = useState(null);
   const [apiUrl, setApiUrl] = useState(null);
 
+  console.log(data);
+
   useEffect(() => {
     getEnvironment().then(url => setApiUrl(url));
   }, []);
@@ -37,8 +39,8 @@ const Timeline = forwardRef((props, ref) => {
   }, [apiUrl]);
 
   return (
-    <div ref={ref} className="bg-black container max-w-7xl flex flex-col items-center lg:flex-row lg:justify-evenly lg:items-start mx-auto px-5 sm:px-10 py-16 lg:px-8 lg:py-16 min-h-[200px]">
-      <div className="w-full lg:w-3/5 md:max-w-[700px] pr-4">
+    <div ref={ref} className="bg-black container w-full flex flex-col items-center lg:flex-row lg:justify-evenly lg:items-start mx-auto px-5 sm:px-10 py-16 lg:px-8 lg:py-16 min-h-[200px]">
+      <div className="w-full pr-4 ">
         <div className="text-center">
           <h2 className="text-4xl font-black mb-4 text-[#00ff4c]">Timeline</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mx-auto mb-8"></div>
@@ -117,26 +119,9 @@ const Timeline = forwardRef((props, ref) => {
           </ul>
         </div>
         <div className="mt-6">
-          <p className="text-sm text-justify font-sans font-medium text-[#00ff4c]/80 bg-[#00120a] border border-[#00ff4c]/20 p-4 rounded-lg">
+          <p className="text-sm text-center font-sans font-medium text-[#00ff4c]/80 bg-[#00120a] border border-[#00ff4c]/20 p-4 rounded-lg">
             <span className="text-red-500 mr-1">**</span>Separate call for papers will be intimated from the authors participating in the conference for the possible publication in conference partner journals.
           </p>
-        </div>
-      </div>
-
-      <div className="w-full md:w-[700px] lg:w-2/5 px-4 lg:px-0 mt-10 lg:mt-0 mx-auto lg:pl-8 lg:mx-0 border-l-0 lg:border-l border-[#00ff4c]/30">
-        <h2 className="text-4xl font-sans font-bold text-[#00ff4c] mb-3 lg:mb-4">
-          About Doaba Regional Centre (DRC)
-        </h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-6"></div>
-        <div className="text-base text-justify font-sans font-base text-gray-300 bg-[#00120a] border border-[#00ff4c]/30 p-6 rounded-xl shadow-md">
-          {data ? <div dangerouslySetInnerHTML={{ __html: data.about[2].description }} /> : (
-            <div className="animate-pulse space-y-3">
-              <div className="h-4 bg-[#001a0d] rounded w-3/4"></div>
-              <div className="h-4 bg-[#001a0d] rounded"></div>
-              <div className="h-4 bg-[#001a0d] rounded w-5/6"></div>
-              <div className="h-4 bg-[#001a0d] rounded w-2/3"></div>
-            </div>
-          )}
         </div>
       </div>
     </div>

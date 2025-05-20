@@ -80,7 +80,7 @@ export default function Example() {
                   <TopNavInfo 
                     className="mr-4 lg:mr-0 text-[#00ff4c]"
                     icon={<EnvelopeIcon className="h-5 w-5 text-[#00ff4c]" />}
-                    value="chemcon2024@gmail.com"
+                    value="rebaris@nitj.ac.in"
                   />
                 </div>
                 <nav className="hidden lg:flex space-x-1 ml-auto" aria-label="Global">
@@ -90,11 +90,12 @@ export default function Example() {
                         <>
                           <Link
                             to={item.href}
-                            className="inline-flex items-center py-2 px-3 text-[10px] text-white uppercase hover:text-[#00ff4c] font-medium transition-colors duration-200 relative"
+                            className="inline-flex items-center py-2 px-3 text-sm text-white uppercase hover:text-[#00ff4c] font-medium transition-colors duration-200 relative"
                             aria-current={item.current ? "page" : undefined}
                           >
                             {item.name}
-                            {item.current && <div className="absolute bottom-0 left-0 w-full h-0.5 bg-[#00ff4c]"></div>}
+                            {/* Show underline only on hover */}
+                            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#00ff4c] group-hover:w-full transition-all duration-300"></div>
                           </Link>
                           <div className="absolute left-0 hidden mt-1 w-64 origin-top-left bg-[#001a00] border border-[#00ff4c]/30 rounded-md shadow-lg group-hover:block z-50">
                             <div className="py-1">
@@ -102,7 +103,7 @@ export default function Example() {
                                 <Link
                                   key={subItem.name}
                                   to={subItem.href}
-                                  className="block px-4 py-2 text-[10px] text-gray-300 hover:bg-[#002a00] hover:text-[#00ff4c]"
+                                  className="block px-4 py-2 text-sm text-gray-300 hover:bg-[#002a00] hover:text-[#00ff4c]"
                                 >
                                   {subItem.name}
                                 </Link>
@@ -113,11 +114,12 @@ export default function Example() {
                       ) : (
                         <Link
                           to={item.href}
-                          className="inline-flex items-center py-2 px-3 text-[10px] text-white uppercase hover:text-[#00ff4c] font-medium transition-colors duration-200 relative"
+                          className="inline-flex items-center py-2 px-3 text-sm text-white uppercase hover:text-[#00ff4c] font-medium transition-colors duration-200 relative"
                           aria-current={item.current ? "page" : undefined}
                         >
                           {item.name}
-                          {item.current && <div className="absolute bottom-0 left-0 w-full h-0.5 bg-[#00ff4c]"></div>}
+                          {/* Show underline only on hover */}
+                          <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#00ff4c] group-hover:w-full transition-all duration-300"></div>
                         </Link>
                       )}
                     </div>
@@ -167,7 +169,7 @@ export default function Example() {
                                 <Link
                                   key={subItem.name}
                                   to={subItem.href}
-                                  className="block pl-8 pr-3 py-2 text-[10px] font-medium text-gray-300 hover:bg-[#002a00] hover:text-[#00ff4c]"
+                                  className="block pl-8 pr-3 py-2 text-sm font-medium text-gray-300 hover:bg-[#002a00] hover:text-[#00ff4c]"
                                 >
                                   {subItem.name}
                                 </Link>

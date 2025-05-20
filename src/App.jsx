@@ -16,7 +16,6 @@ import CommontemplateCommittee from "./pages/Committee/CommonTemplateCommittee";
 import Hotels from "./pages/Accomodation/Hotels";
 import SpeakerPage from "./pages/SpeakerPage";
 import InvitedSpeakerPage from "./pages/InvitedSpeakersPage";
-import Test from "./pages/Test";
 function App() {
    const confid="65fed89def981d3a955ddd9f";
   return (
@@ -27,7 +26,6 @@ function App() {
       < Routes >
       {/* https://xceed.nitj.ac.in/conferencemodule/commontemplate/671fb502dbcf15e8ac081476 */}
         <Route path="/" element={<Home confId={confid} />} />
-        <Route path="test" element={<Test confId={confid} />} />
         <Route path="sponsorship" element={<Sponsors />} />
         <Route path="events" element={<Events />} />
         <Route path="location" element={<Location confid={confid}  />} />

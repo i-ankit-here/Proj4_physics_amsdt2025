@@ -1,51 +1,52 @@
 import Timeline from "../components/Timeline";
-import OurEvents from "../components/OurEvents";
+// import OurEvents from "../components/OurEvents";
 // import HeroSection from "../components/HeroSection";
 // import Speakers from "../components/SpeakerSection/Speakers";
 import Footer from "../components/Footer";
 import AboutNITJ from "../components/AboutNITJ";
 import AboutNews from "../components/AboutNews";
-import SponsorShip from "../components/Sponsorship";
-import { useEffect,useRef } from "react";
+// import SponsorShip from "../components/Sponsorship";
+import { useEffect} from "react";
 import Hero2 from "../components/Hero2";
-import Slider from "../components/Slider";
-import SecNavbar from "../components/SecNavbar";
+// import Slider from "../components/Slider";
+// import SecNavbar from "../components/SecNavbar";
 import Navbar from "../components/Navbar";
-import Speaker from "../components/Speaker";
-import InvitedSpeaker from "../components/InvitedSpeaker";
-import VideoGallery from "../components/VideoGallery";
-import DriveLinks from "../components/Drivelink";
+// import Speaker from "../components/Speaker";
+// import InvitedSpeaker from "../components/InvitedSpeaker";
+// import VideoGallery from "../components/VideoGallery";
+// import DriveLinks from "../components/Drivelink";
 import Waves from "../components/waves/Waves";
+import OrganizingHeads from "../components/OrganizingHeads";
 // import AboutNews from "./components/Dummy";
 function Home(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const ourspeakersRef = useRef(null);
-  const invitedspeakersRef = useRef(null);
+  // const ourspeakersRef = useRef(null);
+  // const invitedspeakersRef = useRef(null);
 
   // Step 2: Define the scroll function
-  const scrollToSection = (section) => {
+  // const scrollToSection = (section) => {
     
-    if(section=='ourspeakers'){
-      ourspeakersRef.current?.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }else if(section=='invitedspeakers'){
-      invitedspeakersRef.current?.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
+  //   if(section=='ourspeakers'){
+  //     ourspeakersRef.current?.scrollIntoView({
+  //       behavior: 'smooth',
+  //       block: 'start',
+  //     });
+  //   }else if(section=='invitedspeakers'){
+  //     invitedspeakersRef.current?.scrollIntoView({
+  //       behavior: 'smooth',
+  //       block: 'start',
+  //     });
+  //   }
     
-  };
+  // };
   return (
-    <div className="bg-black">
+    <div className="bg-black overflow-x-hidden">
     <div className="fixed top-0 w-screen z-40 bg-black">
         <Navbar />
       </div>
-      <SecNavbar onClickScroll={scrollToSection}/>
+      {/* <SecNavbar onClickScroll={scrollToSection}/> */}
     
       <div className="relative bg-black mt-10">
       <Waves
@@ -63,18 +64,20 @@ function Home(props) {
         />
         <Hero2 confid={props.confId}  />
       </div>
-      <Slider  />
+      {/* <Slider  />
       <DriveLinks/>
       <VideoGallery/>
-      <Slider confid={props.confId} />
+      <Slider confid={props.confId} /> */}
       <AboutNews confid={props.confId} />
-      <Speaker confid={props.confId}  ref={ourspeakersRef}   />
-      <InvitedSpeaker confid={props.confId}  ref={invitedspeakersRef}   />
+      {/* <Speaker confid={props.confId}  ref={ourspeakersRef}   />
+      <InvitedSpeaker confid={props.confId}  ref={invitedspeakersRef}   /> */}
       <Timeline confid={props.confId}  />
       {/* <Speakers /> */}
-      <OurEvents confid={props.confId}  />
+      {/* <OurEvents confid={props.confId}  /> */}
       <AboutNITJ confid={props.confId} />
-      <SponsorShip confid={props.confId} />
+      <OrganizingHeads />
+
+      {/* <SponsorShip confid={props.confId} /> */}
       <Footer />
       
     </div>

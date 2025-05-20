@@ -77,96 +77,138 @@
 //   },
 // ];
 
+// import { FaFlag } from 'react-icons/fa';
+// import { 
+//   FaFlagUsa, 
+//   FaCanada, 
+//   FaFlagCheckered 
+// } from 'react-icons/fa6';
+// import { 
+//   SiIndia, 
+//   SiGermany, 
+//   SiJapan, 
+//   SiFrance, 
+//   SiUnitedkingdom, 
+//   SiChina, 
+//   SiRussia 
+// } from 'react-icons/si';
+
 const Footer = () => {
   return (
     <footer className="bg-black relative overflow-hidden border-t border-[#00ff4c]/30">
+      {/* Enhanced Wave background pattern */}
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
+        <svg width="100%" height="100%" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg">
+          <path 
+            d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" 
+            fill="#00ff4c" 
+            fillOpacity="0.1"
+          />
+          <path 
+            d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,149.3C672,149,768,171,864,176C960,181,1056,171,1152,149.3C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" 
+            fill="#00ff4c" 
+            fillOpacity="0.05"
+          />
+          <path 
+            d="M0,32L48,53.3C96,75,192,117,288,122.7C384,128,480,96,576,85.3C672,75,768,85,864,112C960,139,1056,181,1152,186.7C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" 
+            fill="#00ff4c" 
+            fillOpacity="0.03"
+          />
+          <path 
+            d="M0,224L48,229.3C96,235,192,245,288,240C384,235,480,213,576,202.7C672,192,768,192,864,208C960,224,1056,256,1152,261.3C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" 
+            fill="#00ff4c" 
+            fillOpacity="0.07"
+          />
+        </svg>
+      </div>
+
       <div className="container mx-auto relative z-10 px-4 py-16">
-        <div className="flex flex-col lg:flex-row items-center justify-between">
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
           {/* Contact Information */}
-          <div className=" backdrop-blur-sm bg-black/50 border border-[#00ff4c]/30 rounded-xl p-8 shadow-lg shadow-[#00ff4c]/10 relative overflow-hidden mb-10 lg:mb-0">
-            {/* Atom icon */}
-            <div className="absolute -right-4 -top-4 w-20 h-20 opacity-10">
-              <div className="w-full h-full border-2 border-[#00ff4c] rounded-full relative">
-                <div className="absolute w-2 h-2 bg-[#00ff4c] rounded-full top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2"></div>
-                <div className="absolute w-2 h-2 bg-[#00ff4c] rounded-full top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-                <div className="absolute w-2 h-2 bg-[#00ff4c] rounded-full bottom-0 right-1/2 transform translate-x-1/2 translate-y-1/2"></div>
-                <div className="absolute w-3 h-3 bg-[#00ff4c] rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-              </div>
-            </div>
-            
-            <h3 className="text-3xl font-bold text-[#00ff4c] mb-4 flex items-center">
+          <div className="lg:w-1/2">
+            <h3 className="text-4xl font-bold text-white mb-6">
               Contact Us
             </h3>
             <div className="w-32 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-8"></div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <ul className="space-y-3 text-gray-300">
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 bg-[#00ff4c] rounded-full mr-3 mt-1.5"></span>
-                  <span>Dr. Shailendra Bajpai</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 bg-[#00ff4c] rounded-full mr-3 mt-1.5"></span>
-                  <span>Organizing Secretary, CHEMCON-2024</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 bg-[#00ff4c] rounded-full mr-3 mt-1.5"></span>
-                  <span>Phone: 9815909328</span>
-                </li>
-              </ul>
-              
-              <ul className="space-y-3 text-gray-300">
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 bg-[#00ff4c] rounded-full mr-3 mt-1.5"></span>
-                  <span>Email: chemcon2024@gmail.com</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 bg-[#00ff4c] rounded-full mr-3 mt-1.5"></span>
-                  <a href="/" className="text-[#00ff4c] hover:text-white transition-colors">
-                    Website: www.chemcon2024.com
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <ul className="space-y-4 text-gray-300">
+              <li className="flex items-center">
+                <span className="inline-block w-2 h-2 bg-[#00ff4c] rounded-full mr-3"></span>
+                <span className="text-lg">amsdt2025@nitj.ac.in</span>
+              </li>
+              <li className="flex items-center">
+                <span className="inline-block w-2 h-2 bg-[#00ff4c] rounded-full mr-3"></span>
+                <span className="text-lg">+91-9815909328</span>
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-2 h-2 bg-[#00ff4c] rounded-full mr-3 mt-1.5"></span>
+                <span className="text-lg">Department of Physics,<br />NIT Jalandhar, Punjab, India</span>
+              </li>
+            </ul>
           </div>
 
-          {/* SVG Atom Illustration */}
-          <div className="w-full max-w-[400px] h-[400px] relative">
-            <svg width="400" height="400" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-              {/* Central Nucleus */}
-              <circle cx="300" cy="300" r="20" fill="#00ff4c" stroke="#00ff4c" strokeWidth="2" />
+          {/* Visitors Counter */}
+          <div className="lg:w-1/3">
+            <h3 className="text-4xl font-bold text-white mb-6">
+              Visitors
+            </h3>
+            <div className="w-32 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-8"></div>
 
-              {/* Orbital 1 */}
-              <ellipse cx="300" cy="300" rx="80" ry="200" fill="none" stroke="#00ff4c" strokeWidth="1.5" transform="rotate(60 300 300)" />
-              {/* Electron on Orbital 1 */}
-              <circle cx="300" cy="210" r="6" fill="#00ff4c" />
+            <div className="border border-[#00ff4c]/30 rounded-md p-4 bg-black/50 backdrop-blur-sm">
+              {/* Flag Counter with actual flag icons */}
+              <div className="flex flex-wrap gap-2 mb-4">
+                <img
+                src="https://flagcdn.com/32x24/us.png"
+                width="32"
+                height="24"
+                alt="Ukraine"/>
+                <img
+                src="https://flagcdn.com/32x24/us.png"
+                width="32"
+                height="24"
+                alt="Ukraine"/>
+                <img
+                src="https://flagcdn.com/32x24/us.png"
+                width="32"
+                height="24"
+                alt="Ukraine"/>
+                <img
+                src="https://flagcdn.com/32x24/us.png"
+                width="32"
+                height="24"
+                alt="Ukraine"/>
+                <img
+                src="https://flagcdn.com/32x24/us.png"
+                width="32"
+                height="24"
+                alt="Ukraine"/>
+                <img
+                src="https://flagcdn.com/32x24/us.png"
+                width="32"
+                height="24"
+                alt="Ukraine"/>
+                <img
+                src="https://flagcdn.com/32x24/us.png"
+                width="32"
+                height="24"
+                alt="Ukraine"/>
+                {/* <div className="text-xl text-blue-500"><FaFlagUsa title="USA" /></div>
+                <div className="text-xl text-red-600"><FaCanada title="Canada" /></div>
+                <div className="text-xl text-orange-500"><SiIndia title="India" /></div>
+                <div className="text-xl text-yellow-400"><SiGermany title="Germany" /></div>
+                <div className="text-xl text-red-500"><SiJapan title="Japan" /></div>
+                <div className="text-xl text-blue-600"><SiFrance title="France" /></div>
+                <div className="text-xl text-red-600"><SiUnitedkingdom title="UK" /></div>
+                <div className="text-xl text-red-700"><SiChina title="China" /></div>
+                <div className="text-xl text-blue-700"><SiRussia title="Russia" /></div>
+                <div className="text-xl text-gray-300"><FaFlagCheckered title="Other Countries" /></div> */}
+              </div>
 
-              <ellipse cx="300" cy="300" rx="40" ry="100" fill="none" stroke="#00ff4c" strokeWidth="1.5" transform="rotate(60 300 300)" />
-              {/* Electron on Orbital 1 */}
-              <circle cx="150" cy="416" r="6" fill="#00ff4c" />
-
-              {/* Orbital 3 */}
-              <ellipse cx="300" cy="300" rx="60" ry="150" fill="none" stroke="#00ff4c" strokeWidth="1.5" transform="rotate(60 300 300)" />
-              {/* Electron on Orbital 3 */}
-              <circle cx="400" cy="327" r="6" fill="#00ff4c" />
-
-              {/* Glow effect (optional aesthetic) */}
-              <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
-                <feMerge>
-                  <feMergeNode in="coloredBlur"/>
-                  <feMergeNode in="SourceGraphic"/>
-                </feMerge>
-              </filter>
-
-              {/* Applying glow to nucleus and electrons */}
-              <circle cx="300" cy="300" r="20" fill="#00ff4c" filter="url(#glow)" />
-              <circle cx="300" cy="210" r="6" fill="#00ff4c" filter="url(#glow)" />
-              <circle cx="300" cy="345" r="6" fill="#00ff4c" filter="url(#glow)" />
-              <circle cx="400" cy="210" r="6" fill="#00ff4c" filter="url(#glow)" />
-              <circle cx="400" cy="327" r="6" fill="#00ff4c" filter="url(#glow)" />
-              <circle cx="180" cy="327" r="6" fill="#00ff4c" filter="url(#glow)" />
-            </svg>
+              <div className="flex justify-between items-center text-gray-300 text-sm">
+                <span>Pageviews</span>
+                <span className="font-mono text-[#00ff4c] text-lg">00017</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -193,7 +235,7 @@ const Footer = () => {
               </li>
             </ul>
             <p className="text-xs text-gray-400">
-              &copy; 2023 XCEED-NITJ All rights reserved.
+              &copy; 2023 AMSDT-2025 All rights reserved.
             </p>
           </div>
         </div>
