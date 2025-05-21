@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
-import SecNavbar from '../components/SecNavbar';
+// import SecNavbar from '../components/SecNavbar';
 import { useParams } from 'react-router-dom';
 import getEnvironment from '../getenvironment';
 import axios from 'axios';
