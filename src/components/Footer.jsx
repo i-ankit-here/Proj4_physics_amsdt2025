@@ -154,86 +154,10 @@ const Footer = () => {
             </h3>
             <div className="w-32 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-8"></div>
 
-            <div className="border border-[#00ff4c]/30 rounded-md p-4 bg-black/50 backdrop-blur-sm">
-              {/* Flag Counter with actual flag icons */}
-              <div className="flex flex-wrap gap-3 mb-6 justify-center">
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://flagcdn.com/32x24/in.png"
-                    width="32"
-                    height="24"
-                    alt="India"
-                    className=" shadow-sm"
-                  />
-                  <span className="text-xs text-gray-400 mt-1">245</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://flagcdn.com/32x24/us.png"
-                    width="32"
-                    height="24"
-                    alt="USA"
-                    className=" shadow-sm"
-                  />
-                  <span className="text-xs text-gray-400 mt-1">128</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://flagcdn.com/32x24/gb.png"
-                    width="32"
-                    height="24"
-                    alt="UK"
-                    className=" shadow-sm"
-                  />
-                  <span className="text-xs text-gray-400 mt-1">87</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://flagcdn.com/32x24/de.png"
-                    width="32"
-                    height="24"
-                    alt="Germany"
-                    className=" shadow-sm"
-                  />
-                  <span className="text-xs text-gray-400 mt-1">65</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://flagcdn.com/32x24/jp.png"
-                    width="32"
-                    height="24"
-                    alt="Japan"
-                    className=" shadow-sm"
-                  />
-                  <span className="text-xs text-gray-400 mt-1">52</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://flagcdn.com/32x24/fr.png"
-                    width="32"
-                    height="24"
-                    alt="France"
-                    className=" shadow-sm"
-                  />
-                  <span className="text-xs text-gray-400 mt-1">43</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://flagcdn.com/32x24/ca.png"
-                    width="32"
-                    height="24"
-                    alt="Canada"
-                    className=" shadow-sm"
-                  />
-                  <span className="text-xs text-gray-400 mt-1">38</span>
-                </div>
-              </div>
+            <a href="https://info.flagcounter.com/gncR">
+              <img src="https://s05.flagcounter.com/count2/gncR/bg_000000/txt_FFFFFF/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"/>
+            </a>
 
-              <div className="flex justify-between items-center text-gray-300 text-sm border-t border-[#00ff4c]/20 pt-3">
-                <span>Total Visitors</span>
-                <span className="font-mono text-[#00ff4c] text-lg">658</span>
-              </div>
-            </div>
           </div>
         </div>
 
