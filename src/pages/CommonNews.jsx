@@ -31,7 +31,7 @@ function CommonNews() {
     return (
       <>
         <Navbar />
-        <SecNavbar />
+{/*         <SecNavbar /> */}
         <div className="container mx-auto mt-[58px] p-8 text-center text-gray-600">
           Loading announcement…
         </div>
