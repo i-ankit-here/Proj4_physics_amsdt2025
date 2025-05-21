@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 
 const countdownTargets = {
-  submission: new Date('2024-12-01T23:59:59'),
-  registration: new Date('2025-01-01T23:59:59'),
-  conference: new Date('2025-01-22T09:00:00'),
+  submission: new Date('2025-08-15T23:59:59'),
+  registration: new Date('2025-08-30T23:59:59'),
+  conference: new Date('2025-12-07T09:00:00'),
+  acceptance: new Date('2025-08-25T09:00:00'),
 };
 
 const getTimeLeft = (targetDate) => {
@@ -49,6 +50,7 @@ const TripleCountdown = () => {
     submission: getTimeLeft(countdownTargets.submission),
     registration: getTimeLeft(countdownTargets.registration),
     conference: getTimeLeft(countdownTargets.conference),
+    acceptance: getTimeLeft(countdownTargets.acceptance),
   });
 
   useEffect(() => {
@@ -57,6 +59,7 @@ const TripleCountdown = () => {
         submission: getTimeLeft(countdownTargets.submission),
         registration: getTimeLeft(countdownTargets.registration),
         conference: getTimeLeft(countdownTargets.conference),
+        acceptance: getTimeLeft(countdownTargets.acceptance),
       });
     }, 60000); // update every 60s
     return () => clearInterval(timer);
@@ -82,7 +85,7 @@ const TripleCountdown = () => {
         />
         <CountdownBox
           title="Acceptance"
-          time={times.conference}
+          time={times.acceptance}
           color="#0066ff"
         />
       </div>

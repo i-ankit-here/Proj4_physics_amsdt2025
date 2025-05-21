@@ -118,11 +118,11 @@ const Timeline = forwardRef((props, ref) => {
             ))}
           </ul>
         </div>
-        <div className="mt-6">
+        {/* <div className="mt-6">
           <p className="text-sm text-center font-sans font-medium text-[#00ff4c]/80 bg-[#00120a] border border-[#00ff4c]/20 p-4 rounded-lg">
             <span className="text-red-500 mr-1">**</span>Separate call for papers will be intimated from the authors participating in the conference for the possible publication in conference partner journals.
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

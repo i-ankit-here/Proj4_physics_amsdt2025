@@ -5,28 +5,28 @@ const OrganizingHeads = () => {
     {
       name: "Prof. Binod Kumar Kanaujia",
       position: "Director, NIT Jalandhar & Faculty Advisor, IEEE Student Branch NIT Jalandhar",
-      image: "speaker.jpeg",
+      image: "Director.jpg",
       role: "Patron"
     },
     {
-      name: "Prof. Anand Mohan",
+      name: "Prof. Akash Deep",
       position: "Director, Institute of Nano Science and Technology, Mohali",
-      image: "speaker.jpeg",
+      image: "akashdeep.jpeg",
       role: "Patron"
     }
   ];
 
   const coPatrons = [
     {
-      name: "Prof. Ajay Bansal",
-      position: "Registrar(I/C), NIT Jalandhar",
-      image: "speaker.jpeg",
+      name: "Prof. R. K. Bansal",
+      position: "Registrar, NIT Jalandhar",
+      image: "rkbansal.jpeg",
       role: "Co-Patron"
     },
     {
       name: "Prof. Rohit Mehra",
       position: "Dean (R&C), NIT Jalandhar",
-      image: "speaker.jpeg",
+      image: "rohitmehra.jpg",
       role: "Co-Patron"
     }
   ];

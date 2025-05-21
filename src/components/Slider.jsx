@@ -1,115 +1,85 @@
-import { useState, useEffect } from 'react';
+import { forwardRef } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
+import axios from "axios";
+import getEnvironment from "../getenvironment";
 
-function Slider() {
+// Add display name to the component
+const Slider = forwardRef(function Slider(props) {
   const [slides, setSlides] = useState([]);
-  // Remove the unused 'heading' state since the buttons are commented out
   const [currentIndex, setCurrentIndex] = useState(0);
+  const confid = props.confid;
+  const [apiUrl, setApiUrl] = useState(null);
 
+  // Fallback images if API fails
   const inaugural = [
-    { imgLink: "https://nitj.ac.in/files/1735399335249-0L9A2115.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735399354448-0L9A2089.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735399374524-0L9A2146.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735399392312-0L9A2163.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735399410039-0L9A2228.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735399427569-0L9A2339.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735399448976-0L9A2343.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735399471501-0L9A2371.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735399491301-0L9A2392.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735399542768-0L9A2396.JPG", name: "" }
+    { imgLink: "https://nitj.ac.in/files/1735399335249-0L9A2115.JPG", name: "Conference Inauguration" },
+    { imgLink: "https://nitj.ac.in/files/1735399354448-0L9A2089.JPG", name: "Opening Ceremony" },
+    { imgLink: "https://nitj.ac.in/files/1735399374524-0L9A2146.JPG", name: "Keynote Address" },
+    { imgLink: "https://nitj.ac.in/files/1735399392312-0L9A2163.JPG", name: "Panel Discussion" },
+    { imgLink: "https://nitj.ac.in/files/1735399410039-0L9A2228.JPG", name: "Research Presentations" }
   ];
 
-  // const invitations = [
-  //   { imgLink: "https://nitj.ac.in/files/1728104187991-WhatsApp%20Image%202024-10-05%20at%207.35.55%20AM.jpeg", name: "IIChE CHEMCON 2024 team with L&T Director Sh Parthasarthi at L&T house Mumbai" },
-  //   { imgLink: "https://nitj.ac.in/files/1728104229106-WhatsApp%20Image%202024-10-05%20at%207.38.31%20AM.jpeg", name: "CHEMCON Team at UPL" },
-  //   { imgLink: "https://nitj.ac.in/files/1728104266596-WhatsApp%20Image%202024-10-05%20at%207.38.32%20AM.jpeg", name: "Inviting Industry Partners" },
-  //   { imgLink: "https://nitj.ac.in/files/1728104330664-WhatsApp%20Image%202024-10-03%20at%2010.25.43%20PM.jpeg", name: "Inviting Prof. A. B. Pandit, VC, ICT Mumbai for CHEMCON 2024" },
-  //   { imgLink: "https://nitj.ac.in/files/1728104394354-WhatsApp%20Image%202024-10-03%20at%2010.25.42%20PM.jpeg", name: "Inviting Industry Partners - Arti Industries" },
-  //   { imgLink: "https://nitj.ac.in/files/1729938898055-WhatsApp%20Image%202024-10-24%20at%204.25.00%20PM.jpeg", name: "Team Chemcon inviting Sh. A K Singh, CEO Petronet LNG at New Delhi" },
-  //   { imgLink: "https://nitj.ac.in/files/1729938997356-WhatsApp%20Image%202024-10-24%20at%204.25.24%20PM.jpeg", name: "Inviting Industry Partners" },
-  //   { imgLink: "https://nitj.ac.in/files/1729939106207-WhatsApp%20Image%202024-10-24%20at%204.26.01%20PM.jpeg", name: "Team Chemcon Inviting Sh O P Singh, Director ONGC" }
-  // ];
-
-  // const day1 = [
-  //   { imgLink: "https://nitj.ac.in/files/1735399990395-0L9A2970.JPG", name: "" },
-  //   { imgLink: "https://nitj.ac.in/files/1735400011292-0L9A2983.JPG", name: "" },
-  //   { imgLink: "https://nitj.ac.in/files/1735400027152-0L9A3010.JPG", name: "" },
-  //   { imgLink: "https://nitj.ac.in/files/1735400046195-0L9A3028.JPG", name: "" },
-  //   { imgLink: "https://nitj.ac.in/files/1735400061118-0L9A3051.JPG", name: "" },
-  //   { imgLink: "https://nitj.ac.in/files/1735400146087-0L9A3083.JPG", name: "" },
-  //   { imgLink: "https://nitj.ac.in/files/1735400205408-0L9A3107.JPG", name: "" },
-  //   { imgLink: "https://nitj.ac.in/files/1735400237759-0L9A3111.JPG", name: "" },
-  //   { imgLink: "https://nitj.ac.in/files/1735400358695-0L9A3261.JPG", name: "" }
-  // ];
-
-//   const day2 = [
-//     { imgLink: "https://nitj.ac.in/files/1735905313078-0L9A3928.JPG", name: "" },
-//     { imgLink: "https://nitj.ac.in/files/1735905348891-0L9A4079.JPG", name: "" },
-//     { imgLink: "https://nitj.ac.in/files/1735905364658-0L9A4085.JPG", name: "" },
-//     { imgLink: "https://nitj.ac.in/files/1735905383183-0L9A4103.JPG", name: "" },
-//     { imgLink: "https://nitj.ac.in/files/1735905398895-0L9A4121.JPG", name: "" },
-//     { imgLink: "https://nitj.ac.in/files/1735905418035-0L9A4159.JPG", name: "" },
-//     { imgLink: "https://nitj.ac.in/files/1735905432000-0L9A4204.JPG", name: "" },
-//     { imgLink: "https://nitj.ac.in/files/1735905454810-0L9A4228.JPG", name: "" },
-//     { imgLink: "https://nitj.ac.in/files/1735905484927-0L9A4244.JPG", name: "" },
-//     { imgLink: "https://nitj.ac.in/files/1735905501732-0L9A4252.JPG", name: "" },
-//     { imgLink: "https://nitj.ac.in/files/1735905518488-0L9A4256.JPG", name: "" },
-//     { imgLink: "https://nitj.ac.in/files/1735905532492-0L9A4262.JPG", name: "" },
-//     { imgLink: "https://nitj.ac.in/files/1735905550516-0L9A4278.JPG", name: "" },
-// ];
-
-
-  // const day3 = [
-  //   { imgLink: "https://nitj.ac.in/files/1735642366747-0L9A5751.JPG", name: "" },
-  //   { imgLink: "https://nitj.ac.in/files/1735642396710-0L9A5762.JPG", name: "" },
-  //   { imgLink: "https://nitj.ac.in/files/1735642446103-0L9A5753.JPG", name: "" },
-  //   { imgLink: "https://nitj.ac.in/files/1735642420804-0L9A5758.JPG", name: "" },
-  //   { imgLink: "https://nitj.ac.in/files/1735642282938-0L9A5708.JPG", name: "" },
-
-  // ];
-
   useEffect(() => {
-    // Set initial slides to 'inaugural'
-    setSlides(inaugural);
-  }, [inaugural]); // Add inaugural to dependency array
+    // Fetch the environment URL
+    getEnvironment().then(url => setApiUrl(url));
+  }, []);
+  
+  // Fetch images from API
+  useEffect(() => {
+    if (apiUrl) {
+      axios.get(`${apiUrl}/conferencemodule/images/conference/${confid}`, {
+        withCredentials: true
+      })
+        .then(res => {
+          const filteredSlides = (res.data || [])
+            .filter(slide => slide.feature)
+            .sort((a, b) => a.sequence - b.sequence);
+          
+          if (filteredSlides.length > 0) {
+            setSlides(filteredSlides);
+          } else {
+            // Fallback to inaugural images if no featured images
+            setSlides(inaugural);
+          }
+          console.log("Fetched slides:", filteredSlides);
+        })
+        .catch(err => {
+          console.log("Error fetching slides:", err);
+          // Fallback to inaugural images on error
+          setSlides(inaugural);
+        });
+    }
+  }, [apiUrl, confid, inaugural]);
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
-  };
+  }, [currentIndex, slides.length]);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-  };
+  }, [currentIndex, slides.length]);
 
+  // Auto-advance slides
   useEffect(() => {
+    if (slides.length === 0) return; // Don't set interval if no slides
+    
     const intervalId = setInterval(() => {
       nextSlide();
     }, 4500);
+    
     return () => clearInterval(intervalId);
-  }, [currentIndex, slides, nextSlide]); // Add nextSlide to dependency array
-
-  // Since the buttons are commented out, we can remove this function
-  // or keep it but make it a memoized function with useCallback
-  /* 
-  const handleSetSlides = (newSlides, name) => {
-    setHeading(name);
-    setSlides(newSlides);
-    setCurrentIndex(0); // Reset to the first slide
-  };
-  */
+  }, [currentIndex, slides.length, nextSlide]);
 
   return (
-    <div className="container lg:max-w-7xl mx-auto px-8 sm:px-10 lg:px-8 mb-32 sm:mb-10">
-      <div className="h-[420px] w-full md:h-[520px] lg:h-[680px] m-auto py-16 relative group">
-        
-        {/* Commented out buttons section */}
-
-        {slides.length > 0 && slides[currentIndex] && (
+    <div className="container lg:max-w-7xl mx-auto sm:mb-10 py-8">
+      <div className="h-[420px] w-full md:h-[520px] lg:h-[450px] m-auto relative group">
+        {slides.length > 0 && (
           <div
             style={{ backgroundImage: `url(${slides[currentIndex].imgLink})` }}
             className="w-full h-full rounded-2xl bg-center bg-cover relative border-2 border-[#00ff4c] shadow-lg shadow-[#00ff4c]/30"
@@ -121,14 +91,14 @@ function Slider() {
             )}
             
             <div
-              className="hidden group-hover:block absolute top-[50%] -translate-x-0 left-5 rounded-full p-2 bg-black/50 text-[#00ff4c] hover:bg-[#00ff4c] hover:text-black cursor-pointer transition-all"
+              className="hidden group-hover:block absolute top-[50%] -translate-y-1/2 left-5 rounded-full p-2 bg-black/50 text-[#00ff4c] hover:bg-[#00ff4c] hover:text-black cursor-pointer transition-all"
               onClick={prevSlide}
             >
               <BsChevronCompactLeft className="w-4 h-4 md:w-8 md:h-8" />
             </div>
             
             <div
-              className="hidden group-hover:block absolute top-[50%] -translate-x-0 right-5 rounded-full p-2 bg-black/50 text-[#00ff4c] hover:bg-[#00ff4c] hover:text-black cursor-pointer transition-all"
+              className="hidden group-hover:block absolute top-[50%] -translate-y-1/2 right-5 rounded-full p-2 bg-black/50 text-[#00ff4c] hover:bg-[#00ff4c] hover:text-black cursor-pointer transition-all"
               onClick={nextSlide}
             >
               <BsChevronCompactRight className="w-4 h-4 md:w-8 md:h-8" />
@@ -150,105 +120,6 @@ function Slider() {
       </div>
     </div>
   );
-}
+});
 
 export default Slider;
-
-
-//This is the code if you want to fetch images from Backend
-/*
-import  { useState, useEffect } from 'react';
-import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
-import { RxDotFilled } from 'react-icons/rx';
-import axios from "axios";
-import getEnvironment from "../getenvironment";
-
-function Slider(props) {
-  const [apiUrl, setApiUrl] = useState(null);
-    useEffect(() => {
-        // Fetch the environment URL
-        getEnvironment().then(url => setApiUrl(url));
-    }, []);  
-  const [slides, setSlides] = useState([]); // Initialize slides state with an empty array
-  const confid = props.confid;
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    if (apiUrl) {
-    axios.get(`${apiUrl}/conferencemodule/images/conference/${confid}`, {
-      withCredentials: true
-    })
-      .then(res => {
-        const filteredSlides = (res.data || []).filter(slide => slide.feature).sort((a, b) => a.sequence - b.sequence); // Filter slides where feature is true
-        setSlides( filteredSlides); 
-        console.log(res.data);
-      })
-      .catch(err => console.log(err));
-  }}, [apiUrl, confid]); // Add apiUrl and confid to the dependency array
-
-  useEffect(() => {
-    // Set up an interval to call nextSlide every 15 seconds
-    const intervalId = setInterval(() => {
-      nextSlide();
-    }, 2500);
-
-    // Clean up the interval when the component is unmounted or on dependency change
-    return () => clearInterval(intervalId);
-  }, [currentIndex]);
-
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
-  };
-
-  return (
-    <div className="bg-white container space-y-8 lg:max-w-7xl mx-auto px-8 sm:px-10 lg:px-8 md:pb-5">
-      <div className='h-[420px] w-full md:h-[520px] lg:h-[680px] m-auto py-16 relative group'>
-        <h2 className="text-4xl font-sans font-bold text-center text-gray-950 mb-5">Image Gallery</h2>
-        {slides.length > 0 && ( // Check if slides array is not empty before accessing its properties
-          <div
-            style={{ backgroundImage: `url(${slides[currentIndex].imgLink})` }}
-            className='w-full h-full rounded-2xl bg-center bg-cover '
-          >
-            <div className="absolute text-sm lg:text-xl font-sans font-medium bottom-0 left-0 right-0 bg-black/50 text-white text-center p-2">
-              {slides[currentIndex].name}
-            </div>
-          </div>
-        )}
-        <div className='hidden group-hover:block absolute top-[50%] -translate-x-0   left-5 rounded-full p-2 bg-black/30 text-white hover:bg-white hover:text-black  cursor-pointer'>
-          <BsChevronCompactLeft onClick={prevSlide} className='w-4 h-4 md:w-8 md:h-8' />
-        </div>
-        <div className='hidden group-hover:block absolute top-[50%] -translate-x-0  right-5 rounded-full p-2 bg-black/30 text-white hover:bg-white hover:text-black  cursor-pointer'>
-          <BsChevronCompactRight onClick={nextSlide} className='w-4 h-4 md:w-8 md:h-8'  />
-        </div>
-        <div className='flex top-4 justify-center py-2  '>
-          {slides.map((slide, slideIndex) => (
-            <div
-              key={slideIndex}
-              onClick={() => goToSlide(slideIndex)}
-              className={`text-sm sm:text-xl md:text-3xl cursor-pointer ${
-                currentIndex === slideIndex ? 'text-accent-500' : ''
-              }`}
-            >
-              <RxDotFilled />
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default Slider;
-*/

@@ -88,14 +88,14 @@ function AboutNews(props) {
           </div>
 
           {/* News Section - Takes 2/5 of the grid on large screens */}
-          <div className="h-full lg:col-span-2">
-            <div className="bg-[#00120a] h-full border border-[#00ff4c]/30 rounded-xl p-6 shadow-lg shadow-[#00ff4c]/10 backdrop-blur-sm">
+          <div className=" flex-col gap-10 lg:col-span-2 ">
+            <div className="bg-[#00120a] border border-[#00ff4c]/30 rounded-xl p-6 shadow-lg shadow-[#00ff4c]/10 backdrop-blur-sm">
               <h2 className="text-4xl font-sans font-bold text-[#00ff4c] mb-2">News</h2>
               <div className="w-24 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-6"></div>
               
               <div
                 id="news"
-                className="h-[500px] overflow-auto pr-2 scrollbar-thin scrollbar-thumb-[#00ff4c]/30 scrollbar-track-black/20"
+                className="h-[215px] overflow-auto pr-2 scrollbar-thin scrollbar-thumb-[#00ff4c]/30 scrollbar-track-black/20"
               >
                 <div
                   className={`space-y-4 ${isMouseOver ? "animate-none cursor-default" : "animate-wiggle"}`}
@@ -147,11 +147,12 @@ function AboutNews(props) {
                 </div>
               </div>
             </div>
+            <Slider confid={confid} />
           </div>
         </div>
         
         {/* Second row - Gallery Section */}
-        <div className="grid grid-cols-1 gap-10">
+        {/* <div className="grid grid-cols-1 gap-10">
           <div className="relative">
             <div className="absolute -top-10 -left-10 w-20 h-20 border border-[#00ff4c]/20 rounded-full"></div>
             <div className="absolute -bottom-10 -right-10 w-16 h-16 border border-[#00ff4c]/20 rounded-full"></div>
@@ -165,10 +166,10 @@ function AboutNews(props) {
               <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#00ff4c] to-transparent mx-auto mb-8"></div>
               
               {/* Pass the confid prop correctly to the Slider component */}
-              <Slider confid={confid} />
+              {/* <Slider confid={confid} />
             </div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     </div>
   );

@@ -126,39 +126,29 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
           {/* Contact Information */}
           <div className="lg:w-1/2">
-            <h3 className="text-4xl font-bold text-white mb-6">
+            <h3 className="text-3xl font-bold text-white mb-4">
               Contact Us
             </h3>
-            <div className="w-32 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-8"></div>
+            <div className="w-28 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-6"></div>
 
-            <ul className="space-y-4 text-gray-300">
+            <ul className="space-y-3 text-gray-300">
               <li className="flex items-center">
-                <span className="inline-block w-2 h-2 bg-[#00ff4c] rounded-full mr-3"></span>
-                <span className="text-lg">amsdt2025@nitj.ac.in</span>
+                <span className="inline-block w-1.5 h-1.5 bg-[#00ff4c] rounded-full mr-3"></span>
+                <span className="text-base">amsdt2025@nitj.ac.in</span>
               </li>
               <li className="flex items-center">
-                <span className="inline-block w-2 h-2 bg-[#00ff4c] rounded-full mr-3"></span>
-                <span className="text-lg">+91-9815909328</span>
+                <span className="inline-block w-1.5 h-1.5 bg-[#00ff4c] rounded-full mr-3"></span>
+                <span className="text-base">+91-9815909328</span>
               </li>
               <li className="flex items-start">
-                <span className="inline-block w-2 h-2 bg-[#00ff4c] rounded-full mr-3 mt-1.5"></span>
-                <span className="text-lg">Department of Physics,<br />NIT Jalandhar, Punjab, India</span>
+                <span className="inline-block w-1.5 h-1.5 bg-[#00ff4c] rounded-full mr-3 mt-1.5"></span>
+                <span className="text-base">Department of Physics,<br />NIT Jalandhar, Punjab, India</span>
               </li>
             </ul>
           </div>
 
           {/* Visitors Counter */}
-          <div className="lg:w-1/3">
-            <h3 className="text-4xl font-bold text-white mb-6">
-              Visitors
-            </h3>
-            <div className="w-32 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-8"></div>
-
-            <a href="https://info.flagcounter.com/gncR">
-              <img src="https://s05.flagcounter.com/count2/gncR/bg_000000/txt_FFFFFF/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"/>
-            </a>
-
-          </div>
+              <img src='https://www.flagcounter.me/fUw/' alt="AMS"/>
         </div>
 
         <div className="mt-12 pt-8 border-t border-[#00ff4c]/20">
