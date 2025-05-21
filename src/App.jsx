@@ -10,7 +10,6 @@ import Sponsors from "./pages/Sponsors";
 import { Route, Routes } from "react-router-dom";
 //import Committee from "./pages/Committee";
 import CommonNews from "./pages/CommonNews";
-import ParticlesComponent from "./components/Particle";
 import './App.css'
 import CommontemplateCommittee from "./pages/Committee/CommonTemplateCommittee";
 import Hotels from "./pages/Accomodation/Hotels";
@@ -22,7 +21,6 @@ function App() {
    const confid="682c2dbe4f0ddcc436b90e88";
   return (
     <>
-    <ParticlesComponent id="particle" />
 
 <div id="content ">
       < Routes >
@@ -40,9 +38,9 @@ function App() {
         <Route path="invitedspeakers" element={<InvitedSpeakerPage confid={confid} />} />
         <Route path="registrationfee" element={<RegistrationFee />} />
         <Route path="registrationlink" element={<RegistrationLink />} />
-        <Route path="registrationfaq" element={<RegistrationFAQ pageid="671fb502dbcf15e8ac081476" />} />
-        <Route path="advisorycommittee" element={<CommontemplateCommittee pageid="66c2bf945e7b005443191765" />} />
-        <Route path="localcommittee" element={<CommontemplateCommittee pageid="66c2c0855e7b00544319176c" />} />
+        <Route path="registrationfaq" element={<RegistrationFAQ pageid="682c2dbe4f0ddcc436b90e88" />} />
+        <Route path="advisorycommittee" element={<CommontemplateCommittee pageid="682c2dbe4f0ddcc436b90e88" />} />
+        <Route path="localcommittee" element={<CommontemplateCommittee pageid="682c2dbe4f0ddcc436b90e88" />} />
         <Route path="news/:newsid" element={<CommonNews /> } />
 
 

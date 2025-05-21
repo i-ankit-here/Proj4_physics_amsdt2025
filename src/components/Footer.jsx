@@ -156,57 +156,82 @@ const Footer = () => {
 
             <div className="border border-[#00ff4c]/30 rounded-md p-4 bg-black/50 backdrop-blur-sm">
               {/* Flag Counter with actual flag icons */}
-              <div className="flex flex-wrap gap-2 mb-4">
-                <img
-                src="https://flagcdn.com/32x24/us.png"
-                width="32"
-                height="24"
-                alt="Ukraine"/>
-                <img
-                src="https://flagcdn.com/32x24/us.png"
-                width="32"
-                height="24"
-                alt="Ukraine"/>
-                <img
-                src="https://flagcdn.com/32x24/us.png"
-                width="32"
-                height="24"
-                alt="Ukraine"/>
-                <img
-                src="https://flagcdn.com/32x24/us.png"
-                width="32"
-                height="24"
-                alt="Ukraine"/>
-                <img
-                src="https://flagcdn.com/32x24/us.png"
-                width="32"
-                height="24"
-                alt="Ukraine"/>
-                <img
-                src="https://flagcdn.com/32x24/us.png"
-                width="32"
-                height="24"
-                alt="Ukraine"/>
-                <img
-                src="https://flagcdn.com/32x24/us.png"
-                width="32"
-                height="24"
-                alt="Ukraine"/>
-                {/* <div className="text-xl text-blue-500"><FaFlagUsa title="USA" /></div>
-                <div className="text-xl text-red-600"><FaCanada title="Canada" /></div>
-                <div className="text-xl text-orange-500"><SiIndia title="India" /></div>
-                <div className="text-xl text-yellow-400"><SiGermany title="Germany" /></div>
-                <div className="text-xl text-red-500"><SiJapan title="Japan" /></div>
-                <div className="text-xl text-blue-600"><SiFrance title="France" /></div>
-                <div className="text-xl text-red-600"><SiUnitedkingdom title="UK" /></div>
-                <div className="text-xl text-red-700"><SiChina title="China" /></div>
-                <div className="text-xl text-blue-700"><SiRussia title="Russia" /></div>
-                <div className="text-xl text-gray-300"><FaFlagCheckered title="Other Countries" /></div> */}
+              <div className="flex flex-wrap gap-3 mb-6 justify-center">
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://flagcdn.com/32x24/in.png"
+                    width="32"
+                    height="24"
+                    alt="India"
+                    className=" shadow-sm"
+                  />
+                  <span className="text-xs text-gray-400 mt-1">245</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://flagcdn.com/32x24/us.png"
+                    width="32"
+                    height="24"
+                    alt="USA"
+                    className=" shadow-sm"
+                  />
+                  <span className="text-xs text-gray-400 mt-1">128</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://flagcdn.com/32x24/gb.png"
+                    width="32"
+                    height="24"
+                    alt="UK"
+                    className=" shadow-sm"
+                  />
+                  <span className="text-xs text-gray-400 mt-1">87</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://flagcdn.com/32x24/de.png"
+                    width="32"
+                    height="24"
+                    alt="Germany"
+                    className=" shadow-sm"
+                  />
+                  <span className="text-xs text-gray-400 mt-1">65</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://flagcdn.com/32x24/jp.png"
+                    width="32"
+                    height="24"
+                    alt="Japan"
+                    className=" shadow-sm"
+                  />
+                  <span className="text-xs text-gray-400 mt-1">52</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://flagcdn.com/32x24/fr.png"
+                    width="32"
+                    height="24"
+                    alt="France"
+                    className=" shadow-sm"
+                  />
+                  <span className="text-xs text-gray-400 mt-1">43</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://flagcdn.com/32x24/ca.png"
+                    width="32"
+                    height="24"
+                    alt="Canada"
+                    className=" shadow-sm"
+                  />
+                  <span className="text-xs text-gray-400 mt-1">38</span>
+                </div>
               </div>
 
-              <div className="flex justify-between items-center text-gray-300 text-sm">
-                <span>Pageviews</span>
-                <span className="font-mono text-[#00ff4c] text-lg">00017</span>
+              <div className="flex justify-between items-center text-gray-300 text-sm border-t border-[#00ff4c]/20 pt-3">
+                <span>Total Visitors</span>
+                <span className="font-mono text-[#00ff4c] text-lg">658</span>
               </div>
             </div>
           </div>

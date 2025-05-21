@@ -63,7 +63,7 @@ function AboutNews(props) {
                 AMSDT-2025
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-6"></div>
-              <div className="text-base text-gray-300 space-y-4">
+              <div className="text-base text-gray-300 space-y-4 text-justify">
                 {data ? (
                   <div className="min-h-[216px]" dangerouslySetInnerHTML={{ __html: data.about[0].description }} />
                 ) : (
@@ -77,7 +77,7 @@ function AboutNews(props) {
                 About AMSDT
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-6"></div>
-              <div className="text-base text-gray-300 space-y-4">
+              <div className="text-base text-gray-300 space-y-4 text-justify">
                 {data ? (
                   <div dangerouslySetInnerHTML={{ __html: data.about[1].description }} />
                 ) : (

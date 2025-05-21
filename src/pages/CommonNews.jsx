@@ -8,7 +8,7 @@ import axios from 'axios';
 
 function CommonNews() {
   const [apiUrl, setApiUrl] = useState(null);
-  const [data, setData] = useState(null);              // ← start as null
+  const [data, setData] = useState(null);        
   const { newsid } = useParams();
 
   // load base URL

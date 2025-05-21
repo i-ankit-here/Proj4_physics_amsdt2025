@@ -12,7 +12,7 @@ function Hero2(props) {
   return (
     <>
       {/* <Invitation /> */}
-      <div className="text-white py-12 h-90vh">
+      <div className="text-white py-6 sm:py-6 h-90vh">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center mt-[100px] max-w-7xl mx-auto lg:px-8 px-3 mt-[80px] lg:mt-[2px]">
           <div className="flex flex-col items-center md:items-start justify-center z-20 py-4 gap-3">
             <div className="w-full flex items-center justify-evenly">
@@ -49,14 +49,16 @@ function Hero2(props) {
             </div>
           </div>
           
-          <div className="hidden max-w-2xl md:flex justify-center items-center">
-              <div className="absolute w-2xl h-full flex-col items-center justify-center ">
-                <div className="w-[350px] h-[350px] mx-auto">
-                  <img src="molecule.png" alt="AMS" className="w-full h-full object-contain" />
+          <div className="max-w-2xl flex flex-col justify-center items-center relative">
+                <div className="w-full flex flex-col items-center justify-center">
+                  <div className="hidden md:flex w-[350px] h-[350px] mx-auto">
+                    <img src="molecule.png" alt="AMS" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="w-full flex justify-center mt-8 md:mt-0">
+                    <CountdownBox/>
+                  </div>
                 </div>
-                <CountdownBox/>
-            </div>
-          </div>
+              </div>
         </div>
       </div>
     </>

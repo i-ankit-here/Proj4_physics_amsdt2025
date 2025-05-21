@@ -4,7 +4,7 @@ import { RxDotFilled } from 'react-icons/rx';
 
 function Slider() {
   const [slides, setSlides] = useState([]);
-  const [heading, setHeading] = useState("Inaugural Function");
+  // Remove the unused 'heading' state since the buttons are commented out
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const inaugural = [
@@ -20,66 +20,59 @@ function Slider() {
     { imgLink: "https://nitj.ac.in/files/1735399542768-0L9A2396.JPG", name: "" }
   ];
 
-  const invitations = [
-    { imgLink: "https://nitj.ac.in/files/1728104187991-WhatsApp%20Image%202024-10-05%20at%207.35.55%20AM.jpeg", name: "IIChE CHEMCON 2024 team with L&T Director Sh Parthasarthi at L&T house Mumbai" },
-    { imgLink: "https://nitj.ac.in/files/1728104229106-WhatsApp%20Image%202024-10-05%20at%207.38.31%20AM.jpeg", name: "CHEMCON Team at UPL" },
-    { imgLink: "https://nitj.ac.in/files/1728104266596-WhatsApp%20Image%202024-10-05%20at%207.38.32%20AM.jpeg", name: "Inviting Industry Partners" },
-    { imgLink: "https://nitj.ac.in/files/1728104330664-WhatsApp%20Image%202024-10-03%20at%2010.25.43%20PM.jpeg", name: "Inviting Prof. A. B. Pandit, VC, ICT Mumbai for CHEMCON 2024" },
-    { imgLink: "https://nitj.ac.in/files/1728104394354-WhatsApp%20Image%202024-10-03%20at%2010.25.42%20PM.jpeg", name: "Inviting Industry Partners - Arti Industries" },
-    { imgLink: "https://nitj.ac.in/files/1729938898055-WhatsApp%20Image%202024-10-24%20at%204.25.00%20PM.jpeg", name: "Team Chemcon inviting Sh. A K Singh, CEO Petronet LNG at New Delhi" },
-    { imgLink: "https://nitj.ac.in/files/1729938997356-WhatsApp%20Image%202024-10-24%20at%204.25.24%20PM.jpeg", name: "Inviting Industry Partners" },
-    { imgLink: "https://nitj.ac.in/files/1729939106207-WhatsApp%20Image%202024-10-24%20at%204.26.01%20PM.jpeg", name: "Team Chemcon Inviting Sh O P Singh, Director ONGC" }
-  ];
+  // const invitations = [
+  //   { imgLink: "https://nitj.ac.in/files/1728104187991-WhatsApp%20Image%202024-10-05%20at%207.35.55%20AM.jpeg", name: "IIChE CHEMCON 2024 team with L&T Director Sh Parthasarthi at L&T house Mumbai" },
+  //   { imgLink: "https://nitj.ac.in/files/1728104229106-WhatsApp%20Image%202024-10-05%20at%207.38.31%20AM.jpeg", name: "CHEMCON Team at UPL" },
+  //   { imgLink: "https://nitj.ac.in/files/1728104266596-WhatsApp%20Image%202024-10-05%20at%207.38.32%20AM.jpeg", name: "Inviting Industry Partners" },
+  //   { imgLink: "https://nitj.ac.in/files/1728104330664-WhatsApp%20Image%202024-10-03%20at%2010.25.43%20PM.jpeg", name: "Inviting Prof. A. B. Pandit, VC, ICT Mumbai for CHEMCON 2024" },
+  //   { imgLink: "https://nitj.ac.in/files/1728104394354-WhatsApp%20Image%202024-10-03%20at%2010.25.42%20PM.jpeg", name: "Inviting Industry Partners - Arti Industries" },
+  //   { imgLink: "https://nitj.ac.in/files/1729938898055-WhatsApp%20Image%202024-10-24%20at%204.25.00%20PM.jpeg", name: "Team Chemcon inviting Sh. A K Singh, CEO Petronet LNG at New Delhi" },
+  //   { imgLink: "https://nitj.ac.in/files/1729938997356-WhatsApp%20Image%202024-10-24%20at%204.25.24%20PM.jpeg", name: "Inviting Industry Partners" },
+  //   { imgLink: "https://nitj.ac.in/files/1729939106207-WhatsApp%20Image%202024-10-24%20at%204.26.01%20PM.jpeg", name: "Team Chemcon Inviting Sh O P Singh, Director ONGC" }
+  // ];
 
-  const day1 = [
-    { imgLink: "https://nitj.ac.in/files/1735399990395-0L9A2970.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735400011292-0L9A2983.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735400027152-0L9A3010.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735400046195-0L9A3028.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735400061118-0L9A3051.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735400146087-0L9A3083.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735400205408-0L9A3107.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735400237759-0L9A3111.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735400358695-0L9A3261.JPG", name: "" }
-  ];
+  // const day1 = [
+  //   { imgLink: "https://nitj.ac.in/files/1735399990395-0L9A2970.JPG", name: "" },
+  //   { imgLink: "https://nitj.ac.in/files/1735400011292-0L9A2983.JPG", name: "" },
+  //   { imgLink: "https://nitj.ac.in/files/1735400027152-0L9A3010.JPG", name: "" },
+  //   { imgLink: "https://nitj.ac.in/files/1735400046195-0L9A3028.JPG", name: "" },
+  //   { imgLink: "https://nitj.ac.in/files/1735400061118-0L9A3051.JPG", name: "" },
+  //   { imgLink: "https://nitj.ac.in/files/1735400146087-0L9A3083.JPG", name: "" },
+  //   { imgLink: "https://nitj.ac.in/files/1735400205408-0L9A3107.JPG", name: "" },
+  //   { imgLink: "https://nitj.ac.in/files/1735400237759-0L9A3111.JPG", name: "" },
+  //   { imgLink: "https://nitj.ac.in/files/1735400358695-0L9A3261.JPG", name: "" }
+  // ];
 
-  const day2 = [
-    { imgLink: "https://nitj.ac.in/files/1735905313078-0L9A3928.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735905348891-0L9A4079.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735905364658-0L9A4085.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735905383183-0L9A4103.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735905398895-0L9A4121.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735905418035-0L9A4159.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735905432000-0L9A4204.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735905454810-0L9A4228.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735905484927-0L9A4244.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735905501732-0L9A4252.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735905518488-0L9A4256.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735905532492-0L9A4262.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735905550516-0L9A4278.JPG", name: "" },
-];
+//   const day2 = [
+//     { imgLink: "https://nitj.ac.in/files/1735905313078-0L9A3928.JPG", name: "" },
+//     { imgLink: "https://nitj.ac.in/files/1735905348891-0L9A4079.JPG", name: "" },
+//     { imgLink: "https://nitj.ac.in/files/1735905364658-0L9A4085.JPG", name: "" },
+//     { imgLink: "https://nitj.ac.in/files/1735905383183-0L9A4103.JPG", name: "" },
+//     { imgLink: "https://nitj.ac.in/files/1735905398895-0L9A4121.JPG", name: "" },
+//     { imgLink: "https://nitj.ac.in/files/1735905418035-0L9A4159.JPG", name: "" },
+//     { imgLink: "https://nitj.ac.in/files/1735905432000-0L9A4204.JPG", name: "" },
+//     { imgLink: "https://nitj.ac.in/files/1735905454810-0L9A4228.JPG", name: "" },
+//     { imgLink: "https://nitj.ac.in/files/1735905484927-0L9A4244.JPG", name: "" },
+//     { imgLink: "https://nitj.ac.in/files/1735905501732-0L9A4252.JPG", name: "" },
+//     { imgLink: "https://nitj.ac.in/files/1735905518488-0L9A4256.JPG", name: "" },
+//     { imgLink: "https://nitj.ac.in/files/1735905532492-0L9A4262.JPG", name: "" },
+//     { imgLink: "https://nitj.ac.in/files/1735905550516-0L9A4278.JPG", name: "" },
+// ];
 
 
-  const day3 = [
-    { imgLink: "https://nitj.ac.in/files/1735642366747-0L9A5751.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735642396710-0L9A5762.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735642446103-0L9A5753.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735642420804-0L9A5758.JPG", name: "" },
-    { imgLink: "https://nitj.ac.in/files/1735642282938-0L9A5708.JPG", name: "" },
+  // const day3 = [
+  //   { imgLink: "https://nitj.ac.in/files/1735642366747-0L9A5751.JPG", name: "" },
+  //   { imgLink: "https://nitj.ac.in/files/1735642396710-0L9A5762.JPG", name: "" },
+  //   { imgLink: "https://nitj.ac.in/files/1735642446103-0L9A5753.JPG", name: "" },
+  //   { imgLink: "https://nitj.ac.in/files/1735642420804-0L9A5758.JPG", name: "" },
+  //   { imgLink: "https://nitj.ac.in/files/1735642282938-0L9A5708.JPG", name: "" },
 
-  ];
+  // ];
 
   useEffect(() => {
     // Set initial slides to 'inaugural'
     setSlides(inaugural);
-  }, []);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      nextSlide();
-    }, 4500);
-    return () => clearInterval(intervalId);
-  }, [currentIndex, slides]);
+  }, [inaugural]); // Add inaugural to dependency array
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -93,72 +86,28 @@ function Slider() {
     setCurrentIndex(newIndex);
   };
 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      nextSlide();
+    }, 4500);
+    return () => clearInterval(intervalId);
+  }, [currentIndex, slides, nextSlide]); // Add nextSlide to dependency array
+
+  // Since the buttons are commented out, we can remove this function
+  // or keep it but make it a memoized function with useCallback
+  /* 
   const handleSetSlides = (newSlides, name) => {
     setHeading(name);
     setSlides(newSlides);
     setCurrentIndex(0); // Reset to the first slide
   };
+  */
 
   return (
     <div className="container lg:max-w-7xl mx-auto px-8 sm:px-10 lg:px-8 mb-32 sm:mb-10">
       <div className="h-[420px] w-full md:h-[520px] lg:h-[680px] m-auto py-16 relative group">
         
-        <div className="flex justify-center space-x-4 mb-3 font-sans flex-wrap">
-          <button 
-            onClick={() => handleSetSlides(inaugural, "Inaugural Function")}
-            className={`px-4 py-1 rounded-lg mb-2 transition-all ${
-              heading === "Inaugural Function"
-                ? "bg-[#00ff4c] text-black font-bold"
-                : "bg-[#002a00] text-[#00ff4c] border border-[#00ff4c] hover:bg-[#00ff4c20] font-semibold"
-            }`}
-          >
-            Inaugural Function
-          </button>
-          
-          <button 
-            onClick={() => handleSetSlides(day1, "Day1")} 
-            className={`px-4 py-1 rounded-lg mb-2 transition-all ${
-              heading === "Day1"
-                ? "bg-[#00ff4c] text-black font-bold"
-                : "bg-[#002a00] text-[#00ff4c] border border-[#00ff4c] hover:bg-[#00ff4c20] font-semibold"
-            }`}
-          >
-            Day 1
-          </button>
-
-          <button 
-            onClick={() => handleSetSlides(day2, "Day2")} 
-            className={`px-4 py-1 rounded-lg mb-2 transition-all ${
-              heading === "Day2"
-                ? "bg-[#00ff4c] text-black font-bold"
-                : "bg-[#002a00] text-[#00ff4c] border border-[#00ff4c] hover:bg-[#00ff4c20] font-semibold"
-            }`}
-          >
-            Day 2
-          </button>
-          
-          <button 
-            onClick={() => handleSetSlides(day3, "Day3")} 
-            className={`px-4 py-1 rounded-lg mb-2 transition-all ${
-              heading === "Day3"
-                ? "bg-[#00ff4c] text-black font-bold"
-                : "bg-[#002a00] text-[#00ff4c] border border-[#00ff4c] hover:bg-[#00ff4c20] font-semibold"
-            }`}
-          >
-            Day 3
-          </button>
-          
-          <button 
-            onClick={() => handleSetSlides(invitations, "Invitations")} 
-            className={`px-4 py-1 rounded-lg mb-2 transition-all ${
-              heading === "Invitations"
-                ? "bg-[#00ff4c] text-black font-bold"
-                : "bg-[#002a00] text-[#00ff4c] border border-[#00ff4c] hover:bg-[#00ff4c20] font-semibold"
-            }`}
-          >
-            Invitations
-          </button>
-        </div>
+        {/* Commented out buttons section */}
 
         {slides.length > 0 && slides[currentIndex] && (
           <div

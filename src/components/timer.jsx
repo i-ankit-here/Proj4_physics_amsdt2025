@@ -81,9 +81,9 @@ const TripleCountdown = () => {
           color="#00ff66"
         />
         <CountdownBox
-          title="Conference"
+          title="Acceptance"
           time={times.conference}
-          color="#00ff66"
+          color="#0066ff"
         />
       </div>
     </div>
