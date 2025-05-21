@@ -17,7 +17,7 @@ function Hero2(props) {
           <div className="flex flex-col items-center md:items-start justify-center z-20 py-4 gap-3">
             <div className="w-full flex items-center justify-evenly">
               <img src="nitjlogo.png" alt="AMS" className="w-24 h-24 object-contain" />
-              <img src="inst.png" alt="AMS" className="w-24 h-24 object-contain" />
+              <img src="inst.png" alt="AMS" className="w-32 h-32 object-contain" />
             </div>
             <p className="lg:text-6xl md:text-5xl text-4xl leading-tight lg:leading-none tracking-wide font-bold text-[#00ff4c] text-center md:text-left">
               AMSDT-2025
@@ -28,7 +28,11 @@ function Hero2(props) {
             </p>
 
             <h3 className="text-[#00ff4c] mx-auto md:mx-0 font-medium text-center md:text-left tracking-wide lg:text-xl">
-            Jointly organized by Dr B R Ambedkar NIT Jalandhar, Punjab, India & Institute of Nano Science and Technology, Mohali, Punjab, India
+              <span>Jointly organized by</span>
+              <br />
+              <span>Dr B R Ambedkar NIT Jalandhar, Punjab, India</span>
+              <br />
+              <span>& Institute of Nano Science and Technology, Mohali, Punjab, India</span>
             </h3>
             
             <p className="text-white text-sm sm:text-base mt-4 bg-[#00ff4c]/10 border border-[#00ff4c] rounded-md px-4 py-2 w-fit font-medium backdrop-blur-sm">
@@ -45,15 +49,15 @@ function Hero2(props) {
             </div>
           </div>
           
-          <div className="hidden md:flex justify-center items-center">
-              <div className="absolute w-full h-full flex items-center justify-center">
-                <div className="w-[450px] h-[450px]">
+          <div className="hidden max-w-2xl md:flex justify-center items-center">
+              <div className="absolute w-2xl h-full flex-col items-center justify-center ">
+                <div className="w-[350px] h-[350px] mx-auto">
                   <img src="molecule.png" alt="AMS" className="w-full h-full object-contain" />
                 </div>
+                <CountdownBox/>
             </div>
           </div>
         </div>
-      <CountdownBox/>
       </div>
     </>
   );

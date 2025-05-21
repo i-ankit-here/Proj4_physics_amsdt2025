@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom'; // Import useLocation
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
-import SecNavbar from '../../components/SecNavbar';
 import getEnvironment from '../../getenvironment';
 import axios from 'axios';
 
@@ -32,24 +31,45 @@ function CommontemplateCommittee(props) {
     }, [apiUrl, location]); // Re-fetch data when apiUrl or location changes
 
     return (
-        <>
+        <div className="bg-black min-h-screen relative overflow-hidden">
+            {/* Background decorative elements */}
+            <div className="absolute inset-0 pointer-events-none opacity-10">
+                <div className="absolute w-[800px] h-[800px] border border-[#00ff4c]/10 rounded-full -right-1/4 top-1/4 transform -translate-y-1/2"></div>
+                <div className="absolute w-[500px] h-[500px] border border-[#00ff4c]/15 rounded-full -left-1/4 bottom-1/4"></div>
+                <div className="absolute w-3 h-3 bg-[#00ff4c] rounded-full left-[10%] top-[20%] animate-pulse"></div>
+                <div className="absolute w-2 h-2 bg-[#00ff4c] rounded-full right-[15%] bottom-[30%] animate-pulse"></div>
+            </div>
+
             <div className="fixed top-0 w-screen z-40">
                 <Navbar />
             </div>
-            <SecNavbar />
 
-            <div className="bg-white container max-w-7xl mx-auto px-5 sm:px-10 lg:px-8 mt-[58px] lg:mt-[10px] min-h-[300px] pb-5">
-                <div className="w-full mx-auto md:w-[700px] px-4 lg:w-full">
-                    <p className="text-2xl font-sans font-bold mb-5 text-gray-950 underline">
-                        {data.type}
-                    </p>
-                    <div className="text-base text-justify font-sans font-base text-gray-800">
-                        <div dangerouslySetInnerHTML={{ __html: data.description }} />
+            <div className="container max-w-7xl mx-auto px-5 sm:px-10 lg:px-8 pt-[80px] lg:pt-[100px] pb-16 relative z-10">
+                <div className="bg-[#00120a] border border-[#00ff4c]/30 rounded-xl p-6 md:p-8 shadow-lg shadow-[#00ff4c]/10 backdrop-blur-sm">
+                    <div className="w-full mx-auto">
+                        <h1 className="text-4xl font-bold text-[#00ff4c] mb-4">
+                            {data.type || "Committee"}
+                        </h1>
+                        <div className="w-32 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-8"></div>
+                        
+                        {data ? (
+                            <div className="text-gray-300 prose prose-invert max-w-none">
+                                <div dangerouslySetInnerHTML={{ __html: data.description }} />
+                            </div>
+                        ) : (
+                            <div className="animate-pulse">
+                                <div className="h-4 bg-gray-700 rounded w-3/4 mb-4"></div>
+                                <div className="h-4 bg-gray-700 rounded w-1/2 mb-4"></div>
+                                <div className="h-4 bg-gray-700 rounded w-5/6 mb-4"></div>
+                                <div className="h-4 bg-gray-700 rounded w-2/3 mb-4"></div>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
+            
             <Footer />
-        </>
+        </div>
     );
 }
 

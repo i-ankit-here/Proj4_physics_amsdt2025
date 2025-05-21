@@ -31,16 +31,16 @@ function Committee(props) {
     }, [apiUrl, confid]);
 
     // Grouping the data based on the type of committee
-    const nationalCommittees = data.filter(item => 
-        item.Type.toLowerCase().includes('national organising committee')
+    const advisorycommittees = data.filter(item => 
+        item.Type.toLowerCase().includes('advisory committee')
     );
     const localCommittees = data.filter(item => 
         item.Type.toLowerCase().includes('local organising committee')
     );
 
     // Determine which data to display based on the URL
-    const displayData = location.pathname.includes('nationalcommittee') 
-        ? nationalCommittees 
+    const displayData = location.pathname.includes('advisorycommittee') 
+        ? advisorycommittees 
         : location.pathname.includes('localcommittee') 
         ? localCommittees 
         : [];

@@ -100,9 +100,8 @@ function Slider() {
   };
 
   return (
-    <div className="bg-black container space-y-8 lg:max-w-7xl mx-auto px-8 sm:px-10 lg:px-8 mb-32 sm:mb-10">
+    <div className="container lg:max-w-7xl mx-auto px-8 sm:px-10 lg:px-8 mb-32 sm:mb-10">
       <div className="h-[420px] w-full md:h-[520px] lg:h-[680px] m-auto py-16 relative group">
-        <h2 className="text-4xl font-sans font-bold text-center text-[#00ff4c] mb-3">Image Gallery</h2>
         
         <div className="flex justify-center space-x-4 mb-3 font-sans flex-wrap">
           <button 

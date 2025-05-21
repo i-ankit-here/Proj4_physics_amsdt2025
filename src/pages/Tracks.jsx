@@ -1,0 +1,122 @@
+import { useEffect } from 'react';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+
+function Tracks() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    const tracks = [
+        {
+            id: 1,
+            name: "Track 1",
+            topics: [
+                "Nano Materials and Devices",
+                "Smart and Functional Materials",
+                "Batteries and Supercapacitors",
+                "Energy Materials",
+                "Liquid Crystals and Polymeric Materials",
+                "Thin films and Solar cells",
+                "Advanced Composites",
+                "Biomaterials and Sensors",
+                "Surface and Interface",
+                "Functional oxides"
+            ]
+        },
+        {
+            id: 2,
+            name: "Track 2",
+            topics: [
+                "Multi-ferrorics",
+                "Magnetic Materials",
+                "Semiconductor Physics and Devices",
+                "Superconductors",
+                "Ferroelectrics and Dielectrics",
+                "Glasses and Ceramics"
+            ]
+        },
+        {
+            id: 3,
+            name: "Track 3",
+            topics: [
+                "Optics and Photonics",
+                "Quantum computing",
+                "Laser and Plasma Physics",
+                "Computational Physics and Materials Science",
+                "Condensed Matter Theory"
+            ]
+        },
+        {
+            id: 4,
+            name: "Track 4",
+            topics: [
+                "Nuclear and Radiation Physics",
+                "High-Energy Physics",
+                "Atmospheric Physics for Sustainable Climate & Environment",
+                "Sustainable Materials Drug Delivery for Environment",
+                "Interdisciplinary Research for Sustainability",
+                "Swift heavy ion irradiation"
+            ]
+        }
+    ];
+
+    return (
+        <div className="bg-black min-h-screen relative overflow-hidden">
+            {/* Background decorative elements */}
+            <div className="absolute inset-0 pointer-events-none opacity-10">
+                <div className="absolute w-[800px] h-[800px] border border-[#00ff4c]/10 rounded-full -right-1/4 top-1/4 transform -translate-y-1/2"></div>
+                <div className="absolute w-[500px] h-[500px] border border-[#00ff4c]/15 rounded-full -left-1/4 bottom-1/4"></div>
+                <div className="absolute w-3 h-3 bg-[#00ff4c] rounded-full left-[10%] top-[20%] animate-pulse"></div>
+                <div className="absolute w-2 h-2 bg-[#00ff4c] rounded-full right-[15%] bottom-[30%] animate-pulse"></div>
+            </div>
+            
+            <div className="fixed top-0 w-screen z-40"> 
+                <Navbar />      
+            </div>
+            
+            <div className="container max-w-7xl mx-auto px-5 sm:px-10 lg:px-8 pt-[80px] lg:pt-[100px] pb-16 relative z-10">
+                <div className="bg-[#00120a] border border-[#00ff4c]/30 rounded-xl p-6 md:p-8 shadow-lg shadow-[#00ff4c]/10 backdrop-blur-sm">
+                    <h1 className="text-4xl font-bold text-[#00ff4c] mb-4">
+                        Conference Tracks
+                    </h1>
+                    <div className="w-32 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-8"></div>
+                    
+                    <div className="text-gray-300 mb-8">
+                        <p className="leading-relaxed">
+                            AMSDT-2025 features four specialized tracks covering a wide range of topics in advanced materials science and device technology. 
+                            Authors are encouraged to submit their research papers aligned with these tracks.
+                        </p>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {tracks.map((track) => (
+                            <div key={track.id} className="bg-[#001a00] border border-[#00ff4c]/30 rounded-lg p-5 hover:shadow-[0_0_15px_rgba(0,255,76,0.15)] transition-shadow duration-300">
+                                <h2 className="text-2xl font-bold text-[#00ff4c] mb-4 flex items-center">
+                                    <span className="flex items-center justify-center w-8 h-8 bg-[#00ff4c]/10 rounded-full mr-3 text-lg">
+                                        {track.id}
+                                    </span>
+                                    {track.name}
+                                </h2>
+                                
+                                <ul className="space-y-2">
+                                    {track.topics.map((topic, index) => (
+                                        <li key={index} className="flex items-start">
+                                            <span className="text-[#00ff4c] mr-2 mt-1">•</span>
+                                            <span className='text-gray-100'>{topic}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                
+            </div>
+            
+            <Footer />
+        </div>
+    );
+}
+
+export default Tracks;

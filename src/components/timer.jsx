@@ -21,22 +21,22 @@ const CountdownBox = ({ title, time, color }) => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="text-xl font-bold mb-3" style={{ color }}>{title}</div>
+      <div className="text-l font-bold mb-3" style={{ color }}>{title}</div>
       <div className="flex gap-4">
         {['days', 'hours', 'minutes'].map((unit) => (
           <div
             key={unit}
-            className="w-20 h-20 rounded-md border-2 flex flex-col items-center justify-center"
+            className="w-15 h-15 rounded-md border-2 flex flex-col items-center justify-center p-2"
             style={{
               borderColor: color,
               color: color,
               filter: glow,
             }}
           >
-            <div className="text-3xl font-mono font-bold">
+            <div className="text-xl font-mono font-bold">
               {String(time[unit]).padStart(2, '0')}
             </div>
-            <div className="text-sm font-medium uppercase">{unit}</div>
+            <div className="text-[10px] font-medium uppercase">{unit}</div>
           </div>
         ))}
       </div>
@@ -63,8 +63,8 @@ const TripleCountdown = () => {
   }, []);
 
   return (
-    <div className=" py-10 px-4 w-full text-white">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-around gap-10">
+    <div className="px-4 text-white">
+      <div className="mx-auto grid max-w-3xl grid-cols-1 sm:grid-cols-2 gap-5 p-4">
         <CountdownBox
           title="Paper Submission"
           time={times.submission}
@@ -74,6 +74,11 @@ const TripleCountdown = () => {
           title="Registration"
           time={times.registration}
           color="#ffa500"
+        />
+        <CountdownBox
+          title="Conference"
+          time={times.conference}
+          color="#00ff66"
         />
         <CountdownBox
           title="Conference"

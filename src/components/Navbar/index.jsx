@@ -2,7 +2,6 @@ import { Disclosure } from "@headlessui/react";
 import {
   Bars3Icon,
   EnvelopeIcon,
-  PhoneIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import TopNavInfo from "./TopNavInfo";
@@ -19,7 +18,7 @@ const navigation = [
     href: "",
     current: false,
     subItems: [
-      { name: "National Organising Committee", href: "/nationalcommittee" },
+      { name: "Advisory Committee", href: "/advisorycommittee" },
       { name: "Local Organising Committee", href: "/localcommittee" },
     ],
   },
@@ -28,7 +27,7 @@ const navigation = [
     subItems: [
       { name: "Registration Fee", href: "/registrationfee" },
       { name: "Registration Link", href: "/registrationlink" },
-      { name: "Registered Participants", href: "https://chemcon2024.com/news/67555b169f24ce1ecb0ca5dd" },
+      { name: "Registered Participants", href: "https://amsdt2025.com/news/682c2dbe4f0ddcc436b90e88" },
       { name: "Frequently Asked Questions (FAQ)", href: "/registrationfaq" },
     ],
    },
@@ -72,11 +71,6 @@ export default function Example() {
                   </Disclosure.Button>
                 </div>
                 <div className="flex items-center font-bold gap-3">
-                  <TopNavInfo
-                    className="hidden xl:flex text-[#00ff4c]"
-                    icon={<PhoneIcon className="h-5 w-5 text-[#00ff4c]" />}
-                    value="+91-9815909328"
-                  />
                   <TopNavInfo 
                     className="mr-4 lg:mr-0 text-[#00ff4c]"
                     icon={<EnvelopeIcon className="h-5 w-5 text-[#00ff4c]" />}

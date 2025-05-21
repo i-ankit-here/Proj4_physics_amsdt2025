@@ -16,8 +16,10 @@ import CommontemplateCommittee from "./pages/Committee/CommonTemplateCommittee";
 import Hotels from "./pages/Accomodation/Hotels";
 import SpeakerPage from "./pages/SpeakerPage";
 import InvitedSpeakerPage from "./pages/InvitedSpeakersPage";
+import Submission from "./pages/Submission";
+import Tracks from "./pages/Tracks";
 function App() {
-   const confid="65fed89def981d3a955ddd9f";
+   const confid="682c2dbe4f0ddcc436b90e88";
   return (
     <>
     <ParticlesComponent id="particle" />
@@ -27,6 +29,8 @@ function App() {
       {/* https://xceed.nitj.ac.in/conferencemodule/commontemplate/671fb502dbcf15e8ac081476 */}
         <Route path="/" element={<Home confId={confid} />} />
         <Route path="sponsorship" element={<Sponsors />} />
+        <Route path="tracks" element={<Tracks />} />
+        <Route path="submission" element={<Submission />} />
         <Route path="events" element={<Events />} />
         <Route path="location" element={<Location confid={confid}  />} />
         <Route path="accommodation" element={<Accommodation confid={confid}/>} />
@@ -37,7 +41,7 @@ function App() {
         <Route path="registrationfee" element={<RegistrationFee />} />
         <Route path="registrationlink" element={<RegistrationLink />} />
         <Route path="registrationfaq" element={<RegistrationFAQ pageid="671fb502dbcf15e8ac081476" />} />
-        <Route path="nationalcommittee" element={<CommontemplateCommittee pageid="66c2bf945e7b005443191765" />} />
+        <Route path="advisorycommittee" element={<CommontemplateCommittee pageid="66c2bf945e7b005443191765" />} />
         <Route path="localcommittee" element={<CommontemplateCommittee pageid="66c2c0855e7b00544319176c" />} />
         <Route path="news/:newsid" element={<CommonNews /> } />
 
