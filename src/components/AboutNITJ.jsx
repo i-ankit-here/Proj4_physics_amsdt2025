@@ -49,7 +49,7 @@ function AboutNITJ(props) {
                         </div>
                     ) : (
                         <div className="text-base text-justify font-sans font-base text-gray-300">
-                            {data ? <div dangerouslySetInnerHTML={{ __html: data.about[3].description }} /> : <div></div>}
+                            {data ? <div dangerouslySetInnerHTML={{ __html: data.about[2].description || '' }} /> : <div></div>}
                         </div>
                     )}
                 </div>
@@ -75,7 +75,7 @@ function AboutNITJ(props) {
                         </div>
                     ) : (
                         <div className="text-base text-justify font-sans font-base text-gray-300">
-                            {data ? <div dangerouslySetInnerHTML={{ __html: data.about[4].description }} /> : <div></div>}
+                            {data ? <div dangerouslySetInnerHTML={{ __html: data.about[3].description || '' }} /> : <div></div>}
                         </div>
                     )}
                     
