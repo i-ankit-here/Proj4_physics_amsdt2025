@@ -17,7 +17,7 @@ import Hotels from "./pages/Accomodation/Hotels";
 import SpeakerPage from "./pages/SpeakerPage";
 import InvitedSpeakerPage from "./pages/InvitedSpeakersPage";
 function App() {
-   const confid="65fed89def981d3a955ddd9f";
+   const confid="682c2dbe4f0ddcc436b90e88";
   return (
     <>
     <ParticlesComponent id="particle" />
