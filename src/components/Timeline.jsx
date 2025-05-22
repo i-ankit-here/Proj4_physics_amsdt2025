@@ -23,7 +23,7 @@ const Timeline = forwardRef((props, ref) => {
       })
         .then(res => {
           setDatesData(res.data);
-          console.log(res.data);
+          console.log("this is data::",res.data);
         })
         .catch(err => console.log(err));
 

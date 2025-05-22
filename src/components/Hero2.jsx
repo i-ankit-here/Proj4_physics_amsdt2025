@@ -12,7 +12,7 @@ function Hero2(props) {
   return (
     <>
       {/* <Invitation /> */}
-      <div className="text-white py-6 sm:py-6 h-90vh">
+      <div className="text-white pb-6 sm:py-6 h-90vh">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center mt-[100px] max-w-7xl mx-auto lg:px-8 px-3 mt-[80px] lg:mt-[2px]">
           <div className="flex flex-col items-center md:items-start justify-center z-20 py-4 gap-3">
             <div className="w-full flex items-center justify-evenly">
@@ -39,7 +39,7 @@ function Hero2(props) {
               January 22–24, 2025 &nbsp;|&nbsp; NIT Jalandhar, India
             </p>
             
-            <div className="flex flex-wrap gap-4 mt-6">
+            <div className="flex flex-wrap gap-4 mt-6 justify-center">
               <button className="bg-[#00ff4c] hover:bg-[#00cc3d] text-black font-bold py-3 px-8 rounded-md transition-all">
                 Register Now
               </button>

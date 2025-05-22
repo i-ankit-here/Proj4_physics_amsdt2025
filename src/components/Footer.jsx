@@ -152,29 +152,9 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-[#00ff4c]/20">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <ul className="flex flex-wrap gap-6 mb-4 md:mb-0">
-              <li>
-                <a href="#" className="text-gray-400 hover:text-[#00ff4c] transition-colors text-sm flex items-center">
-                  <span className="inline-block w-1.5 h-1.5 bg-[#00ff4c] rounded-full mr-2"></span>
-                  Terms & Conditions
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-[#00ff4c] transition-colors text-sm flex items-center">
-                  <span className="inline-block w-1.5 h-1.5 bg-[#00ff4c] rounded-full mr-2"></span>
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-[#00ff4c] transition-colors text-sm flex items-center">
-                  <span className="inline-block w-1.5 h-1.5 bg-[#00ff4c] rounded-full mr-2"></span>
-                  Cookies
-                </a>
-              </li>
-            </ul>
+          <div className="flex flex-col md:flex-row justify-center items-center">
             <p className="text-xs text-gray-400">
-              &copy; 2023 AMSDT-2025 All rights reserved.
+              Developed and Maintained by <a href="https://xceed.nitj.ac.in" target="_blank" rel="noopener noreferrer" className="text-[#00ff4c] hover:underline transition-all">XCEED NITJ</a>
             </p>
           </div>
         </div>

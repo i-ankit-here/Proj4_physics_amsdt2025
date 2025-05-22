@@ -18,9 +18,9 @@ const OrganizingHeads = () => {
 
   const coPatrons = [
     {
-      name: "Prof. R. K. Bansal",
+      name: "Prof. Ajay Bansal",
       position: "Registrar, NIT Jalandhar",
-      image: "rkbansal.jpeg",
+      image: "ajaybansal.jpg",
       role: "Co-Patron"
     },
     {

@@ -17,6 +17,7 @@ import SpeakerPage from "./pages/SpeakerPage";
 import InvitedSpeakerPage from "./pages/InvitedSpeakersPage";
 import Submission from "./pages/Submission";
 import Tracks from "./pages/Tracks";
+import IntCommittee from "./components/commonTemplate";
 function App() {
    const confid="682c2dbe4f0ddcc436b90e88";
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path="advisorycommittee" element={<CommontemplateCommittee pageid="682c2dbe4f0ddcc436b90e88" />} />
         <Route path="localcommittee" element={<CommontemplateCommittee pageid="682c2dbe4f0ddcc436b90e88" />} />
         <Route path="news/:newsid" element={<CommonNews /> } />
+        <Route path="commontemplate" element={<IntCommittee />} />
 
 
       </Routes >

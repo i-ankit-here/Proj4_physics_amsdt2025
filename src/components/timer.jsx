@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 const countdownTargets = {
   submission: new Date('2025-08-15T23:59:59'),
   registration: new Date('2025-08-30T23:59:59'),
-  conference: new Date('2025-12-07T09:00:00'),
+  conference: new Date('2025-11-07T09:00:00'),
   acceptance: new Date('2025-08-25T09:00:00'),
 };
 
@@ -74,6 +74,11 @@ const TripleCountdown = () => {
           color="#00ffff"
         />
         <CountdownBox
+          title="Acceptance"
+          time={times.acceptance}
+          color="#0066ff"
+        />
+        <CountdownBox
           title="Registration"
           time={times.registration}
           color="#ffa500"
@@ -82,11 +87,6 @@ const TripleCountdown = () => {
           title="Conference"
           time={times.conference}
           color="#00ff66"
-        />
-        <CountdownBox
-          title="Acceptance"
-          time={times.acceptance}
-          color="#0066ff"
         />
       </div>
     </div>

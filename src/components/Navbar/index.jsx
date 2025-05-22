@@ -18,6 +18,7 @@ const navigation = [
     href: "",
     current: false,
     subItems: [
+      { name: "Organizing Heads", href: "/organozongheads" },
       { name: "Advisory Committee", href: "/advisorycommittee" },
       { name: "Local Organising Committee", href: "/localcommittee" },
     ],
@@ -26,9 +27,9 @@ const navigation = [
   { name: "Registration", href: "", current: false,
     subItems: [
       { name: "Registration Fee", href: "/registrationfee" },
-      { name: "Registration Link", href: "/registrationlink" },
-      { name: "Registered Participants", href: "https://amsdt2025.com/news/682c2dbe4f0ddcc436b90e88" },
-      { name: "Frequently Asked Questions (FAQ)", href: "/registrationfaq" },
+      // { name: "Registration Link", href: "/registrationlink" },
+      // { name: "Registered Participants", href: "https://amsdt2025.com/news/682c2dbe4f0ddcc436b90e88" },
+      // { name: "Frequently Asked Questions (FAQ)", href: "/registrationfaq" },
     ],
    },
 ];

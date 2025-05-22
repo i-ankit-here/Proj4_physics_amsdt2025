@@ -74,7 +74,7 @@ function AboutNews(props) {
 
             <div className="bg-[#00120a] border border-[#00ff4c]/30 rounded-xl p-6 shadow-lg shadow-[#00ff4c]/10 backdrop-blur-sm">
               <h2 className="text-4xl font-sans font-bold text-[#00ff4c] mb-2">
-                About AMSDT
+                About Jalandhar
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-6"></div>
               <div className="text-base text-gray-300 space-y-4 text-justify">
