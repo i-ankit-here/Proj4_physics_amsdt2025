@@ -45,7 +45,7 @@ function Location(props) {
             <div className="container max-w-7xl mx-auto px-5 sm:px-10 lg:px-8 pt-[80px] lg:pt-[100px] pb-16 relative z-10">
                 <div className="bg-[#00120a] border border-[#00ff4c]/30 rounded-xl p-6 md:p-8 shadow-lg shadow-[#00ff4c]/10 backdrop-blur-sm">
                     <h1 className="text-4xl font-bold text-[#00ff4c] mb-4">
-                        How to Reach NITJ
+                        How to Reach NIT Jalandhar
                     </h1>
                     <div className="w-32 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-8"></div>
                     
@@ -63,7 +63,7 @@ function Location(props) {
                     )}
                     
                     {/* Map container */}
-                    <div className="mt-8 border border-[#00ff4c]/30 rounded-lg overflow-hidden">
+                    {/* <div className="mt-8 border border-[#00ff4c]/30 rounded-lg overflow-hidden">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.1377287966196!2d75.53326491497945!3d31.39686998141244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a5747a9eb91%3A0xee7a6c0cae52768!2sDr%20B%20R%20Ambedkar%20National%20Institute%20of%20Technology%20Jalandhar!5e0!3m2!1sen!2sin!4v1679911376371!5m2!1sen!2sin" 
                             width="100%" 
@@ -74,7 +74,7 @@ function Location(props) {
                             referrerPolicy="no-referrer-when-downgrade"
                             className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
                         ></iframe>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             

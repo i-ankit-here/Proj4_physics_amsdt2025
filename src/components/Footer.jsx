@@ -97,6 +97,7 @@ const Footer = () => {
   return (
     <footer className="bg-black relative overflow-hidden border-t border-[#00ff4c]/30">
       {/* Enhanced Wave background pattern */}
+      
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <svg width="100%" height="100%" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg">
           <path 
@@ -134,7 +135,7 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-center">
                 <span className="inline-block w-1.5 h-1.5 bg-[#00ff4c] rounded-full mr-3"></span>
-                <span className="text-base">amsdt2025@nitj.ac.in</span>
+                <span className="text-base">rebaris@nitj.ac.in</span>
               </li>
               <li className="flex items-center">
                 <span className="inline-block w-1.5 h-1.5 bg-[#00ff4c] rounded-full mr-3"></span>

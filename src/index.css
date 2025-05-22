@@ -70,3 +70,39 @@
   opacity: 1;
   transition: opacity 0.8s ease-in-out ;
 }
+
+@layer base {
+  table {
+    width: 100%;
+    border: 2px solid #00ff4c;
+    border-collapse: collapse;
+    color: #f5f5f5;
+  }
+  th,
+  td {
+    border: 1px solid #00ff4c;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* bottom of index.css */
+
+@keyframes wave-move {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.wave-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;      /* twice the viewport so we can scroll half */
+  height: 150px;    /* adjust to taste */
+  overflow: hidden;
+}
+
+.wave-strip {
+  display: flex;
+  width: 200%;
+  animation: wave-move 10s linear infinite;
+}

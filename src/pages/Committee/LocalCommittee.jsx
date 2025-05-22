@@ -5,7 +5,7 @@ import Navbar from '../../components/Navbar'
 import axios from "axios";
 import getEnvironment from "../../getenvironment";
 
-function RegistrationFee(props) {
+function LocalCommittee(props) {
     const confid = props.confid;
     const [data, setData] = useState(null)
     const [apiUrl, setApiUrl] = useState(null);
@@ -48,7 +48,7 @@ function RegistrationFee(props) {
                     <h1 className="text-4xl font-bold text-[#00ff4c] mb-4">
                           {data ?( 
                         <div className="text-gray-300 prose prose-invert max-w-none">
-                            <div dangerouslySetInnerHTML={{__html:data[0].pageTitle}}/>
+                            <div dangerouslySetInnerHTML={{__html:data[4].pageTitle}}/>
                         </div>):(
                         <div className="animate-pulse">
                             <div className="h-4 bg-gray-700 rounded w-3/4 mb-4"></div>
@@ -63,7 +63,7 @@ function RegistrationFee(props) {
                     
                     {data ? (
                         <div className="text-gray-300 prose prose-invert max-w-none">
-                            <div dangerouslySetInnerHTML={{__html:data[0].description}}/>
+                            <div dangerouslySetInnerHTML={{__html:data[4].description}}/>
                         </div>
                     ) : (
                         <div className="animate-pulse">
@@ -85,4 +85,4 @@ function RegistrationFee(props) {
 
 
 // export default Tracks;
-export default RegistrationFee
+export default LocalCommittee

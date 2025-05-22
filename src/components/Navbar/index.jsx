@@ -18,9 +18,9 @@ const navigation = [
     href: "",
     current: false,
     subItems: [
-      { name: "Organizing Heads", href: "/organozongheads" },
+      { name: "Organizing Heads", href: "/organizingheads" },
       { name: "Advisory Committee", href: "/advisorycommittee" },
-      { name: "Local Organising Committee", href: "/localcommittee" },
+      { name: "Local Organizing Committee", href: "/localcommittee" },
     ],
   },
   { name: "Location", href: "/location", current: false },
