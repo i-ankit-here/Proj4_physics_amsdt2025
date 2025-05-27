@@ -36,13 +36,18 @@ function Hero2(props) {
             </h3>
             
             <p className="text-white text-sm sm:text-base mt-4 bg-[#00ff4c]/10 border border-[#00ff4c] rounded-md px-4 py-2 w-fit font-medium backdrop-blur-sm">
-              November 7-8, 2025 &nbsp;|&nbsp; NIT Jalandhar, India
+              November 7-8, 2025 &nbsp;|&nbsp; NIT Jalandhar, India &nbsp;|&nbsp; Hybrid Mode
             </p>
             
             <div className="flex flex-wrap gap-4 mt-6 justify-center">
-              <button className="bg-[#00ff4c] hover:bg-[#00cc3d] text-black font-bold py-3 px-8 rounded-md transition-all">
-                Register Now
-              </button>
+             <a
+  href="https://amsdt2025.com/registrationlink"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-[#00ff4c] hover:bg-[#00cc3d] text-black font-bold py-3 px-8 rounded-md transition-all inline-block"
+>
+  Register Now
+</a>
               <button className="border-2 border-[#00ff4c] text-[#00ff4c] hover:bg-[#00ff4c20] font-bold py-3 px-8 rounded-md transition-all">
                 Submit Paper
               </button>

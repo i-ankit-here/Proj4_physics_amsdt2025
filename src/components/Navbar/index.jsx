@@ -78,7 +78,7 @@ export default function Example() {
                   <TopNavInfo 
                     className="mr-4 lg:mr-0 text-[#00ff4c]"
                     icon={<EnvelopeIcon className="h-5 w-5 text-[#00ff4c]" />}
-                    value="rebaris@nitj.ac.in"
+                    value="amsdt2025@nitj.ac.in"
                   />
                 </div>
                 <nav className="hidden lg:flex space-x-1 ml-auto" aria-label="Global">
@@ -88,7 +88,7 @@ export default function Example() {
                         <>
                           <Link
                             to={item.href}
-                            className="inline-flex items-center py-2 px-3 text-sm text-white uppercase hover:text-[#00ff4c] font-medium transition-colors duration-200 relative"
+                            className="inline-flex items-center py-2 px-3 text-sm text-white uppercase hover:text-[#00ff4c] font-medium transition-colors duration-200 relative visited:text-white"
                             aria-current={item.current ? "page" : undefined}
                           >
                             {item.name}
@@ -112,7 +112,7 @@ export default function Example() {
                       ) : (
                         <Link
                           to={item.href}
-                          className="no-underline inline-flex items-center py-2 px-3 text-sm text-white uppercase hover:text-[#00ff4c] font-medium transition-colors duration-200 relative"
+                          className="no-underline inline-flex items-center py-2 px-3 text-sm text-white uppercase hover:text-[#00ff4c] font-medium transition-colors duration-200 relative visited:text-white"
                           aria-current={item.current ? "page" : undefined}
                         >
                           {item.name}
@@ -137,9 +137,9 @@ export default function Example() {
                             <Disclosure.Button
                               className={classNames(
                                 item.current
-                                  ? "bg-[#002a00] text-[#00ff4c]"
+                                  ? "bg-[#002a00] text-[#00ff4c] visited:text-white"
                                   : "text-gray-200 hover:bg-[#002a00] hover:text-[#00ff4c]",
-                                "block w-full rounded-md py-2 px-3 text-base font-medium text-left flex justify-between items-center"
+                                "block w-full rounded-md py-2 px-3 text-base font-medium text-left flex justify-between items-center visited:text-white"
                               )}
                               aria-current={item.current ? "page" : undefined}
                             >
@@ -167,7 +167,7 @@ export default function Example() {
                                 <Link
                                   key={subItem.name}
                                   to={subItem.href}
-                                  className="block pl-8 pr-3 py-2 text-sm font-medium text-gray-300 hover:bg-[#002a00] hover:text-[#00ff4c]"
+                                  className="block pl-8 pr-3 py-2 text-sm font-medium text-gray-300 hover:bg-[#002a00] hover:text-[#00ff4c] visited:text-white"
                                 >
                                   {subItem.name}
                                 </Link>

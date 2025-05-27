@@ -107,6 +107,18 @@
   animation: wave-move 10s linear infinite;
 }
 
-header a {
+@layer base {
+
+  a:hover {
+    color: #00ff4c;
+  }
+
+a, a:visited {
+  color: white !important;
   text-decoration: none !important;
 }
+  a:active {
+    color: #00ff4c;
+  }
+}
+

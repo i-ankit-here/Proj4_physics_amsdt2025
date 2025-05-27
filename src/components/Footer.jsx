@@ -135,15 +135,19 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-center">
                 <span className="inline-block w-1.5 h-1.5 bg-[#00ff4c] rounded-full mr-3"></span>
-                <span className="text-base">rebaris@nitj.ac.in</span>
+                <span className="text-base">amsdt2025@nitj.ac.in</span>
               </li>
               <li className="flex items-center">
                 <span className="inline-block w-1.5 h-1.5 bg-[#00ff4c] rounded-full mr-3"></span>
-                <span className="text-base">+91-9815909328</span>
+                <span className="text-base">Dr Praveen Malik (Chairman cum convenor):  98883-82021</span>
               </li>
               <li className="flex items-start">
                 <span className="inline-block w-1.5 h-1.5 bg-[#00ff4c] rounded-full mr-3 mt-1.5"></span>
-                <span className="text-base">Department of Physics,<br />NIT Jalandhar, Punjab, India</span>
+                <span className="text-base">Dr Abhinav Pratap Singh (Organizing Secretary):  9915240730</span>
+              </li>
+               <li className="flex items-start">
+                <span className="inline-block w-1.5 h-1.5 bg-[#00ff4c] rounded-full mr-3 mt-1.5"></span>
+                <span className="text-base">Dr Shisram Rebari (Organizing Secretary): 8054160882</span>
               </li>
             </ul>
           </div>
