@@ -109,7 +109,7 @@ export default function Example() {
                       ) : (
                         <Link
                           to={item.href}
-                          className="inline-flex items-center py-2 px-3 text-sm text-white uppercase hover:text-[#00ff4c] font-medium transition-colors duration-200 relative"
+                          className="no-underline inline-flex items-center py-2 px-3 text-sm text-white uppercase hover:text-[#00ff4c] font-medium transition-colors duration-200 relative"
                           aria-current={item.current ? "page" : undefined}
                         >
                           {item.name}
@@ -178,7 +178,7 @@ export default function Example() {
                         to={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-[#002a00] text-[#00ff4c]"
+                            ? "bg-[#002a00] text-[#00ff4c] "
                             : "text-gray-200 hover:bg-[#002a00] hover:text-[#00ff4c]",
                           "block w-full rounded-md py-2 px-3 text-base font-medium"
                         )}

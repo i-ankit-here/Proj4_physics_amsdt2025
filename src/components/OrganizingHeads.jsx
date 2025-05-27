@@ -4,15 +4,15 @@ const OrganizingHeads = () => {
   const patrons = [
     {
       name: "Prof. Binod Kumar Kanaujia",
-      position: "Director, NIT Jalandhar & Faculty Advisor, IEEE Student Branch NIT Jalandhar",
+      position: "Director, NIT Jalandhar",
       image: "Director.jpg",
-      role: "Patron"
+      role: "Chief Patron"
     },
     {
       name: "Prof. Akash Deep",
       position: "Director, Institute of Nano Science and Technology, Mohali",
       image: "akashdeep.jpeg",
-      role: "Patron"
+      role: "Chief Patron"
     }
   ];
 
@@ -21,13 +21,13 @@ const OrganizingHeads = () => {
       name: "Prof. Ajay Bansal",
       position: "Registrar, NIT Jalandhar",
       image: "ajaybansal.jpg",
-      role: "Co-Patron"
+      role: "Patron"
     },
     {
       name: "Prof. Rohit Mehra",
       position: "Dean (R&C), NIT Jalandhar",
       image: "rohitmehra.jpg",
-      role: "Co-Patron"
+      role: "Patron"
     }
   ];
 
@@ -50,7 +50,7 @@ const OrganizingHeads = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-black mb-4 text-[#00ff4c] inline-flex items-center">
             <span className="relative">
-              Organizing Heads
+              Chief Patrons & Patrons
             </span>
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#00ff4c] to-transparent mx-auto mt-4"></div>

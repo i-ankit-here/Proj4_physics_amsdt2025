@@ -106,3 +106,7 @@
   width: 200%;
   animation: wave-move 10s linear infinite;
 }
+
+header a {
+  text-decoration: none !important;
+}

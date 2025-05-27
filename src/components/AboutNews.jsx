@@ -47,8 +47,8 @@ function AboutNews(props) {
     <div className="bg-black relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none opacity-10">
-        <div className="absolute w-[800px] h-[800px] border border-[#00ff4c]/10 rounded-full -right-1/4 top-1/4 transform -translate-y-1/2"></div>
-        <div className="absolute w-[500px] h-[500px] border border-[#00ff4c]/15 rounded-full -left-1/4 bottom-1/4"></div>
+        <div className="absolute w-[800px] h-[200px] border border-[#00ff4c]/10 rounded-full -right-1/4 top-1/4 transform -translate-y-1/2"></div>
+        <div className="absolute w-[500px] h-[200px] border border-[#00ff4c]/15 rounded-full -left-1/4 bottom-1/4"></div>
         <div className="absolute w-3 h-3 bg-[#00ff4c] rounded-full left-[10%] top-[20%] animate-pulse"></div>
         <div className="absolute w-2 h-2 bg-[#00ff4c] rounded-full right-[15%] bottom-[30%] animate-pulse"></div>
       </div>
@@ -95,7 +95,7 @@ function AboutNews(props) {
               
               <div
                 id="news"
-                className="h-[215px] overflow-auto pr-2 scrollbar-thin scrollbar-thumb-[#00ff4c]/30 scrollbar-track-black/20"
+                className="h-[270px] overflow-auto pr-2 scrollbar-thin scrollbar-thumb-[#00ff4c]/30 scrollbar-track-black/20"
               >
                 <div
                   className={`space-y-4 ${isMouseOver ? "animate-none cursor-default" : "animate-wiggle"}`}

@@ -78,11 +78,11 @@ const Slider = forwardRef(function Slider(props) {
 
   return (
     <div className="container lg:max-w-7xl mx-auto sm:mb-10 py-8">
-      <div className="h-[420px] w-full md:h-[520px] lg:h-[450px] m-auto relative group">
+      <div className="h-[320px] w-full md:h-[520px] lg:h-[450px] m-auto relative group">
         {slides.length > 0 && (
           <div
             style={{ backgroundImage: `url(${slides[currentIndex].imgLink})` }}
-            className="w-full h-full rounded-2xl bg-center bg-cover relative border-2 border-[#00ff4c] shadow-lg shadow-[#00ff4c]/30"
+            className="w-full h-[320px] rounded-2xl bg-center bg-cover relative border-2 border-[#00ff4c] shadow-lg shadow-[#00ff4c]/30"
           >
             {slides[currentIndex].name && (
               <div className="absolute text-sm lg:text-xl font-sans font-medium bottom-0 left-0 right-0 bg-black/70 text-white text-center p-2 backdrop-blur-sm">
