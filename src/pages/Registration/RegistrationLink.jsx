@@ -24,20 +24,17 @@ function RegistrationLink() {
             <div className="container max-w-7xl mx-auto px-5 sm:px-10 lg:px-8 pt-[80px] lg:pt-[100px] pb-16 relative z-10">
                 <div className="bg-[#00120a] border border-[#00ff4c]/30 rounded-xl p-6 md:p-8 shadow-lg shadow-[#00ff4c]/10 backdrop-blur-sm">
                     <h1 className="text-4xl font-bold text-[#00ff4c] mb-4">
-                        Registration Link
+                        Registration 
                     </h1>
                     <div className="w-32 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-8"></div>
                     
                     <div className="text-gray-300 prose prose-invert max-w-none">
-                        <p className="text-lg mb-6">
-                            Register now by clicking on the link below:
-                        </p>
-                        
+                                          
                         <div className="flex flex-col items-center justify-center my-10">
                             <div className="relative group">
                                 <div className="absolute -inset-0.5 bg-gradient-to-r from-[#00ff4c] to-[#00ff4c]/50 rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
                                 <a
-                                    href="https://forms.gle/FswBCsUuCqnBWUuR7" 
+                                    href="https://www.nitj.ac.in/events_registration/ic_amsdt_2025/login" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     className="relative flex items-center justify-center px-8 py-4 bg-black rounded-lg leading-none text-[#00ff4c] font-medium hover:text-white transition-colors duration-300"
@@ -51,9 +48,7 @@ function RegistrationLink() {
                                 </a>
                             </div>
                             
-                            <p className="text-sm text-gray-400 mt-4">
-                                Direct link: <a href="https://forms.gle/FswBCsUuCqnBWUuR7" target="_blank" rel="noopener noreferrer" className="text-[#00ff4c] hover:underline">https://forms.gle/FswBCsUuCqnBWUuR7</a>
-                            </p>
+                           
                         </div>
                         
                         {/* <div className="mt-8 p-4 bg-[#00ff4c]/5 border-l-4 border-[#00ff4c] rounded">
@@ -61,37 +56,27 @@ function RegistrationLink() {
                             <p className="mt-2">An additional late registration fee of Rs. 1000/- applies to all categories after registration deadline.</p>
                         </div> */}
                         
-                        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="p-5 bg-[#001a00] border border-[#00ff4c]/30 rounded-lg">
-                                <h3 className="text-xl font-bold text-[#00ff4c] mb-3">Registration Benefits</h3>
+                        {/* <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="p-5 bg-[#001a00] border border-[#00ff4c]/30 rounded-lg"> */}
+                                <h3 className="text-xl font-bold text-[#00ff4c] mb-3">Guidelines for Registration</h3>
                                 <ul className="space-y-2 list-disc pl-5">
-                                    <li>Access to all conference sessions</li>
-                                    <li>Conference kit and materials</li>
-                                    <li>Certificate of participation</li>
-                                    <li>Lunch and refreshments during the event</li>
-                                </ul>
-                            </div>
-                            
-                            <div className="p-5 bg-[#001a00] border border-[#00ff4c]/30 rounded-lg">
-                                <h3 className="text-xl font-bold text-[#00ff4c] mb-3">Important Dates</h3>
-                                <ul className="space-y-2">
-                                    <li className="flex justify-between">
-                                        <span>Abstract Submission:</span>
-                                        <span className="text-[#00ff4c]">Sep 15, 2025</span>
-                                    </li>
-                                    <li className="flex justify-between">
-                                        <span>Acceptance Notification:</span>
-                                        <span className="text-[#00ff4c]">Sep 25, 2025</span>
-                                    </li>
-                                    <li className="flex justify-between">
-                                        <span>Early Bid Registration:</span>
-                                        <span className="text-[#00ff4c]">Sep 30, 2025</span>
-                                    </li>
+                                    <ul>
+  <li>- Selected abstract will be accepted for presentation. After the acceptance of the abstract, the authors are required to register for the conference by paying the registration fees.</li>
+  <li>- Please pay the registration fee only through the payment portal provided on the conference website. No other means of fee payment will be accepted.</li>
+  <li>- After the acceptance of the abstract for presentation, at least one of the authors of an accepted abstract must register for the conference in order to present it.</li>
+  <li>- If more than one author of an accepted abstract wishes to attend the conference, they need to register separately.</li>
+  <li>- Students are requested to upload their valid student ID cards (front and back sides) during the online registration process.</li>
+  <li>- The registration fee includes the conference kit, access/admission to technical sessions, and all conference meals. Any gateway charges incurred will be borne by the registrant.</li>
+  <li>- The registration fee is non-refundable and non-transferable.</li>
+  <li>- Please keep a copy of the transaction receipt.</li>
+  <li>- Please note that AMSDT-2025 will not be responsible for any loss, financial or otherwise, caused by improper transactions conducted online. While the organizers have taken all reasonable precautions to ensure a safe online transaction, it is the registrant’s responsibility to secure their user IDs, passwords, Paper ID, transaction ID, etc., when paying the registration fee.</li>
+</ul>
+
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    {/* </div>
+                </div> */}
                 
             </div>
             

@@ -13,6 +13,8 @@ const navigation = [
   { name:<IoMdHome className="h-5 w-5" />   , href: "/", current: true },
   { name: "Paper tracks", href: "/tracks", current: false },
   { name: "Abstract Submission ", href: "/submission", current: false },
+  { name: "List of Speakers ", href: "/speakers", current: false },
+{ name: "Publications", href: "/publications", current: false },
   {
     name: "Committees",
     href: "",
@@ -23,15 +25,16 @@ const navigation = [
       { name: "Local Organizing Committee", href: "/localcommittee" },
     ],
   },
-  { name: "Location", href: "/location", current: false },
   { name: "Registration", href: "", current: false,
     subItems: [
       { name: "Registration Fee", href: "/registrationfee" },
-      // { name: "Registration Link", href: "/registrationlink" },
+      { name: "Registration Link", href: "/registrationlink" },
       // { name: "Registered Participants", href: "https://amsdt2025.com/news/682c2dbe4f0ddcc436b90e88" },
       // { name: "Frequently Asked Questions (FAQ)", href: "/registrationfaq" },
     ],
    },
+   { name: "Location", href: "/location", current: false },
+   { name: "Accommodation", href: "/accommodation", current: false },
 ];
 
 function classNames(...classes) {

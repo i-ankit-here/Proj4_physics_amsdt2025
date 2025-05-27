@@ -1,56 +1,51 @@
+import { useEffect } from 'react';
+import Footer from '../../components/Footer';
+import Navbar from '../../components/Navbar';
+// import SecNavbar from '../../components/SecNavbar';
 
-
-import { useEffect,useState } from 'react';
-import Footer from '../../components/Footer'
-import Navbar from '../../components/Navbar'
-import SecNavbar from '../../components/SecNavbar';
-import axios from "axios";
-import getEnvironment from "../../getenvironment";
-function Accommodation(props) {
-    const confid = props.confid;
-  const [data, setData] = useState([])
-   const [apiUrl, setApiUrl] = useState(null);
-    useEffect(() => {
-        // Fetch the environment URL
-        getEnvironment().then(url => setApiUrl(url));
-    }, []);
-useEffect(() => {
+function Accommodation() {
+  // ensure page scrolls to top when this route mounts
+  useEffect(() => {
     window.scrollTo(0, 0);
-    if (apiUrl) {
-  axios.get(`${apiUrl}/conferencemodule/accomodation/conf/${confid}`, {
-    withCredentials: true
+  }, []);
 
-  })
-    .then(res => {
-      setData(res.data);
-      console.log(res.data);
+  return (
+    <>
+      <div className="fixed top-0 w-full z-40">
+        <Navbar />
+      </div>
 
-    })
-    .catch(err => console.log(err))
+      {/* <SecNavbar /> */}
 
-}}, [apiUrl]);
-   
-    return (
-        <><div className="fixed top-0 w-screen z-40 "> 
-        <Navbar />      
+      <main className="bg-black pt-[58px] pb-10 min-h-screen">
+        <div className="container max-w-7xl mx-auto px-5 sm:px-10 lg:px-8">
+          <h1 className="text-3xl font-bold text-[#00ff4c] mb-6 underline">
+            Accommodation
+          </h1>
+
+          <section className="bg-[#00120a] p-6 rounded-lg shadow-sm">
+
+            <ul className="list-disc pl-6 space-y-2 text-[#00ff4c]">
+              <li>
+                Accommodation will be provided to registered participants on a payment basis.
+              </li>
+              <li>
+                Participants (scholars) will be housed on a shared basis in NITJ hostels.
+              </li>
+              <li>
+                Post-docs, research associates, faculty members, and scientists will be accommodated in guest rooms (hostel guest house or nearby hotels) at nominal rates.
+              </li>
+              <li>
+                Exact accommodation charges will be updated on the conference website soon.
+              </li>
+            </ul>
+          </section>
         </div>
-        <SecNavbar />
-        <div className="bg-white container max-w-7xl mx-auto px-5 sm:px-10  lg:px-8 pt-[58px] min-h-[300px] lg:pt-[10px] pb-5">
-                <div className="w-full mx-auto  md:w-[700px] px-4 lg:w-full" >
-                    <p className="text-2xl font-sans font-bold mb-5  text-gray-950 underline ">
-                        Accomodation
-                    </p>
-                    {data.length > 0 && 
-                    <p className="text-base  text-justify font-sans font-base text-gray-800">
-                        {data? <div dangerouslySetInnerHTML={{__html:data[0].description}}/>: " "}
-                    </p>
-}
-                </div>
-            </div>
-            <Footer />
-        </>
-    )
+      </main>
+
+      <Footer />
+    </>
+  );
 }
 
-export default Accommodation
-
+export default Accommodation;
