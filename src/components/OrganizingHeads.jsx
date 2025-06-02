@@ -31,6 +31,44 @@ const OrganizingHeads = () => {
     },
   ];
 
+ const coPatrons2 = [
+    {
+      name: "Prof. H. M. Mittal",
+      position: "Head, Department of Physics, NIT Jalandhar",
+      image: "mittal.jpg",
+      role: "Patron",
+    }
+  ];
+   const chairman = [
+    {
+      name: "Dr. Praveen Malik",
+      position: "Department of Physics, NIT Jalandhar",
+      image: "malik.jpg",
+      role: "Patron",
+    }
+  ];
+
+ const secretary = [
+    {
+      name: "Dr. Abhinav Pratap Singh",
+      position: "Department of Physics, NIT Jalandhar",
+      image: "abhinav.jpg",
+      role: "Patron",
+    },
+    {
+      name: "Dr Shisram Rebari",
+      position: "Department of Physics, NIT Jalandhar",
+      image: "Shishram.jpg",
+      role: "Patron",
+    },
+     {
+      name: "Dr P S Vikay Kumar",
+      position: "Scientist E, INST Mohali",
+      image: "vikay.jpg",
+      role: "Patron",
+    },
+  ];
+
   return (
     <div className="bg-black w-full py-16 relative overflow-hidden">
       {/* === Animated Atomic/Molecular Background === */}
@@ -97,7 +135,7 @@ const OrganizingHeads = () => {
         {/* ====== Section: Co-Patrons ====== */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-black mb-4 text-[#00ff4c] inline-flex items-center">
-            Co-Patrons
+            Patrons
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#00ff4c] to-transparent mx-auto mt-4" />
         </div>
@@ -133,6 +171,122 @@ const OrganizingHeads = () => {
             ))}
           </div>
         </div>
+
+<div className="text-center mb-12">
+          <h2 className="text-4xl font-black mb-4 text-[#00ff4c] inline-flex items-center">
+            Co-Patron
+          </h2>
+          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#00ff4c] to-transparent mx-auto mt-4" />
+        </div>
+
+        <div className="flex flex-col items-center justify-center mb-16">
+          <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
+            {coPatrons2.map((coPatron, idx) => (
+              <div
+                key={idx}
+                className="bg-[#001a00] border border-[#00ff4c]/30 hover:border-[#00ff4c]/70
+                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#00ff4c]/20
+                           backdrop-blur-sm max-w-sm flex flex-col items-center"
+              >
+                <div className="relative mb-4">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#00ff4c] p-1">
+                    <img
+                      src={coPatron.image}
+                      alt={coPatron.name}
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+                  {/* If you later want to show 'Patron' badge:
+                    <div className="absolute -top-2 -right-2 bg-[#00ff4c] text-black font-bold px-3 py-1
+                                     rounded-full text-sm">
+                      {coPatron.role}
+                    </div> */}
+                </div>
+                <h3 className="text-xl font-bold text-[#00ff4c] mb-2 text-center">
+                  {coPatron.name}
+                </h3>
+                <p className="text-gray-300 text-center text-sm">{coPatron.position}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-black mb-4 text-[#00ff4c] inline-flex items-center">
+            Chairman
+          </h2>
+          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#00ff4c] to-transparent mx-auto mt-4" />
+        </div>
+
+        <div className="flex flex-col items-center justify-center mb-16">
+          <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
+            {chairman.map((coPatron, idx) => (
+              <div
+                key={idx}
+                className="bg-[#001a00] border border-[#00ff4c]/30 hover:border-[#00ff4c]/70
+                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#00ff4c]/20
+                           backdrop-blur-sm max-w-sm flex flex-col items-center"
+              >
+                <div className="relative mb-4">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#00ff4c] p-1">
+                    <img
+                      src={coPatron.image}
+                      alt={coPatron.name}
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+                  {/* If you later want to show 'Patron' badge:
+                    <div className="absolute -top-2 -right-2 bg-[#00ff4c] text-black font-bold px-3 py-1
+                                     rounded-full text-sm">
+                      {coPatron.role}
+                    </div> */}
+                </div>
+                <h3 className="text-xl font-bold text-[#00ff4c] mb-2 text-center">
+                  {coPatron.name}
+                </h3>
+                <p className="text-gray-300 text-center text-sm">{coPatron.position}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-black mb-4 text-[#00ff4c] inline-flex items-center">
+            Organising Secretaries
+          </h2>
+          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#00ff4c] to-transparent mx-auto mt-4" />
+        </div>
+
+        <div className="flex flex-col items-center justify-center mb-16">
+          <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
+            {secretary.map((coPatron, idx) => (
+              <div
+                key={idx}
+                className="bg-[#001a00] border border-[#00ff4c]/30 hover:border-[#00ff4c]/70
+                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#00ff4c]/20
+                           backdrop-blur-sm max-w-sm flex flex-col items-center"
+              >
+                <div className="relative mb-4">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#00ff4c] p-1">
+                    <img
+                      src={coPatron.image}
+                      alt={coPatron.name}
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+                  {/* If you later want to show 'Patron' badge:
+                    <div className="absolute -top-2 -right-2 bg-[#00ff4c] text-black font-bold px-3 py-1
+                                     rounded-full text-sm">
+                      {coPatron.role}
+                    </div> */}
+                </div>
+                <h3 className="text-xl font-bold text-[#00ff4c] mb-2 text-center">
+                  {coPatron.name}
+                </h3>
+                <p className="text-gray-300 text-center text-sm">{coPatron.position}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
 
       {/* === Custom Ping Animation Keyframes === */}
