@@ -21,11 +21,11 @@ function Hero2(props) {
             </div>
             
 
-            <p className="lg:text-2xl md:text-xl text-2xl leading-tight lg:leading-none tracking-wide font-medium text-white text-center md:text-left my-3">
+            <p className="lg:text-4xl md:text-3xl text-3xl leading-tight lg:leading-none tracking-wide font-medium text-white text-center md:text-left my-3">
               International Conference on Advanced Materials for Sustainable Development and Technology
             </p>
-<p className="lg:text-6xl md:text-5xl text-3xl leading-tight lg:leading-none tracking-wide font-bold text-[#00ff4c] text-center md:text-left">
-              AMSDT-2025
+<p className="lg:text-3xl md:text-3xl text-2xl leading-tight lg:leading-none tracking-wide font-bold text-[#00ff4c] text-center md:text-left">
+              (AMSDT-2025)
             </p>
             {/* <h3 className="text-[#00ff4c] mx-auto md:mx-0 font-medium text-center md:text-left tracking-wide lg:text-xl">
               <span>Jointly organized by</span>
