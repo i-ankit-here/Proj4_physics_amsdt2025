@@ -51,7 +51,7 @@ function Hero2(props) {
 </div>
 
             <p className="text-white text-sm sm:text-base mt-4 bg-[#00ff4c]/10 border border-[#00ff4c] rounded-md px-4 py-2 w-fit font-medium backdrop-blur-sm">
-              November 7-8, 2025 &nbsp;|&nbsp; NIT Jalandhar, India &nbsp;|&nbsp; Hybrid Mode
+              November 7-8, 2025 &nbsp;|&nbsp; Dr B R Ambedkar NIT Jalandhar, India &nbsp;|&nbsp; Hybrid Mode
             </p>
             
             <div className="flex flex-wrap gap-4 mt-6 justify-center">
