@@ -19,22 +19,37 @@ function Hero2(props) {
               <img src="nitjlogo.png" alt="AMS" className="w-24 h-24 object-contain" />
               <img src="inst.png" alt="AMS" className="w-32 h-32 object-contain" />
             </div>
-            <p className="lg:text-6xl md:text-5xl text-4xl leading-tight lg:leading-none tracking-wide font-bold text-[#00ff4c] text-center md:text-left">
-              AMSDT-2025
-            </p>
+            
 
-            <p className="lg:text-2xl md:text-xl text-xl leading-tight lg:leading-none tracking-wide font-medium text-white text-center md:text-left my-3">
+            <p className="lg:text-2xl md:text-xl text-2xl leading-tight lg:leading-none tracking-wide font-medium text-white text-center md:text-left my-3">
               International Conference on Advanced Materials for Sustainable Development and Technology
             </p>
-
-            <h3 className="text-[#00ff4c] mx-auto md:mx-0 font-medium text-center md:text-left tracking-wide lg:text-xl">
+<p className="lg:text-6xl md:text-5xl text-3xl leading-tight lg:leading-none tracking-wide font-bold text-[#00ff4c] text-center md:text-left">
+              AMSDT-2025
+            </p>
+            {/* <h3 className="text-[#00ff4c] mx-auto md:mx-0 font-medium text-center md:text-left tracking-wide lg:text-xl">
               <span>Jointly organized by</span>
               <br />
-              <span>Dr B R Ambedkar NIT Jalandhar, Punjab, India</span>
-              <br />
-              <span>& Institute of Nano Science and Technology, Mohali, Punjab, India</span>
-            </h3>
+              <ul>
+              <span><li>Dr B R Ambedkar NIT Jalandhar, Punjab, India</li></span>
+              
+              <li><span>Institute of Nano Science and Technology, Mohali, Punjab, India</span>
+              </li>
+            </ul>
+
+            </h3> */}
             
+            <div className="text-center md:text-left">
+  <h3 className="text-[#00ff4c] mx-auto md:mx-0 font-medium tracking-wide lg:text-xl">
+    Jointly organized by
+  </h3>
+
+  <ul className="text-[#00ff4c] list-disc list-inside mt-2">
+    <li>Dr B R Ambedkar NIT Jalandhar, Punjab, India</li>
+    <li>Institute of Nano Science and Technology, Mohali, Punjab, India</li>
+  </ul>
+</div>
+
             <p className="text-white text-sm sm:text-base mt-4 bg-[#00ff4c]/10 border border-[#00ff4c] rounded-md px-4 py-2 w-fit font-medium backdrop-blur-sm">
               November 7-8, 2025 &nbsp;|&nbsp; NIT Jalandhar, India &nbsp;|&nbsp; Hybrid Mode
             </p>
@@ -48,9 +63,9 @@ function Hero2(props) {
 >
   Register Now
 </a>
-              <button className="border-2 border-[#00ff4c] text-[#00ff4c] hover:bg-[#00ff4c20] font-bold py-3 px-8 rounded-md transition-all">
+              {/* <button className="border-2 border-[#00ff4c] text-[#00ff4c] hover:bg-[#00ff4c20] font-bold py-3 px-8 rounded-md transition-all">
                 Submit Paper
-              </button>
+              </button> */}
             </div>
           </div>
           
