@@ -62,9 +62,9 @@ const OrganizingHeads = () => {
       role: "Patron",
     },
      {
-      name: "Dr P S Vikay Kumar",
+      name: "Dr Vijayakumar Shanmugam",
       position: "Scientist E, INST Mohali",
-      image: "vikay.jpg",
+      image: "vijay.jpg",
       role: "Patron",
     },
   ];
@@ -212,7 +212,7 @@ const OrganizingHeads = () => {
         </div>
         <div className="text-center mb-12">
           <h2 className="text-4xl font-black mb-4 text-[#00ff4c] inline-flex items-center">
-            Chairman
+            Chairman/Convernor
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#00ff4c] to-transparent mx-auto mt-4" />
         </div>
