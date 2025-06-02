@@ -19,13 +19,13 @@ const OrganizingHeads = () => {
   const coPatrons = [
     {
       name: "Prof. Ajay Bansal",
-      position: "Registrar, NIT Jalandhar",
+      position: "Registrar,Dr B R Ambedkar National Institute of Technology Jalandhar",
       image: "ajaybansal.jpg",
       role: "Patron",
     },
     {
       name: "Prof. Rohit Mehra",
-      position: "Dean (R&C), NIT Jalandhar",
+      position: "Dean (R&C), Dr B R Ambedkar National Institute of Technology Jalandhar",
       image: "rohitmehra.jpg",
       role: "Patron",
     },
