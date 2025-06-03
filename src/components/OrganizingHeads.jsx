@@ -64,7 +64,7 @@ const OrganizingHeads = () => {
      {
       name: "Dr Vijayakumar Shanmugam",
       position: "Scientist E, INST Mohali",
-      image: "vijay.jpg",
+      image: "vijay.png",
       role: "Patron",
     },
   ];
