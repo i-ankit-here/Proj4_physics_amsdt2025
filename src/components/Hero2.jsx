@@ -21,7 +21,7 @@ function Hero2(props) {
             </div>
             
 
-            <p className="lg:text-4xl md:text-3xl text-3xl leading-tight lg:leading-none tracking-wide font-medium text-[#00ff4c] text-center md:text-left my-3">
+            <p className="lg:text-4xl md:text-3xl text-3xl leading-tight lg:leading-none tracking-wide font-medium text-white text-center md:text-left my-3">
               International Conference on Advanced Materials for Sustainable Development and Technology
             </p>
 <p className="lg:text-3xl md:text-3xl text-2xl leading-tight lg:leading-none tracking-wide font-bold text-white text-center md:text-left">
