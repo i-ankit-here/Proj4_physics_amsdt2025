@@ -48,7 +48,7 @@ function Submission(props) {
                     <h1 className="text-4xl font-bold text-[#00ff4c] mb-4">
                           {data ?( 
                         <div className="text-gray-300 prose prose-invert max-w-none">
-                            <div dangerouslySetInnerHTML={{__html:data[6].pageTitle}}/>
+                            <div dangerouslySetInnerHTML={{__html:data[5].pageTitle}}/>
                         </div>):(
                         <div className="animate-pulse">
                             <div className="h-4 bg-gray-700 rounded w-3/4 mb-4"></div>
@@ -63,7 +63,7 @@ function Submission(props) {
                     
                     {data ? (
                         <div className="text-gray-300 prose prose-invert max-w-none">
-                            <div dangerouslySetInnerHTML={{__html:data[6].description}}/>
+                            <div dangerouslySetInnerHTML={{__html:data[5].description}}/>
                         </div>
                     ) : (
                         <div className="animate-pulse">
