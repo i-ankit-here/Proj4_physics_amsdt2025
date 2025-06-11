@@ -24,7 +24,7 @@ function Hero2(props) {
             <p className="lg:text-4xl md:text-3xl text-3xl leading-tight lg:leading-none tracking-wide font-medium text-white text-center md:text-left my-3">
               International Conference on Advanced Materials for Sustainable Development and Technology
             </p>
-<p className="lg:text-3xl md:text-3xl text-2xl leading-tight lg:leading-none tracking-wide font-bold text-[#00ff4c] text-center md:text-left">
+<p className="lg:text-3xl md:text-3xl text-2xl leading-tight lg:leading-none tracking-wide font-bold text-white text-center md:text-left">
               (AMSDT-2025)
             </p>
             {/* <h3 className="text-[#00ff4c] mx-auto md:mx-0 font-medium text-center md:text-left tracking-wide lg:text-xl">
@@ -51,7 +51,11 @@ function Hero2(props) {
 </div>
 
             <p className="text-white text-sm sm:text-base mt-4 bg-[#00ff4c]/10 border border-[#00ff4c] rounded-md px-4 py-2 w-fit font-medium backdrop-blur-sm">
-              November 7-8, 2025 &nbsp;|&nbsp; Dr B R Ambedkar NIT Jalandhar, India &nbsp;|&nbsp; Hybrid Mode
+              November 7-8, 2025 &nbsp;|&nbsp; Hybrid Mode
+            </p>
+
+ <p className="text-white text-sm sm:text-base mt-4 px-4 py-2 w-fit font-medium backdrop-blur-sm">
+              Venue: Dr B R Ambedkar National Institute of Technology, Jalandhar 
             </p>
             
             <div className="flex flex-wrap gap-4 mt-6 justify-center">

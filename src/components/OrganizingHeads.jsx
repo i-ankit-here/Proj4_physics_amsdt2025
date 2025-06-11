@@ -56,7 +56,7 @@ const OrganizingHeads = () => {
       role: "Patron",
     },
     {
-      name: "Dr Shisram Rebari",
+      name: "Dr Shishram Rebari",
       position: "Department of Physics, NIT Jalandhar",
       image: "Shishram.jpg",
       role: "Patron",
@@ -64,7 +64,7 @@ const OrganizingHeads = () => {
      {
       name: "Dr Vijayakumar Shanmugam",
       position: "Scientist E, INST Mohali",
-      image: "vijay.jpg",
+      image: "vijay.png",
       role: "Patron",
     },
   ];
