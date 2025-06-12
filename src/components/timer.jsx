@@ -69,7 +69,7 @@ const TripleCountdown = () => {
     <div className="px-4 text-white">
       <div className="mx-auto grid max-w-3xl grid-cols-1 sm:grid-cols-2 gap-5 p-4">
         <CountdownBox
-          title="Paper Submission"
+          title="Abstract Submission"
           time={times.submission}
           color="#00ffff"
         />
