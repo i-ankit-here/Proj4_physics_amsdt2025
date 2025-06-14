@@ -17,15 +17,15 @@ function Accommodation() {
 
       {/* <SecNavbar /> */}
 
-      <main className="bg-black pt-[58px] pb-10 min-h-screen">
+      <main className="bg-white pt-[58px] pb-10 min-h-screen">
         <div className="container max-w-7xl mx-auto px-5 sm:px-10 lg:px-8">
-          <h1 className="text-3xl font-bold text-[#00ff4c] mb-6 underline">
+          <h1 className="text-3xl font-bold text-[#2563eb] mb-6 underline">
             Accommodation
           </h1>
 
-          <section className="bg-[#00120a] p-6 rounded-lg shadow-sm">
+          <section className="bg-[white] p-6 rounded-lg shadow-sm">
 
-            <ul className="list-disc pl-6 space-y-2 text-[#00ff4c]">
+            <ul className="list-disc pl-6 space-y-2 text-[#2563eb]">
               <li>
                 Accommodation will be provided to registered participants on a payment basis.
               </li>

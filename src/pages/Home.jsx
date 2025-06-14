@@ -8,14 +8,13 @@ import AboutNews from "../components/AboutNews";
 // import SponsorShip from "../components/Sponsorship";
 import { useEffect} from "react";
 import Hero2 from "../components/Hero2";
-// import Slider from "../components/Slider";
+import Slider from "../components/Slider";
 // import SecNavbar from "../components/SecNavbar";
 import Navbar from "../components/Navbar";
 // import Speaker from "../components/Speaker";
 // import InvitedSpeaker from "../components/InvitedSpeaker";
 // import VideoGallery from "../components/VideoGallery";
 // import DriveLinks from "../components/Drivelink";
-import Waves from "../components/waves/Waves";
 import OrganizingHeads from "../components/OrganizingHeads";
 // import AboutNews from "./components/Dummy";
 function Home(props) {
@@ -42,30 +41,16 @@ function Home(props) {
     
   // };
   return (
-    <div className="bg-black overflow-x-hidden">
-    <div className="fixed top-0 w-screen z-40 bg-black">
+    <div className="bg-white overflow-x-hidden">
+    <div className="fixed top-0 w-screen z-40 bg-blue-700">
         <Navbar />
       </div>
       {/* <SecNavbar onClickScroll={scrollToSection}/> */}
     
-      <div className="relative bg-black mt-10">
-      <Waves
-        lineColor="rgba(0, 255, 156, 0.2)"
-        backgroundColor="000"
-        waveSpeedX={0.02}
-        waveSpeedY={0.01}
-        waveAmpX={40}
-        waveAmpY={20}
-        friction={0.9}
-        tension={0.01}
-        maxCursorMove={120}
-        xGap={12}
-        yGap={36}
-        />
-        <Hero2 confid={props.confId}  />
-      </div>
-      {/* <Slider  />
-      <DriveLinks/>
+      
+      <Hero2 confid={props.confId}  />
+      <Slider  />
+      {/* <DriveLinks/>
       <VideoGallery/>
       <Slider confid={props.confId} /> */}
       <AboutNews confid={props.confId} />

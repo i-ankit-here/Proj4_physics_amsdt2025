@@ -30,13 +30,13 @@ function Submission(props) {
     }, [apiUrl, confid]);
    
     return (
-        <div className="bg-black min-h-screen relative overflow-hidden">
+        <div className="bg-white min-h-screen relative overflow-hidden">
             {/* Background decorative elements */}
             <div className="absolute inset-0 pointer-events-none opacity-10">
-                <div className="absolute w-[800px] h-[800px] border border-[#00ff4c]/10 rounded-full -right-1/4 top-1/4 transform -translate-y-1/2"></div>
-                <div className="absolute w-[500px] h-[500px] border border-[#00ff4c]/15 rounded-full -left-1/4 bottom-1/4"></div>
-                <div className="absolute w-3 h-3 bg-[#00ff4c] rounded-full left-[10%] top-[20%] animate-pulse"></div>
-                <div className="absolute w-2 h-2 bg-[#00ff4c] rounded-full right-[15%] bottom-[30%] animate-pulse"></div>
+                <div className="absolute w-[800px] h-[800px] border border-[#2563eb]/10 rounded-full -right-1/4 top-1/4 transform -translate-y-1/2"></div>
+                <div className="absolute w-[500px] h-[500px] border border-[#2563eb]/15 rounded-full -left-1/4 bottom-1/4"></div>
+                <div className="absolute w-3 h-3 bg-[#2563eb] rounded-full left-[10%] top-[20%] animate-pulse"></div>
+                <div className="absolute w-2 h-2 bg-[#2563eb] rounded-full right-[15%] bottom-[30%] animate-pulse"></div>
             </div>
             
             <div className="fixed top-0 w-screen z-40"> 
@@ -44,11 +44,11 @@ function Submission(props) {
             </div>
             
             <div className="container max-w-7xl mx-auto px-5 sm:px-10 lg:px-8 pt-[80px] lg:pt-[100px] pb-16 relative z-10">
-                <div className="bg-[#00120a] border border-[#00ff4c]/30 rounded-xl p-6 md:p-8 shadow-lg shadow-[#00ff4c]/10 backdrop-blur-sm">
-                    <h1 className="text-4xl font-bold text-[#00ff4c] mb-4">
+                <div className="bg-[white] border border-[#2563eb]/30 rounded-xl p-6 md:p-8 shadow-lg shadow-[#2563eb]/10 backdrop-blur-sm">
+                    <h1 className="text-4xl font-bold text-[#2563eb] mb-4">
                           {data ?( 
-                        <div className="text-gray-300 prose prose-invert max-w-none">
-                            <div dangerouslySetInnerHTML={{__html:data[6].pageTitle}}/>
+                        <div className="text-gray-700 prose prose-invert max-w-none">
+                            <div dangerouslySetInnerHTML={{__html:data[5].pageTitle}}/>
                         </div>):(
                         <div className="animate-pulse">
                             <div className="h-4 bg-gray-700 rounded w-3/4 mb-4"></div>
@@ -59,11 +59,11 @@ function Submission(props) {
                     )}
                     
                     </h1>
-                    <div className="w-32 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mb-8"></div>
+                    <div className="w-32 h-1 bg-gradient-to-r from-[#2563eb] to-transparent mb-8"></div>
                     
                     {data ? (
-                        <div className="text-gray-300 prose prose-invert max-w-none">
-                            <div dangerouslySetInnerHTML={{__html:data[6].description}}/>
+                        <div className="text-gray-700 prose prose-invert max-w-none">
+                            <div dangerouslySetInnerHTML={{__html:data[5].description}}/>
                         </div>
                     ) : (
                         <div className="animate-pulse">

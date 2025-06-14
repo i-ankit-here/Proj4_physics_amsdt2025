@@ -128,7 +128,7 @@ export default SpeakerPage
 //             onClick={() => setShowInvited(false)}
 //             className={`px-4 py-2 rounded-lg ${
 //               !showInvited
-//                 ? "bg-accent-500 text-white font-bold"
+//                 ? "bg-accent-500 text-black font-bold"
 //                 : "bg-accent-100 text-gray-700 font-semibold"
 //             }`}
 //           >
@@ -138,7 +138,7 @@ export default SpeakerPage
 //             onClick={() => setShowInvited(true)}
 //             className={`sm:px-2 px-4 py-2 rounded-lg ${
 //               showInvited
-//                 ? "bg-accent-500 text-white font-bold"
+//                 ? "bg-accent-500 text-black font-bold"
 //                 : "bg-accent-100 text-gray-700 font-semibold"
 //             }`}
 //           >

@@ -24,9 +24,9 @@ function VideoGallery() {
   // };
 
   return (
-    <div className="bg-black container space-y-8 lg:max-w-7xl mx-auto px-8 sm:px-10 lg:px-8 mb-28 sm:mb-5">
+    <div className="bg-white container space-y-8 lg:max-w-7xl mx-auto px-8 sm:px-10 lg:px-8 mb-28 sm:mb-5">
       <div className="h-[420px] w-full md:h-[520px] lg:h-[680px] m-auto relative group pb-16">
-        <h2 className="text-4xl font-sans font-bold text-center text-[#00ff4c] mb-6">
+        <h2 className="text-4xl font-sans font-bold text-center text-[#2563eb] mb-6">
           Video Gallery
         </h2>
 
@@ -37,8 +37,8 @@ function VideoGallery() {
               onClick={() => setCurrentIndex(index)}
               className={`px-4 py-2 rounded-lg mb-2 transition-all ${
                 currentIndex === index
-                  ? "bg-[#00ff4c] text-black font-bold"
-                  : "bg-[#002a00] text-[#00ff4c] border border-[#00ff4c] hover:bg-[#00ff4c20] font-semibold"
+                  ? "bg-[#2563eb] text-black font-bold"
+                  : "bg-[#002a00] text-[#2563eb] border border-[#2563eb] hover:bg-[#2563eb20] font-semibold"
               }`}
             >
               {video.name}
@@ -47,7 +47,7 @@ function VideoGallery() {
         </div>
 
         {videos.length > 0 && (
-          <div className="w-full h-full rounded-2xl bg-center bg-cover relative border-2 border-[#00ff4c] shadow-lg shadow-[#00ff4c]/30">
+          <div className="w-full h-full rounded-2xl bg-center bg-cover relative border-2 border-[#2563eb] shadow-lg shadow-[#2563eb]/30">
             <iframe
               width="100%"
               height="100%"
@@ -59,18 +59,18 @@ function VideoGallery() {
               className="rounded-2xl"
             ></iframe>
             {videos[currentIndex].name && (
-              <div className="absolute text-sm lg:text-xl font-sans font-medium bottom-0 left-0 right-0 bg-black/70 text-white text-center p-2 backdrop-blur-sm border-t border-[#00ff4c]/50">
+              <div className="absolute text-sm lg:text-xl font-sans font-medium bottom-0 left-0 right-0 bg-white/70 text-black text-center p-2 backdrop-blur-sm border-t border-[#2563eb]/50">
                 {videos[currentIndex].name}
               </div>
             )}
             {/* <div
-              className="hidden group-hover:block absolute top-[50%] -translate-x-0 left-5 rounded-full p-2 bg-black/30 text-white hover:bg-white hover:text-black cursor-pointer"
+              className="hidden group-hover:block absolute top-[50%] -translate-x-0 left-5 rounded-full p-2 bg-white/30 text-black hover:bg-white hover:text-black cursor-pointer"
               onClick={prevSlide}
             >
               <BsChevronCompactLeft className="w-4 h-4 md:w-8 md:h-8" />
             </div>
             <div
-              className="hidden group-hover:block absolute top-[50%] -translate-x-0 right-5 rounded-full p-2 bg-black/30 text-white hover:bg-white hover:text-black cursor-pointer"
+              className="hidden group-hover:block absolute top-[50%] -translate-x-0 right-5 rounded-full p-2 bg-white/30 text-black hover:bg-white hover:text-black cursor-pointer"
               onClick={nextSlide}
             >
               <BsChevronCompactRight className="w-4 h-4 md:w-8 md:h-8" />
@@ -84,7 +84,7 @@ function VideoGallery() {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`text-2xl cursor-pointer transition-all ${
-                index === currentIndex ? "text-[#00ff4c] scale-125" : "text-gray-400 hover:text-[#00ff4c]/70"
+                index === currentIndex ? "text-[#2563eb] scale-125" : "text-gray-400 hover:text-[#2563eb]/70"
               }`}
             />
           ))}

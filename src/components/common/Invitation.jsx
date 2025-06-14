@@ -50,24 +50,24 @@ function Invitation({ show, setShow }) {
   return (
     <>
       {show && (
-        <div className="flex w-full h-screen bg-black bg-opacity-70 backdrop-blur-sm justify-center  fixed top-14 z-50">
+        <div className="flex w-full h-screen bg-white bg-opacity-70 backdrop-blur-sm justify-center  fixed top-14 z-50">
 
           <button
-            className="absolute top-0 right-2 bg-white z-50 text-black font-bold w-8 h-8 flex items-center justify-center hover:bg-accent-600 hover:text-white focus:outline-none"
+            className="absolute top-0 right-2 bg-white z-50 text-black font-bold w-8 h-8 flex items-center justify-center hover:bg-accent-600 hover:text-black focus:outline-none"
             onClick={() => setShow(false)}
             aria-label="Close invitation"
           >
             <ImCross />
           </button>
           <button
-            className="absolute left-2 top-1/2 z-50 transform -translate-y-1/2 bg-black/30 text-white p-2 rounded-full hover:bg-white hover:text-black"
+            className="absolute left-2 top-1/2 z-50 transform -translate-y-1/2 bg-white/30 text-black p-2 rounded-full hover:bg-white hover:text-black"
             onClick={prevSlide}
             aria-label="Previous slide"
           >
             <BsChevronCompactLeft className='w-4 h-4 sm:w-8 sm:h-8 ' />
           </button>
           <button
-            className="absolute top-1/2 right-2 z-50 transform -translate-y-1/2 bg-black/30 text-white p-2 rounded-full hover:bg-white hover:text-black"
+            className="absolute top-1/2 right-2 z-50 transform -translate-y-1/2 bg-white/30 text-black p-2 rounded-full hover:bg-white hover:text-black"
             onClick={nextSlide}
             aria-label="Next slide"
           >
@@ -134,10 +134,10 @@ export default Invitation;
 //   return (
 //     <>
 //       {show && (
-//         <div className="flex w-full h-screen bg-black bg-opacity-70 backdrop-blur-sm justify-center fixed top-14 z-50">
+//         <div className="flex w-full h-screen bg-white bg-opacity-70 backdrop-blur-sm justify-center fixed top-14 z-50">
 //           {isConfettiVisible && <ConfettiExplosion zIndex={50} force={0.9} particleCount={300}  duration={5000} width={2200} />}
 //           <button
-//             className="absolute top-0 right-2 bg-white text-black font-bold w-8 h-10 flex items-center justify-center hover:bg-accent-600 hover:text-white focus:outline-none"
+//             className="absolute top-0 right-2 bg-white text-black font-bold w-8 h-10 flex items-center justify-center hover:bg-accent-600 hover:text-black focus:outline-none"
 //             onClick={() => setShow(false)}
 //             aria-label="Close invitation"
 //           >

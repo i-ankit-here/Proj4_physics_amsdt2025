@@ -33,7 +33,7 @@ function SecNavbar({onClickScroll}) {
         className="group relative transition-all duration-300 ease-in-out hover:scale-105 "
             >
               <span>
-                <p className="ml-10 text-sm font-semibold rounded-full text-black bg-white px-4 py-[2px] border-radius-2 shadow-lg group-hover:bg-green-500 group-hover:text-white">
+                <p className="ml-10 text-sm font-semibold rounded-full text-black bg-white px-4 py-[2px] border-radius-2 shadow-lg group-hover:bg-green-500 group-hover:text-black">
                   Our Speakers
                 </p>
               </span>
@@ -43,7 +43,7 @@ function SecNavbar({onClickScroll}) {
           <Link to="/speakers">
             <button className="group relative transition-all duration-300 ease-in-out hover:scale-105">
               <span>
-                <p className="ml-10 text-sm font-semibold rounded-full text-black bg-white px-4 py-[2px] border-radius-2 shadow-lg group-hover:bg-green-500 group-hover:text-white">
+                <p className="ml-10 text-sm font-semibold rounded-full text-black bg-white px-4 py-[2px] border-radius-2 shadow-lg group-hover:bg-green-500 group-hover:text-black">
                 Our Speakers
                 </p>
               </span>
@@ -58,7 +58,7 @@ function SecNavbar({onClickScroll}) {
          className="group relative transition-all duration-300 ease-in-out hover:scale-105 "
             >
               <span>
-                <p className=" text-sm font-semibold rounded-full text-black bg-white px-2 py-[2px] border-radius-2 shadow-lg group-hover:bg-yellow-500 group-hover:text-white">
+                <p className=" text-sm font-semibold rounded-full text-black bg-white px-2 py-[2px] border-radius-2 shadow-lg group-hover:bg-yellow-500 group-hover:text-black">
                   Invited Speakers
                 </p>
               </span>
@@ -68,7 +68,7 @@ function SecNavbar({onClickScroll}) {
           <Link to="/invitedspeakers">
             <button className="group relative transition-all duration-300 ease-in-out hover:scale-105">
               <span>
-                <p className=" text-sm font-semibold rounded-full text-black bg-white px-2 py-[2px] border-radius-2 shadow-lg group-hover:bg-yellow-500 group-hover:text-white">
+                <p className=" text-sm font-semibold rounded-full text-black bg-white px-2 py-[2px] border-radius-2 shadow-lg group-hover:bg-yellow-500 group-hover:text-black">
                   Invited Speakers
                 </p>
               </span>
@@ -83,7 +83,7 @@ function SecNavbar({onClickScroll}) {
         >
           <button className="group relative transition-all duration-300 ease-in-out hover:scale-105">
             <span>
-              <p className="text-sm font-semibold rounded-full text-black bg-white px-2 py-[2px] border-radius-2 shadow-lg group-hover:bg-blue-500 group-hover:text-white">
+              <p className="text-sm font-semibold rounded-full text-black bg-white px-2 py-[2px] border-radius-2 shadow-lg group-hover:bg-blue-500 group-hover:text-black">
               Best Paper Awards
               </p>
             </span>
@@ -95,7 +95,7 @@ function SecNavbar({onClickScroll}) {
           className="group relative transition-all duration-300 ease-in-out hover:scale-105"
         >
           <span>
-            <p className="text-sm font-semibold rounded-full text-black bg-white px-2 py-[2px] border-radius-2 shadow-lg group-hover:bg-violet-500 group-hover:text-white">
+            <p className="text-sm font-semibold rounded-full text-black bg-white px-2 py-[2px] border-radius-2 shadow-lg group-hover:bg-violet-500 group-hover:text-black">
               Inaugural Invitation
             </p>
           </span>
@@ -110,7 +110,7 @@ function SecNavbar({onClickScroll}) {
         >
           <button className="group relative transition-all duration-300 ease-in-out hover:scale-105">
             <span>
-              <p className="text-sm font-semibold rounded-full text-black bg-white px-2 py-[2px] border-radius-2 shadow-lg group-hover:bg-accent-500 group-hover:text-white">
+              <p className="text-sm font-semibold rounded-full text-black bg-white px-2 py-[2px] border-radius-2 shadow-lg group-hover:bg-accent-500 group-hover:text-black">
                 Technical Events Schedule
               </p>
             </span>

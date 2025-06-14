@@ -17,27 +17,21 @@ const getTimeLeft = (targetDate) => {
 };
 
 const CountdownBox = ({ title, time, color }) => {
-    const glow = `drop-shadow(0 0 10px ${color})`;
-
-
   return (
-    <div className="flex flex-col items-center">
-      <div className="text-l font-bold mb-3" style={{ color }}>{title}</div>
-      <div className="flex gap-4">
+    <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm p-4">
+      <div className="text-md font-semibold mb-3" style={{ color }}>{title}</div>
+      <div className="flex gap-3">
         {['days', 'hours', 'minutes'].map((unit) => (
           <div
             key={unit}
-            className="w-15 h-15 rounded-md border-2 flex flex-col items-center justify-center p-2"
-            style={{
-              borderColor: color,
-              color: color,
-              filter: glow,
-            }}
+            className="w-16 h-16 rounded-md border border-gray-300 flex flex-col items-center justify-center p-2 bg-gray-50"
           >
-            <div className="text-xl font-mono font-bold">
+            <div className="text-2xl font-mono font-bold text-gray-800">
               {String(time[unit]).padStart(2, '0')}
             </div>
-            <div className="text-[10px] font-medium uppercase">{unit}</div>
+            <div className="text-[11px] text-gray-500 uppercase font-medium">
+              {unit}
+            </div>
           </div>
         ))}
       </div>
@@ -61,32 +55,33 @@ const TripleCountdown = () => {
         conference: getTimeLeft(countdownTargets.conference),
         acceptance: getTimeLeft(countdownTargets.acceptance),
       });
-    }, 60000); // update every 60s
+    }, 60000); // every 60s
+
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <div className="px-4 text-white">
-      <div className="mx-auto grid max-w-3xl grid-cols-1 sm:grid-cols-2 gap-5 p-4">
+    <div className="px-4 text-black bg-gray-100 py-8 w-full">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         <CountdownBox
           title="Paper Submission"
           time={times.submission}
-          color="#00ffff"
+          color="#007BFF"
         />
         <CountdownBox
           title="Acceptance"
           time={times.acceptance}
-          color="#0066ff"
+          color="#6C63FF"
         />
         <CountdownBox
           title="Registration"
           time={times.registration}
-          color="#ffa500"
+          color="#FF6F00"
         />
         <CountdownBox
           title="Conference"
           time={times.conference}
-          color="#00ff66"
+          color="#2E7D32"
         />
       </div>
     </div>

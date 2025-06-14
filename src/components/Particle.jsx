@@ -535,7 +535,7 @@ const ParticlesComponent = (props) => {
           "shadow": {
             "blur": 5,
             "color": {
-              "value": "#000"
+              "value": ""
             },
             "enable": false
           },
