@@ -15,8 +15,8 @@
     { name: "Abstract Submission", href: "/submission", current: false },
     { name: "List of Speakers", href: "/speakers", current: false },
     { name: "Publications", href: "/publications", current: false },
-    { name: "Awards", href: "/publications", current: false },
-    { name: "Sponsors", href: "/publications", current: false },
+    { name: "Awards", href: "/awards", current: false },
+    { name: "Sponsors", href: "/sponsors", current: false },
     {
       name: "Committees",
       href: "",

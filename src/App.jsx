@@ -23,6 +23,9 @@ import AdvisoryCommittee from "./pages/Committee/AdvisoryCommittee";
 // import LocalCommittee from "./pages/Committee/LocalCommittee";
 import Speakers from "./pages/speakersfront";
 import Publications from "./pages/Publications";
+import Awards from "./pages/awards";
+import Sponsors from "./pages/Sponsors";
+
 function App() {
    const confid="682c2dbe4f0ddcc436b90e88";
   return (
@@ -37,6 +40,10 @@ function App() {
         <Route path="submission" element={<Submission confid={confid}/>} />
         {/* <Route path="events" element={<Events />} /> */}
         <Route path="location" element={<Location confid={confid}  />} />
+        <Route path="awards" element={<Awards confid={confid}  />} />
+
+        <Route path="sponsors" element={<Sponsors confid={confid}  />} />
+
         <Route path="accommodation" element={<Accommodation />} />
         {/* <Route path="hotelslist" element={<Hotels confid={confid}/>} /> */}
         {/* <Route path="souvenir" element={<Souvenir />} /> */}
