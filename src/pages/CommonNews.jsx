@@ -46,7 +46,7 @@ function CommonNews() {
 
   return (
     <>
-      <div className="fixed top-0 w-screen z-40">
+      <div className="top-0 w-screen z-40">
         <Navbar />
       </div>
 
@@ -64,7 +64,8 @@ function CommonNews() {
             <h1 className="text-2xl md:text-3xl font-bold mb-6 text-[#2563eb]">
               {data.title}
             </h1>
-            <div className="w-32 h-1 bg-gradient-to-r from-[#2563eb] to-transparent mb-8"></div>
+            {/* <div className="w-32 h-1 bg-gradient-to-r from-[#2563eb] to-transparent mb-8"></div> */}
+          <div className="w-40 h-1 bg-blue-600 mb-4"></div>
             
             <div
               className="text-base text-gray-700 prose prose-invert prose-headings:text-[#2563eb] prose-a:text-[#2563eb] prose-strong:text-black max-w-none"

@@ -8,7 +8,7 @@ function RegistrationLink() {
     }, []);
 
     return (
-        <div className="bg-white min-h-screen relative overflow-hidden pt-[166px]">
+        <div className="bg-white min-h-screen relative overflow-hidden">
             {/* Background decorative elements */}
             <div className="absolute inset-0 pointer-events-none opacity-10">
                 <div className="absolute w-[800px] h-[800px] border border-[#2563eb]/10 rounded-full -right-1/4 top-1/4 transform -translate-y-1/2"></div>
@@ -17,30 +17,31 @@ function RegistrationLink() {
                 <div className="absolute w-2 h-2 bg-[#2563eb] rounded-full right-[15%] bottom-[30%] animate-pulse"></div>
             </div>
             
-            <div className="fixed top-0 w-screen z-40">
+            <div className="top-0 w-screen z-40">
                 <Navbar />
             </div>
             
-            <div className="container max-w-7xl mx-auto px-5 sm:px-10 lg:px-8 pt-[80px] lg:pt-[100px] pb-16 relative z-10">
+            <div className="pt-[166px] container max-w-7xl mx-auto px-5 sm:px-10 lg:px-8 pt-[80px] lg:pt-[100px] pb-16 relative z-10">
                 <div className="bg-[white] border border-[#2563eb]/30 rounded-xl p-6 md:p-8 shadow-lg shadow-[#2563eb]/10 backdrop-blur-sm">
                     <h1 className="text-4xl font-bold text-[#2563eb] mb-4">
                         Registration 
                     </h1>
-                    <div className="w-32 h-1 bg-gradient-to-r from-[#2563eb] to-transparent mb-8"></div>
+                    {/* <div className="w-32 h-1 bg-gradient-to-r from-[#2563eb] to-transparent mb-8"></div> */}
+          <div className="w-40 h-1 bg-blue-600 mb-4"></div>
                     
                     <div className="text-gray-700 prose prose-invert max-w-none">
                                           
                         <div className="flex flex-col items-center justify-center my-10">
                             <div className="relative group">
-                                <div className="absolute -inset-0.5 bg-gradient-to-r from-[#2563eb] to-[#2563eb]/50 rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                                <div className="absolute -inset-0.5 bg-gradient-to-r from-[#2563eb] to-[#2563eb]/50 rounded-lg blur opacity-50  text-blue-900 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
                                 <a
                                     href="https://www.nitj.ac.in/events_registration/ic_amsdt_2025/login" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="relative flex items-center justify-center px-8 py-4 bg-white rounded-lg leading-none text-[#2563eb] font-medium hover:text-black transition-colors duration-300"
+                                    className="relative flex text-blue-900 items-center justify-center px-8 py-4 bg-blue-900 border border-blue-900 shadow-lg rounded-lg leading-none font-medium hover:bg-blue-900 hover:text-red-600 transition-colors duration-300"
                                 >
                                     <span className="mr-3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-blue-900">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
                                         </svg>
                                     </span>
