@@ -13,6 +13,15 @@
     { name: <IoMdHome className="h-5 w-5" />, href: "/", current: true },
     { name: "Paper tracks", href: "/tracks", current: false },
     { name: "Abstract Submission", href: "/submission", current: false },
+     {
+      name: "Registration",
+      href: "",
+      current: false,
+      subItems: [
+        { name: "Registration Fee", href: "/registrationfee" },
+        { name: "Registration Link", href: "/registrationlink" },
+      ],
+    },
     { name: "List of Speakers", href: "/speakers", current: false },
     { name: "Publications", href: "/publications", current: false },
     { name: "Awards", href: "/awards", current: false },
@@ -26,15 +35,7 @@
         { name: "Advisory Committee", href: "/advisorycommittee" },
       ],
     },
-    {
-      name: "Registration",
-      href: "",
-      current: false,
-      subItems: [
-        { name: "Registration Fee", href: "/registrationfee" },
-        { name: "Registration Link", href: "/registrationlink" },
-      ],
-    },
+   
     { name: "Location", href: "/location", current: false },
     { name: "Accommodation", href: "/accommodation", current: false },
   ];
