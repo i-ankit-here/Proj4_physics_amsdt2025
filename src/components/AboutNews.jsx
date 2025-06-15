@@ -62,7 +62,7 @@ function AboutNews(props) {
               <h2 className="text-4xl font-sans font-bold text-blue-600 mb-2">
                 AMSDT-2025
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-[#2563eb] to-transparent mb-6"></div>
+              <div className="w-20 h-1 bg-blue-600 mb-4"></div>
               <div className="text-base text-gray-700 space-y-4 text-justify">
                 {data ? (
                   <div className="min-h-[216px]" dangerouslySetInnerHTML={{ __html: data.about[0].description }} />
@@ -76,7 +76,7 @@ function AboutNews(props) {
               <h2 className="text-4xl font-sans font-bold text-blue-600 mb-2">
                 About Jalandhar
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-[#2563eb] to-transparent mb-6"></div>
+              <div className="w-20 h-1 bg-blue-600 mb-4"></div>
               <div className="text-base text-gray-700 space-y-4 text-justify">
                 {data ? (
                   <div dangerouslySetInnerHTML={{ __html: data.about[1].description }} />
@@ -91,7 +91,7 @@ function AboutNews(props) {
           <div className=" flex-col gap-10 lg:col-span-2 ">
             <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-lg shadow-[#2563eb]/10 backdrop-blur-sm">
               <h2 className="text-4xl font-sans font-bold text-blue-600 mb-2">News</h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-[#2563eb] to-transparent mb-6"></div>
+              <div className="w-20 h-1 bg-blue-600 mb-4"></div>
               
               <div
                 id="news"
