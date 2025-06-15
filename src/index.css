@@ -78,7 +78,7 @@
     width: 100%;
     border: 2px solid #2563eb;
     border-collapse: collapse;
-    color: #f5f5f5;
+    color: #0c0c0c;
   }
   th,
   td {
@@ -116,7 +116,7 @@
   }
 
 a, a:visited {
-  color: white !important;
+  color: rgb(255, 255, 255) !important;
   text-decoration: none !important;
 }
   a:active {
