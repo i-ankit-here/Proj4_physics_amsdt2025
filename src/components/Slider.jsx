@@ -20,26 +20,29 @@ function Slider() {
   }, []);
 
   return (
-    <div
-      className="relative w-full min-h-screen"
-      style={{
-        backgroundImage: `url('${sliderData[currentSlide].image}')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        transition: "background-image 1s ease-in-out"
-      }}
-    >
-      {/* Optional gradient overlay */}
-      {/* <div className="absolute inset-0 bg-gradient-to-b from-blue-900 via-blue-800 to-blue-300 opacity-90 z-0"></div> */}
+    <>
+      {/* Image Slider Section */}
+      <div
+        className="relative w-full min-h-screen"
+        style={{
+          backgroundImage: `url('${sliderData[currentSlide].image}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          transition: "background-image 1s ease-in-out"
+        }}
+      >
+        {/* You can add a gradient overlay if needed */}
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-blue-900 via-blue-800 to-blue-300 opacity-80 z-0"></div> */}
+      </div>
 
-      {/* Label at bottom */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-white px-4">
-        <h1 className="text-xl sm:text-xl md:text-2xl lg:text-2xl font-bold bg-blue-800 bg-opacity-70 inline-block px-6 py-3 rounded">
+      {/* Title/Label Section Below Image */}
+      <div className="w-full bg-blue-800 text-white text-center py-6 px-4">
+        <h1 className="text-lg sm:text-xl md:text-2xl font-semibold">
           {sliderData[currentSlide].label}
         </h1>
       </div>
-    </div>
+    </>
   );
 }
 
