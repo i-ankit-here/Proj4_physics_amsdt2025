@@ -64,18 +64,17 @@ export default function Example() {
           <img src="nitjlogo.png" alt="AMS" className=" w-36 h-36 item-center object-contain p-4" />
 
           <div className="flex-1 flex flex-col items-center text-center gap-0 pt-0">
-            <p className="lg:text-3xl md:text-2xl text-xl font-medium tracking-wide text-center justify-center">
+            <p className="lg:text-2xl md:text-xl text-xl font-medium tracking-wide text-center justify-center">
               International Conference on Advanced Materials for Sustainable Development and Technology
             </p>
-            <p className="lg:text-3xl md:text-2xl text-xl font-bold">
+            <p className="lg:text-xl md:text-xl -mt-2 text-xl font-bold">
               (AMSDT-2025)
             </p>
-
             <div>
-              <h3 className="text-blue-600 font-medium tracking-wide text-lg">
+              <h3 className="text-blue-600 font-medium -mt-2 tracking-wide text-lg">
                 Jointly organized by
               </h3>
-              <div className="text-blue-600 list-disc list-inside mt-2 text-sm sm:text-base">
+              <div className="text-blue-600 list-disc list-inside -mt-1 text-sm sm:text-base">
                 <ul>
                   <li>Dr B R Ambedkar National Institute of Technology Jalandhar, Punjab, India</li>
                   <li>Institute of Nano Science and Technology, Mohali, Punjab, India</li>
@@ -109,7 +108,7 @@ export default function Example() {
                     value="amsdt2025@nitj.ac.in"
                   />
                 </div>
-                <nav className="hidden lg:flex space-x-1 ml-auto" aria-label="Global">
+                <nav className="hidden lg:flex space-x-1 mx-auto" aria-label="Global">
                   {currentNavigation.map((item) => (
                     <div key={item.name} className="relative group">
                       {item.subItems ? (
@@ -139,7 +138,7 @@ export default function Example() {
                       ) : (
                         <Link
                           to={item.href}
-                          className="inline-flex items-center py-2 px-3 text-sm text-gray-800 uppercase hover:text-blue-200 font-medium transition-colors duration-200"
+                          className="inline-flex items-center py-2 px-1 text-sm text-gray-800 uppercase hover:text-blue-200 font-medium transition-colors duration-200"
                           aria-current={item.current ? "page" : undefined}
                         >
                           {item.name}
