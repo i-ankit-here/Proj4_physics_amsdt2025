@@ -97,9 +97,8 @@ const OrganizingHeads = () => {
           <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
             Chief Patrons
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#2563eb] to-transparent mx-auto mt-4" />
-        </div>
-
+          
+<div className="w-20 h-1 bg-blue-600 mb-4"></div>
         <div className="flex flex-col items-center justify-center mb-16">
           <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
             {patrons.map((patron, idx) => (
@@ -137,8 +136,7 @@ const OrganizingHeads = () => {
           <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
             Patrons
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#2563eb] to-transparent mx-auto mt-4" />
-        </div>
+          <div className="w-20 h-1 bg-blue-600 mb-4"></div>
 
         <div className="flex flex-col items-center justify-center mb-16">
           <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
@@ -176,9 +174,8 @@ const OrganizingHeads = () => {
           <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
             Co-Patron
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#2563eb] to-transparent mx-auto mt-4" />
-        </div>
-
+          
+<div className="w-20 h-1 bg-blue-600 mb-4"></div>
         <div className="flex flex-col items-center justify-center mb-16">
           <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
             {coPatrons2.map((coPatron, idx) => (
@@ -214,8 +211,7 @@ const OrganizingHeads = () => {
           <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
             Chairman/Convenor
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#2563eb] to-transparent mx-auto mt-4" />
-        </div>
+          <div className="w-20 h-1 bg-blue-600 mb-4"></div>
 
         <div className="flex flex-col items-center justify-center mb-16">
           <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
@@ -252,8 +248,7 @@ const OrganizingHeads = () => {
           <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
             Organising Secretaries
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#2563eb] to-transparent mx-auto mt-4" />
-        </div>
+          <div className="w-20 h-1 bg-blue-600 mb-4"></div>
 
         <div className="flex flex-col items-center justify-center mb-16">
           <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
