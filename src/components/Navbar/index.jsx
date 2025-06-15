@@ -71,7 +71,7 @@
                 International Conference on Advanced Materials for Sustainable Development and Technology
               </p>
               <p className="lg:text-xl md:text-xl -mt-2 text-xl font-bold">
-                AMSDT-2025| November 7-8, 2025| Hybrid Mode| At NIT Jalandhar
+                AMSDT-2025| November 7-8, 2025| Hybrid Mode
               </p>
               <div>
                 <h3 className="text-blue-600 font-medium -mt-2 tracking-wide text-lg">
