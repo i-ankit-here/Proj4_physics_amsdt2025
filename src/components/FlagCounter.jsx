@@ -1,6 +1,6 @@
 const FlagCounter = () => {
   return (
-    <div className="border border-[#00ff4c]/30 rounded-md p-4 bg-black/50 backdrop-blur-sm">
+    <div className="border border-[#2563eb]/30 rounded-md p-4 bg-white/50 backdrop-blur-sm">
       <img src='https://www.flagcounter.me/fUw/' alt="AMS"/>
     </div>
   );

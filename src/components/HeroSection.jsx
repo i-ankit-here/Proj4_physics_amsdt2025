@@ -197,10 +197,10 @@ function HeroSection(props) {
           <div className="flex flex-row  mx-auto items-center">
                   <Link
                   to={data ? data.facebookLink :" "} target="_blank"
-                  className="inline-flex justify-between items-center mx-5 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
+                  className="inline-flex justify-between items-center mx-5 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-black hover:bg-gray-200 dark:hover:bg-gray-700"
                   role="alert"
                 >
-                  <span className="text-sm bg-violet-600 font-bold uppercase rounded-full text-white px-4 py-1.5 mr-2">
+                  <span className="text-sm bg-violet-600 font-bold uppercase rounded-full text-black px-4 py-1.5 mr-2">
                   <FaDownload />
                   </span>{" "}
                   <span className="text-xs md:text-sm font-medium pr-2">Flyer Chemcon-2024 </span>
@@ -208,10 +208,10 @@ function HeroSection(props) {
                 </Link>
                 <Link
                   to={data ? data.twitterLink :" "} target="_blank"
-                  className="inline-flex justify-between items-center mx-5  text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
+                  className="inline-flex justify-between items-center mx-5  text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-black hover:bg-gray-200 dark:hover:bg-gray-700"
                   role="alert" 
                 >
-                  <span className="text-sm bg-green-500 font-bold uppercase rounded-full text-white px-4 py-1.5 mr-2">
+                  <span className="text-sm bg-green-500 font-bold uppercase rounded-full text-black px-4 py-1.5 mr-2">
                   <FaDownload />
                   </span>{" "}
                   <span className="text-xs md:text-sm font-medium pr-2">Brochure Chemcon-2024 </span>
@@ -220,7 +220,7 @@ function HeroSection(props) {
         </div>
           {/* <a
             href="https://docs.google.com/document/u/1/d/e/2PACX-1vRjWCr2kIO67CAcCz--1dCqer8dvDH5yYGQV7jA_XblMNko4KPk3B4ZT4no98o-sEcg-II7pbaN_ga4/pub" target="_blank" rel="noopener noreferrer"
-            className="mt-3 mx-auto flex items-center animate-bounce justify-center whitespace-nowrap rounded-md border w-fit border-transparent bg-accent-500 px-6 py-2 text-base font-semibold text-white shadow-sm hover:bg-accent-700"
+            className="mt-3 mx-auto flex items-center animate-bounce justify-center whitespace-nowrap rounded-md border w-fit border-transparent bg-accent-500 px-6 py-2 text-base font-semibold text-black shadow-sm hover:bg-accent-700"
           >
             Presentation and Poster Schedule
           </a> */}
@@ -259,7 +259,7 @@ function HeroSection(props) {
                 <div className="absolute w-full h-full   z-40  rounded-lg" />
                 <img
                   src="/main.webp"
-                  className={`bg-black  object-cover h-full object-left lg:rounded-xl rounded-lg`}
+                  className={`bg-white  object-cover h-full object-left lg:rounded-xl rounded-lg`}
                   alt=""
                 />
               </div>
@@ -269,7 +269,7 @@ function HeroSection(props) {
                 <div className="absolute w-full h-full   z-30  rounded-lg" />
                 <img
                   src="/side-1.webp"
-                  className={`bg-black  object-cover h-full object-left lg:rounded-xl rounded-lg`}
+                  className={`bg-white  object-cover h-full object-left lg:rounded-xl rounded-lg`}
                   alt=""
                 />
               </div>
@@ -280,7 +280,7 @@ function HeroSection(props) {
                 <div className="absolute w-full h-full  z-20  rounded-lg" />
                 <img
                   src="/side-2.webp"
-                  className={`bg-black  object-cover h-full object-left lg:rounded-xl rounded-lg`}
+                  className={`bg-white  object-cover h-full object-left lg:rounded-xl rounded-lg`}
                   alt=""
                 />
               </div>
@@ -291,7 +291,7 @@ function HeroSection(props) {
                 <div className="absolute w-full h-full  z-20  rounded-lg" />
                 <img
                   src="/side-3.webp"
-                  className={`bg-black  object-cover h-full object-left lg:rounded-xl rounded-lg`}
+                  className={`bg-white  object-cover h-full object-left lg:rounded-xl rounded-lg`}
                   alt=""
                 />
               </div>
@@ -301,7 +301,7 @@ function HeroSection(props) {
                 <div className="absolute w-full h-full   z-40  rounded-lg" />
                 <img
                   src="/main.webp"
-                  className={`bg-black  object-cover h-full object-left lg:rounded-xl rounded-lg`}
+                  className={`bg-white  object-cover h-full object-left lg:rounded-xl rounded-lg`}
                   alt=""
                 />
               </div>
@@ -311,7 +311,7 @@ function HeroSection(props) {
                 <div className="absolute w-full h-full   z-30  rounded-lg" />
                 <img
                   src="/side-1.webp"
-                  className={`bg-black  object-cover h-full object-left lg:rounded-xl rounded-lg`}
+                  className={`bg-white  object-cover h-full object-left lg:rounded-xl rounded-lg`}
                   alt=""
                 />
               </div>
@@ -322,7 +322,7 @@ function HeroSection(props) {
                 <div className="absolute w-full h-full   z-20  rounded-lg" />
                 <img
                   src="/side-2.webp"
-                  className={`bg-black  object-cover h-full object-left lg:rounded-xl rounded-lg `}
+                  className={`bg-white  object-cover h-full object-left lg:rounded-xl rounded-lg `}
                   alt=""
                 />
               </div>
@@ -333,7 +333,7 @@ function HeroSection(props) {
                 <div className="absolute w-full h-full  z-20  rounded-lg" />
                 <img
                   src="/side-3.webp"
-                  className={`bg-black  object-cover h-full object-left lg:rounded-xl rounded-lg`}
+                  className={`bg-white  object-cover h-full object-left lg:rounded-xl rounded-lg`}
                   alt=""
                 />
               </div>

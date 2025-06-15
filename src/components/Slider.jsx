@@ -82,23 +82,23 @@ const Slider = forwardRef(function Slider(props) {
         {slides.length > 0 && (
           <div
             style={{ backgroundImage: `url(${slides[currentIndex].imgLink})` }}
-            className="w-full h-[320px] rounded-2xl bg-center bg-cover relative border-2 border-[#00ff4c] shadow-lg shadow-[#00ff4c]/30"
+            className="w-full h-[320px] rounded-2xl bg-center bg-cover relative border-2 border-[#2563eb] shadow-lg shadow-[#2563eb]/30"
           >
             {slides[currentIndex].name && (
-              <div className="absolute text-sm lg:text-xl font-sans font-medium bottom-0 left-0 right-0 bg-black/70 text-white text-center p-2 backdrop-blur-sm">
+              <div className="absolute text-sm lg:text-xl font-sans font-medium bottom-0 left-0 right-0 bg-white/70 text-black text-center p-2 backdrop-blur-sm">
                 {slides[currentIndex].name}
               </div>
             )}
             
             <div
-              className="hidden group-hover:block absolute top-[50%] -translate-y-1/2 left-5 rounded-full p-2 bg-black/50 text-[#00ff4c] hover:bg-[#00ff4c] hover:text-black cursor-pointer transition-all"
+              className="hidden group-hover:block absolute top-[50%] -translate-y-1/2 left-5 rounded-full p-2 bg-white/50 text-[#2563eb] hover:bg-[#2563eb] hover:text-black cursor-pointer transition-all"
               onClick={prevSlide}
             >
               <BsChevronCompactLeft className="w-4 h-4 md:w-8 md:h-8" />
             </div>
             
             <div
-              className="hidden group-hover:block absolute top-[50%] -translate-y-1/2 right-5 rounded-full p-2 bg-black/50 text-[#00ff4c] hover:bg-[#00ff4c] hover:text-black cursor-pointer transition-all"
+              className="hidden group-hover:block absolute top-[50%] -translate-y-1/2 right-5 rounded-full p-2 bg-white/50 text-[#2563eb] hover:bg-[#2563eb] hover:text-black cursor-pointer transition-all"
               onClick={nextSlide}
             >
               <BsChevronCompactRight className="w-4 h-4 md:w-8 md:h-8" />
@@ -112,7 +112,7 @@ const Slider = forwardRef(function Slider(props) {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`text-2xl cursor-pointer transition-all ${
-                index === currentIndex ? "text-[#00ff4c] scale-125" : "text-gray-400 hover:text-[#00ff4c]/70"
+                index === currentIndex ? "text-[#2563eb] scale-125" : "text-gray-400 hover:text-[#2563eb]/70"
               }`}
             />
           ))}

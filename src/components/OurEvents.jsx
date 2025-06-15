@@ -40,7 +40,7 @@ const data = [
     title: "Exhibition",
     content:
       "An exhibition of Chemical Engineering and allied businesses including safety, technology providers, consultants, institution, tour packages and communication, Equipment, Instruments, Books and Journals, etc. is proposed during CHEMCON 2024. Interested organizations will be allotted space of the following dimensions in the form of exhibition stalls with all facilities like furniture, power, etc. ",
-    bg: "bg-accent-400 text-white",
+    bg: "bg-accent-400 text-black",
   },
   {
     title: "Sri Dhirubhai Ambani Commemoration Day",
@@ -58,7 +58,7 @@ const data = [
     title: "Quiz Competition",
     content:
       "Quiz Competition will be conducted for the student delegates    based on GATE 2024 syllabus. The prize will be distributed to the   winners.",
-    bg: "bg-accent-500 text-white",
+    bg: "bg-accent-500 text-black",
   },
   // {
   //   title: "Accommodation",
@@ -76,10 +76,10 @@ const data = [
 
 function OurEvents() {
   return (
-    <div className="bg-black container space-y-8 lg:max-w-7xl mx-auto px-8 sm:px-10 lg:px-8 py-16">
+    <div className="bg-white container space-y-8 lg:max-w-7xl mx-auto px-8 sm:px-10 lg:px-8 py-16">
       <div className="text-center">
-        <h2 className="text-4xl font-bold mb-4 text-[#00ff4c]">Our Events</h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mx-auto mb-8"></div>
+        <h2 className="text-4xl font-bold mb-4 text-emerald-600">Our Events</h2>
+        <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-transparent mx-auto mb-8"></div>
       </div>
       
       <Link to="/events" className="block">
@@ -87,53 +87,49 @@ function OurEvents() {
           {data.map((item, index) => (
             <div
               key={index}
-              className={`group relative overflow-hidden rounded-xl border border-[#00ff4c]/30 hover:border-[#00ff4c] transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#00ff4c]/20 ${
+              className={`group relative overflow-hidden rounded-xl border border-emerald-200 hover:border-emerald-500 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-emerald-100 ${
                 index === 0 ? "md:col-span-2 lg:col-span-2" : ""
               }`}
             >
-              {/* Glowing background effect on hover */}
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#00ff4c]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-emerald-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
-              <div className="relative z-10 p-6 h-full bg-[#00120a] backdrop-blur-sm">
+              <div className="relative z-10 p-6 h-full bg-white backdrop-blur-sm">
                 <div className="flex flex-col h-full">
-                  <h4 className="font-bold text-xl md:text-2xl mb-4 text-[#00ff4c] group-hover:text-[#00ff4c] transition-colors">
+                  <h4 className="font-bold text-xl md:text-2xl mb-4 text-emerald-600 group-hover:text-emerald-700 transition-colors">
                     {item.title}
                   </h4>
                   
                   <div 
-                    className="text-sm leading-relaxed text-gray-300 overflow-hidden max-h-[300px] overflow-y-auto custom-scrollbar"
+                    className="text-sm leading-relaxed text-gray-600 overflow-hidden max-h-[300px] overflow-y-auto custom-scrollbar"
                     dangerouslySetInnerHTML={{ __html: item.content }} 
                   />
                   
-                  {/* Decorative element */}
-                  <div className="absolute bottom-0 left-0 w-full h-1 bg-[#00ff4c]/30 group-hover:bg-[#00ff4c] transition-colors duration-300"></div>
+                  <div className="absolute bottom-0 left-0 w-full h-1 bg-emerald-100 group-hover:bg-emerald-500 transition-colors duration-300"></div>
                 </div>
               </div>
               
-              {/* Tech-inspired decorative elements */}
-              <div className="absolute top-2 right-2 w-3 h-3 rounded-full bg-[#00ff4c]/50 group-hover:bg-[#00ff4c] transition-colors duration-300"></div>
-              <div className="absolute top-2 right-7 w-2 h-2 rounded-full bg-[#00ff4c]/30 group-hover:bg-[#00ff4c]/70 transition-colors duration-300"></div>
+              <div className="absolute top-2 right-2 w-3 h-3 rounded-full bg-emerald-200 group-hover:bg-emerald-500 transition-colors duration-300"></div>
+              <div className="absolute top-2 right-7 w-2 h-2 rounded-full bg-emerald-100 group-hover:bg-emerald-400 transition-colors duration-300"></div>
             </div>
           ))}
         </div>
       </Link>
       
-      {/* Add custom scrollbar styles */}
       <style>
         {`
         .custom-scrollbar::-webkit-scrollbar {
           width: 4px;
         }
         .custom-scrollbar::-webkit-scrollbar-track {
-          background: rgba(0, 255, 76, 0.05);
+          background: rgba(16, 185, 129, 0.05);
           border-radius: 10px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: rgba(0, 255, 76, 0.3);
+          background: rgba(16, 185, 129, 0.3);
           border-radius: 10px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-          background: rgba(0, 255, 76, 0.5);
+          background: rgba(16, 185, 129, 0.5);
         }
         `}
       </style>

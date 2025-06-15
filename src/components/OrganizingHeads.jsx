@@ -70,23 +70,23 @@ const OrganizingHeads = () => {
   ];
 
   return (
-    <div className="bg-black w-full py-16 relative overflow-hidden">
+    <div className="bg-white w-full py-16 relative overflow-hidden">
       {/* === Animated Atomic/Molecular Background === */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
         {/* Electron Orbits */}
-        <div className="absolute w-[600px] h-[600px] border border-[#00ff4c]/10 rounded-full left-1/2 top-1/2 
+        <div className="absolute w-[600px] h-[600px] border border-[#2563eb]/10 rounded-full left-1/2 top-1/2 
                         transform -translate-x-1/2 -translate-y-1/2 animate-pulse" />
-        <div className="absolute w-[400px] h-[400px] border border-[#00ff4c]/20 rounded-full left-1/2 top-1/2 
+        <div className="absolute w-[400px] h-[400px] border border-[#2563eb]/20 rounded-full left-1/2 top-1/2 
                         transform -translate-x-1/2 -translate-y-1/2 animate-pulse" />
-        <div className="absolute w-[200px] h-[200px] border border-[#00ff4c]/30 rounded-full left-1/2 top-1/2 
+        <div className="absolute w-[200px] h-[200px] border border-[#2563eb]/30 rounded-full left-1/2 top-1/2 
                         transform -translate-x-1/2 -translate-y-1/2 animate-pulse" />
 
         {/* Electrons */}
-        <div className="absolute w-3 h-3 bg-[#00ff4c] rounded-full left-[calc(50%-300px)] top-1/2 
+        <div className="absolute w-3 h-3 bg-[#2563eb] rounded-full left-[calc(50%-300px)] top-1/2 
                         transform -translate-y-1/2 animate-ping opacity-75" />
-        <div className="absolute w-2 h-2 bg-[#00ff4c] rounded-full left-[calc(50%-200px)] top-1/2 
+        <div className="absolute w-2 h-2 bg-[#2563eb] rounded-full left-[calc(50%-200px)] top-1/2 
                         transform -translate-y-1/2 animate-ping opacity-75" />
-        <div className="absolute w-1.5 h-1.5 bg-[#00ff4c] rounded-full left-[calc(50%-100px)] top-1/2 
+        <div className="absolute w-1.5 h-1.5 bg-[#2563eb] rounded-full left-[calc(50%-100px)] top-1/2 
                         transform -translate-y-1/2 animate-ping opacity-75" />
       </div>
 
@@ -94,10 +94,10 @@ const OrganizingHeads = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* ====== Section: Chief Patrons ====== */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-black mb-4 text-[#00ff4c] inline-flex items-center">
+          <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
             Chief Patrons
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#00ff4c] to-transparent mx-auto mt-4" />
+          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#2563eb] to-transparent mx-auto mt-4" />
         </div>
 
         <div className="flex flex-col items-center justify-center mb-16">
@@ -105,12 +105,12 @@ const OrganizingHeads = () => {
             {patrons.map((patron, idx) => (
               <div
                 key={idx}
-                className="bg-[#001a00] border border-[#00ff4c]/30 hover:border-[#00ff4c]/70
-                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#00ff4c]/20
+                className="bg-white border border-[#2563eb]/30 hover:border-[#2563eb]/70
+                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#2563eb]/20
                            backdrop-blur-sm max-w-sm flex flex-col items-center"
               >
                 <div className="relative mb-4">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#00ff4c] p-1">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#2563eb] p-1">
                     <img
                       src={patron.image}
                       alt={patron.name}
@@ -118,15 +118,15 @@ const OrganizingHeads = () => {
                     />
                   </div>
                   {/* If you later want to show 'Chief Patron' as a badge:
-                    <div className="absolute -top-2 -right-2 bg-[#00ff4c] text-black font-bold px-3 py-1
+                    <div className="absolute -top-2 -right-2 bg-[#2563eb] text-black font-bold px-3 py-1
                                      rounded-full text-sm">
                       {patron.role}
                     </div> */}
                 </div>
-                <h3 className="text-xl font-bold text-[#00ff4c] mb-2 text-center">
+                <h3 className="text-xl font-bold text-[#2563eb] mb-2 text-center">
                   {patron.name}
                 </h3>
-                <p className="text-gray-300 text-center text-sm">{patron.position}</p>
+                <p className="text-gray-700 text-center text-sm">{patron.position}</p>
               </div>
             ))}
           </div>
@@ -134,10 +134,10 @@ const OrganizingHeads = () => {
 
         {/* ====== Section: Co-Patrons ====== */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-black mb-4 text-[#00ff4c] inline-flex items-center">
+          <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
             Patrons
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#00ff4c] to-transparent mx-auto mt-4" />
+          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#2563eb] to-transparent mx-auto mt-4" />
         </div>
 
         <div className="flex flex-col items-center justify-center mb-16">
@@ -145,12 +145,12 @@ const OrganizingHeads = () => {
             {coPatrons.map((coPatron, idx) => (
               <div
                 key={idx}
-                className="bg-[#001a00] border border-[#00ff4c]/30 hover:border-[#00ff4c]/70
-                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#00ff4c]/20
+                className="bg-white border border-[#2563eb]/30 hover:border-[#2563eb]/70
+                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#2563eb]/20
                            backdrop-blur-sm max-w-sm flex flex-col items-center"
               >
                 <div className="relative mb-4">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#00ff4c] p-1">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#2563eb] p-1">
                     <img
                       src={coPatron.image}
                       alt={coPatron.name}
@@ -158,25 +158,25 @@ const OrganizingHeads = () => {
                     />
                   </div>
                   {/* If you later want to show 'Patron' badge:
-                    <div className="absolute -top-2 -right-2 bg-[#00ff4c] text-black font-bold px-3 py-1
+                    <div className="absolute -top-2 -right-2 bg-[#2563eb] text-black font-bold px-3 py-1
                                      rounded-full text-sm">
                       {coPatron.role}
                     </div> */}
                 </div>
-                <h3 className="text-xl font-bold text-[#00ff4c] mb-2 text-center">
+                <h3 className="text-xl font-bold text-[#2563eb] mb-2 text-center">
                   {coPatron.name}
                 </h3>
-                <p className="text-gray-300 text-center text-sm">{coPatron.position}</p>
+                <p className="text-gray-700 text-center text-sm">{coPatron.position}</p>
               </div>
             ))}
           </div>
         </div>
 
 <div className="text-center mb-12">
-          <h2 className="text-4xl font-black mb-4 text-[#00ff4c] inline-flex items-center">
+          <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
             Co-Patron
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#00ff4c] to-transparent mx-auto mt-4" />
+          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#2563eb] to-transparent mx-auto mt-4" />
         </div>
 
         <div className="flex flex-col items-center justify-center mb-16">
@@ -184,12 +184,12 @@ const OrganizingHeads = () => {
             {coPatrons2.map((coPatron, idx) => (
               <div
                 key={idx}
-                className="bg-[#001a00] border border-[#00ff4c]/30 hover:border-[#00ff4c]/70
-                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#00ff4c]/20
+                className="bg-white border border-[#2563eb]/30 hover:border-[#2563eb]/70
+                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#2563eb]/20
                            backdrop-blur-sm max-w-sm flex flex-col items-center"
               >
                 <div className="relative mb-4">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#00ff4c] p-1">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#2563eb] p-1">
                     <img
                       src={coPatron.image}
                       alt={coPatron.name}
@@ -197,24 +197,24 @@ const OrganizingHeads = () => {
                     />
                   </div>
                   {/* If you later want to show 'Patron' badge:
-                    <div className="absolute -top-2 -right-2 bg-[#00ff4c] text-black font-bold px-3 py-1
+                    <div className="absolute -top-2 -right-2 bg-[#2563eb] text-black font-bold px-3 py-1
                                      rounded-full text-sm">
                       {coPatron.role}
                     </div> */}
                 </div>
-                <h3 className="text-xl font-bold text-[#00ff4c] mb-2 text-center">
+                <h3 className="text-xl font-bold text-[#2563eb] mb-2 text-center">
                   {coPatron.name}
                 </h3>
-                <p className="text-gray-300 text-center text-sm">{coPatron.position}</p>
+                <p className="text-gray-700 text-center text-sm">{coPatron.position}</p>
               </div>
             ))}
           </div>
         </div>
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-black mb-4 text-[#00ff4c] inline-flex items-center">
+          <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
             Chairman/Convernor
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#00ff4c] to-transparent mx-auto mt-4" />
+          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#2563eb] to-transparent mx-auto mt-4" />
         </div>
 
         <div className="flex flex-col items-center justify-center mb-16">
@@ -222,12 +222,12 @@ const OrganizingHeads = () => {
             {chairman.map((coPatron, idx) => (
               <div
                 key={idx}
-                className="bg-[#001a00] border border-[#00ff4c]/30 hover:border-[#00ff4c]/70
-                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#00ff4c]/20
+                className="bg-white border border-[#2563eb]/30 hover:border-[#2563eb]/70
+                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#2563eb]/20
                            backdrop-blur-sm max-w-sm flex flex-col items-center"
               >
                 <div className="relative mb-4">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#00ff4c] p-1">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#2563eb] p-1">
                     <img
                       src={coPatron.image}
                       alt={coPatron.name}
@@ -235,24 +235,24 @@ const OrganizingHeads = () => {
                     />
                   </div>
                   {/* If you later want to show 'Patron' badge:
-                    <div className="absolute -top-2 -right-2 bg-[#00ff4c] text-black font-bold px-3 py-1
+                    <div className="absolute -top-2 -right-2 bg-[#2563eb] text-black font-bold px-3 py-1
                                      rounded-full text-sm">
                       {coPatron.role}
                     </div> */}
                 </div>
-                <h3 className="text-xl font-bold text-[#00ff4c] mb-2 text-center">
+                <h3 className="text-xl font-bold text-[#2563eb] mb-2 text-center">
                   {coPatron.name}
                 </h3>
-                <p className="text-gray-300 text-center text-sm">{coPatron.position}</p>
+                <p className="text-gray-700 text-center text-sm">{coPatron.position}</p>
               </div>
             ))}
           </div>
         </div>
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-black mb-4 text-[#00ff4c] inline-flex items-center">
+          <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
             Organising Secretaries
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#00ff4c] to-transparent mx-auto mt-4" />
+          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#2563eb] to-transparent mx-auto mt-4" />
         </div>
 
         <div className="flex flex-col items-center justify-center mb-16">
@@ -260,12 +260,12 @@ const OrganizingHeads = () => {
             {secretary.map((coPatron, idx) => (
               <div
                 key={idx}
-                className="bg-[#001a00] border border-[#00ff4c]/30 hover:border-[#00ff4c]/70
-                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#00ff4c]/20
+                className="bg-white border border-[#2563eb]/30 hover:border-[#2563eb]/70
+                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#2563eb]/20
                            backdrop-blur-sm max-w-sm flex flex-col items-center"
               >
                 <div className="relative mb-4">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#00ff4c] p-1">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#2563eb] p-1">
                     <img
                       src={coPatron.image}
                       alt={coPatron.name}
@@ -273,15 +273,15 @@ const OrganizingHeads = () => {
                     />
                   </div>
                   {/* If you later want to show 'Patron' badge:
-                    <div className="absolute -top-2 -right-2 bg-[#00ff4c] text-black font-bold px-3 py-1
+                    <div className="absolute -top-2 -right-2 bg-[#2563eb] text-black font-bold px-3 py-1
                                      rounded-full text-sm">
                       {coPatron.role}
                     </div> */}
                 </div>
-                <h3 className="text-xl font-bold text-[#00ff4c] mb-2 text-center">
+                <h3 className="text-xl font-bold text-[#2563eb] mb-2 text-center">
                   {coPatron.name}
                 </h3>
-                <p className="text-gray-300 text-center text-sm">{coPatron.position}</p>
+                <p className="text-gray-700 text-center text-sm">{coPatron.position}</p>
               </div>
             ))}
           </div>

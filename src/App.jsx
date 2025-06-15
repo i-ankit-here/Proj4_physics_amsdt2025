@@ -20,7 +20,7 @@ import Tracks from "./pages/Tracks";
 // import IntCommittee from "./components/commonTemplate";
 import OrganizingHeads from "./pages/Committee/OrganizingHeads";
 import AdvisoryCommittee from "./pages/Committee/AdvisoryCommittee";
-import LocalCommittee from "./pages/Committee/LocalCommittee";
+// import LocalCommittee from "./pages/Committee/LocalCommittee";
 import Speakers from "./pages/speakersfront";
 import Publications from "./pages/Publications";
 function App() {
@@ -51,7 +51,7 @@ function App() {
         {/* <Route path="commontemplate" element={<IntCommittee />} /> */}
         <Route path="organizingheads" element={<OrganizingHeads confid={confid} />} />
         <Route path="advisorycommittee" element={<AdvisoryCommittee confid={confid} />} />    
-        <Route path="localcommittee" element={<LocalCommittee confid={confid} />} />
+        {/* <Route path="localcommittee" element={<LocalCommittee confid={confid} />} /> */}
         <Route path="publications" element={<Publications confid={confid} />} />
 
 
