@@ -55,37 +55,7 @@ export default function Example() {
 
   return (
     <div>
-
-    <div className="w-full flex items-center justify-between flex-wrap p-1"
-            style={{
-              background: 'linear-gradient(to right, #FF9933, #FFFFFF, #138808)',
-            }}
-        >
-          <img src="nitjlogo.png" alt="AMS" className=" hidden sm:block w-36 h-36 item-center object-contain p-4" />
-
-          <div className="flex-1 flex flex-col items-center text-center gap-0 pt-0">
-            <p className="lg:text-2xl md:text-xl text-xl font-medium tracking-wide text-center justify-center">
-              International Conference on Advanced Materials for Sustainable Development and Technology
-            </p>
-            <p className="lg:text-xl md:text-xl -mt-2 text-xl font-bold">
-              (AMSDT-2025)
-            </p>
-            <div>
-              <h3 className="text-blue-600 font-medium -mt-2 tracking-wide text-lg">
-                Jointly organized by
-              </h3>
-              <div className="text-blue-600 list-disc list-inside -mt-1 text-sm sm:text-base">
-                <ul>
-                  <li>Dr B R Ambedkar National Institute of Technology Jalandhar, Punjab, India</li>
-                  <li>Institute of Nano Science and Technology, Mohali, Punjab, India</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <img src="inst.png" alt="AMS" className="hidden sm:block w-38 h-38 object-contain p-6 sm:p-8 lg:p-8" />
-        </div>
-      <Disclosure as="header" className="bg-blue-900 shadow">
+<Disclosure as="header" className="bg-blue-900 shadow">
         {({ open }) => (
           <>
             <div className="mx-auto">
@@ -220,6 +190,7 @@ export default function Example() {
           </>
         )}
       </Disclosure>
+          
     </div>
   );
 }
