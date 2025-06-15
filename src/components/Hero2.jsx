@@ -12,7 +12,7 @@ function Hero2(props) {
   return (
     <>
       <div className="text-gray-800 p-6 sm:py-10 min-h-screen bg-white">
-        <div className="w-full flex items-center justify-between flex-wrap gap-6 p-6"
+        {/* <div className="w-full flex items-center justify-between flex-wrap gap-6 p-6"
             style={{
               background: 'linear-gradient(to right, #FF9933, #FFFFFF, #138808)',
             }}
@@ -36,10 +36,10 @@ function Hero2(props) {
                 <li>Institute of Nano Science and Technology, Mohali, Punjab, India</li>
               </ul>
             </div>
-          </div>
+          </div> */}
 
-          <img src="inst.png" alt="AMS" className="w-48 h-48 object-contain" />
-        </div>
+          {/* <img src="inst.png" alt="AMS" className="w-48 h-48 object-contain" />
+        </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mt-12 max-w-7xl mx-auto px-4">
           {/* Left Molecule Image */}
