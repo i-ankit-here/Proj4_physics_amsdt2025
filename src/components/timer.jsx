@@ -61,17 +61,17 @@ const TripleCountdown = () => {
   }, []);
 
   return (
-    <div className="px-4 text-black bg-gray-100 py-8 w-full">
+    <div className="px-4 text-black bg-blue-900 py-8 w-full">
       <div className="mx-auto grid max-w-7xl grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         <CountdownBox
           title="Abstract Submission"
           time={times.submission}
-          color="#007BFF"
+          color="#FF1493"
         />
         <CountdownBox
           title="Acceptance"
           time={times.acceptance}
-          color="#6C63FF"
+          color="#800000"
         />
         <CountdownBox
           title="Registration"
