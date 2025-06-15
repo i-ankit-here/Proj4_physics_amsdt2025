@@ -61,7 +61,7 @@ export default function Example() {
               background: 'linear-gradient(to right, #FF9933, #FFFFFF, #138808)',
             }}
         >
-          <img src="nitjlogo.png" alt="AMS" className=" w-32 h-32 item-center object-contain p-4" />
+          <img src="nitjlogo.png" alt="AMS" className=" w-36 h-36 item-center object-contain p-4" />
 
           <div className="flex-1 flex flex-col items-center text-center gap-0 pt-0">
             <p className="lg:text-3xl md:text-2xl text-xl font-medium tracking-wide text-center justify-center">
@@ -84,7 +84,7 @@ export default function Example() {
             </div>
           </div>
 
-          <img src="inst.png" alt="AMS" className="w-38 h-38 object-contain" />
+          <img src="inst.png" alt="AMS" className="w-38 h-38 object-contain p-6 sm:p-8 lg:p-8" />
         </div>
       <Disclosure as="header" className="bg-blue-900 shadow">
         {({ open }) => (
