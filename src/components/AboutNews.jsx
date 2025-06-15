@@ -72,7 +72,7 @@ function AboutNews(props) {
               </div>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-lg shadow-[#2563eb]/10 backdrop-blur-sm">
+            {/* <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-lg shadow-[#2563eb]/10 backdrop-blur-sm">
               <h2 className="text-4xl font-sans font-bold text-blue-600 mb-2">
                 About Jalandhar
               </h2>
@@ -84,7 +84,7 @@ function AboutNews(props) {
                   <div className="h-32 animate-pulse bg-gray-200/50 rounded"></div>
                 )}
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* News Section - Takes 2/5 of the grid on large screens */}
@@ -95,10 +95,10 @@ function AboutNews(props) {
               
               <div
                 id="news"
-                className="h-[512px] overflow-auto pr-2 scrollbar-thin scrollbar-thumb-[#2563eb]/30 scrollbar-track-black/20"
+                className="h-[220px] overflow-auto pr-2 scrollbar-thin scrollbar-thumb-[#2563eb]/30 scrollbar-track-black/20"
               >
                 <div
-                  className={`space-y-4 ${isMouseOver ? "animate-none cursor-default" : "animate-wiggle"}`}
+                  className={`space-y-6 ${isMouseOver ? "animate-none cursor-default" : "animate-wiggle"}`}
                   onMouseOver={() => setIsMouseOver(true)}
                   onMouseOut={() => setIsMouseOver(false)}
                 >
@@ -111,8 +111,8 @@ function AboutNews(props) {
                         to={item.link !== "" ? item.link : `/news/${item._id}`}
                         className="block"
                       >
-                        <div className="relative p-4 my-4 rounded-xl hover:shadow-md hover:shadow-[#2563eb]/30 bg-white/40 backdrop-blur-sm space-y-3 border border-[#2563eb]/20 transition-all hover:border-[#2563eb]/50">
-                          <div className="w-2 h-2 animate-ping bg-[#2563eb] absolute -left-1 -top-1 rounded-full"></div>
+                        <div className="relative p-2 my-4 rounded-xl hover:shadow-md hover:shadow-[#2563eb]/30 bg-white/40 backdrop-blur-sm space-y-2 border border-[#2563eb]/20 transition-all hover:border-[#2563eb]/50">
+                          {/* <div className="w-2 h-2  bg-[#2563eb] absolute -left-1 -top-1 rounded-full"></div> */}
                           <div className="flex flex-row justify-between items-start">
                             <p className="text-base font-medium text-blue-600">{item.title}</p>
                             

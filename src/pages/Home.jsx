@@ -5,10 +5,12 @@ import Timeline from "../components/Timeline";
 import Footer from "../components/Footer";
 import AboutNITJ from "../components/AboutNITJ";
 import AboutNews from "../components/AboutNews";
+import CountdownBox from "../components/timer.jsx";
+
 // import SponsorShip from "../components/Sponsorship";
 import { useEffect} from "react";
-import Hero2 from "../components/Hero2";
-// import Slider from "../components/Slider";
+// import Hero2 from "../components/Hero2";
+import Slider from "../components/Slider";
 // import SecNavbar from "../components/SecNavbar";
 import Navbar from "../components/Navbar";
 // import Speaker from "../components/Speaker";
@@ -42,24 +44,31 @@ function Home(props) {
   // };
   return (
     <div className="bg-white overflow-x-hidden">
-    <div className="fixed top-0 w-screen z-40 bg-blue-700">
+    <div className="sticky top-0 w-screen z-40 bg-blue-700">
         <Navbar />
       </div>
       {/* <SecNavbar onClickScroll={scrollToSection}/> */}
     
       
-      <Hero2 confid={props.confId}  />
+      {/* <Hero2 confid={props.confId}  /> */}
       {/* <Slider  /> */}
       {/* <DriveLinks/>
       <VideoGallery/>
-      <Slider confid={props.confId} /> */}
-      <AboutNews confid={props.confId} />
+      
+      
       {/* <Speaker confid={props.confId}  ref={ourspeakersRef}   />
       <InvitedSpeaker confid={props.confId}  ref={invitedspeakersRef}   /> */}
-      <Timeline confid={props.confId}  />
+      <Slider />
+      
       {/* <Speakers /> */}
       {/* <OurEvents confid={props.confId}  /> */}
+      <AboutNews confid={props.confId} />
+       <Timeline confid={props.confId}  />
+        <div className="w-full flex justify-center mt-8">
+            <CountdownBox />
+          </div>
       <AboutNITJ confid={props.confId} />
+
       <OrganizingHeads />
 
       {/* <SponsorShip confid={props.confId} /> */}
