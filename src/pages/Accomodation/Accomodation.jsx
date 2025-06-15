@@ -17,7 +17,7 @@ function Accommodation() {
 
       {/* <SecNavbar /> */}
 
-      <main className="bg-white pt-[58px] pb-10 min-h-screen pt-[250px] relative overflow-hidden">
+      <main className="bg-white pt-[58px] pb-10 min-h-screen pt-[288px] relative overflow-hidden">
         <div className="container max-w-7xl mx-auto px-5 sm:px-10 lg:px-8">
           <h1 className="text-3xl font-bold text-[#2563eb] mb-6 underline">
             Accommodation
