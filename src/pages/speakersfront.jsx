@@ -59,7 +59,7 @@ function Speakers(props) {
                     )}
                     
                     </h1>
-                    <div className="w-32 h-1 bg-gradient-to-r from-[#2563eb] to-transparent mb-8"></div>
+                    <div className="w-20 h-1 bg-blue-600 mb-4"></div>
                     
                     {data ? (
                         <div className="text-gray-700 prose prose-invert max-w-none">
