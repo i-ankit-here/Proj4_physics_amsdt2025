@@ -1,87 +1,112 @@
 // import React from "react";
 
+const ProfileCard = ({ person }) => (
+  <div className="bg-white border border-[#2563eb]/30 hover:border-[#2563eb]/70
+                  transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#2563eb]/20
+                  backdrop-blur-sm w-72 flex flex-col items-center">
+    <div className="relative mb-4">
+      <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#2563eb] p-1">
+        <img
+          src={person.image}
+          alt={person.name}
+          className="w-full h-full object-cover rounded-full"
+        />
+      </div>
+    </div>
+    <h3 className="text-xl font-bold text-[#2563eb] mb-2 text-center">
+      {person.name}
+    </h3>
+    <p className="text-gray-700 text-center text-sm">{person.position}</p>
+  </div>
+);
+
 const OrganizingHeads = () => {
   const patrons = [
     {
       name: "Prof. Binod Kumar Kanaujia",
       position: "Director, Dr B R Ambedkar National Institute of Technology Jalandhar",
       image: "director.jpg",
-      role: "Chief Patron",
     },
     {
       name: "Prof. Akash Deep",
       position: "Director, Institute of Nano Science and Technology, Mohali",
       image: "akashdeep.jpeg",
-      role: "Chief Patron",
     },
   ];
 
   const coPatrons = [
     {
       name: "Prof. Ajay Bansal",
-      position: "Registrar,Dr B R Ambedkar National Institute of Technology Jalandhar",
+      position: "Registrar, Dr B R Ambedkar National Institute of Technology Jalandhar",
       image: "ajaybansal.jpg",
-      role: "Patron",
     },
     {
       name: "Prof. Rohit Mehra",
       position: "Dean (R&C), Dr B R Ambedkar National Institute of Technology Jalandhar",
       image: "rohitmehra.jpg",
-      role: "Patron",
     },
   ];
 
- const coPatrons2 = [
+  const coPatrons2 = [
     {
       name: "Prof. H. M. Mittal",
       position: "Head, Department of Physics, NIT Jalandhar",
       image: "mittal.jpg",
-      role: "Patron",
-    }
+    },
   ];
-   const chairman = [
+
+  const chairman = [
     {
       name: "Dr. Praveen Malik",
       position: "Department of Physics, NIT Jalandhar",
       image: "malik.jpg",
-      role: "Patron",
-    }
+    },
   ];
 
- const secretary = [
+  const secretary = [
     {
       name: "Dr. Abhinav Pratap Singh",
       position: "Department of Physics, NIT Jalandhar",
       image: "abhinav.jpg",
-      role: "Patron",
     },
     {
       name: "Dr Shishram Rebari",
       position: "Department of Physics, NIT Jalandhar",
       image: "Shishram.jpg",
-      role: "Patron",
     },
-     {
+    {
       name: "Dr Vijayakumar Shanmugam",
       position: "Scientist E, INST Mohali",
       image: "vijay.png",
-      role: "Patron",
     },
   ];
 
+  const renderSection = (title, members) => (
+    <div className="text-center mb-12">
+      <h2 className="text-4xl font-black mb-2 text-[#2563eb] inline-flex items-center justify-center relative">
+        {title}
+        <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-[#2563eb]"></span>
+      </h2>
+      <div className="flex flex-col items-center justify-center mt-8 mb-16">
+        <div className="flex flex-col md:flex-row flex-wrap justify-center gap-8 md:gap-16">
+          {members.map((person, idx) => (
+            <ProfileCard key={idx} person={person} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <div className="bg-white w-full py-16 relative overflow-hidden">
-      {/* === Animated Atomic/Molecular Background === */}
+      {/* === Animated Background === */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
-        {/* Electron Orbits */}
         <div className="absolute w-[600px] h-[600px] border border-[#2563eb]/10 rounded-full left-1/2 top-1/2 
                         transform -translate-x-1/2 -translate-y-1/2 animate-pulse" />
         <div className="absolute w-[400px] h-[400px] border border-[#2563eb]/20 rounded-full left-1/2 top-1/2 
                         transform -translate-x-1/2 -translate-y-1/2 animate-pulse" />
         <div className="absolute w-[200px] h-[200px] border border-[#2563eb]/30 rounded-full left-1/2 top-1/2 
                         transform -translate-x-1/2 -translate-y-1/2 animate-pulse" />
-
-        {/* Electrons */}
         <div className="absolute w-3 h-3 bg-[#2563eb] rounded-full left-[calc(50%-300px)] top-1/2 
                         transform -translate-y-1/2 animate-ping opacity-75" />
         <div className="absolute w-2 h-2 bg-[#2563eb] rounded-full left-[calc(50%-200px)] top-1/2 
@@ -90,198 +115,13 @@ const OrganizingHeads = () => {
                         transform -translate-y-1/2 animate-ping opacity-75" />
       </div>
 
-      {/* === Main Content Container === */}
+      {/* === Content === */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* ====== Section: Chief Patrons ====== */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
-            Chief Patrons
-          </h2>
-          
-<div className="w-20 h-1 bg-blue-600 mb-4"></div>
-        <div className="flex flex-col items-center justify-center mb-16">
-          <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
-            {patrons.map((patron, idx) => (
-              <div
-                key={idx}
-                className="bg-white border border-[#2563eb]/30 hover:border-[#2563eb]/70
-                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#2563eb]/20
-                           backdrop-blur-sm max-w-sm flex flex-col items-center"
-              >
-                <div className="relative mb-4">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#2563eb] p-1">
-                    <img
-                      src={patron.image}
-                      alt={patron.name}
-                      className="w-full h-full object-cover rounded-full"
-                    />
-                  </div>
-                  {/* If you later want to show 'Chief Patron' as a badge:
-                    <div className="absolute -top-2 -right-2 bg-[#2563eb] text-black font-bold px-3 py-1
-                                     rounded-full text-sm">
-                      {patron.role}
-                    </div> */}
-                </div>
-                <h3 className="text-xl font-bold text-[#2563eb] mb-2 text-center">
-                  {patron.name}
-                </h3>
-                <p className="text-gray-700 text-center text-sm">{patron.position}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* ====== Section: Co-Patrons ====== */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
-            Patrons
-          </h2>
-          <div className="w-20 h-1 bg-blue-600 mb-4"></div>
-
-        <div className="flex flex-col items-center justify-center mb-16">
-          <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
-            {coPatrons.map((coPatron, idx) => (
-              <div
-                key={idx}
-                className="bg-white border border-[#2563eb]/30 hover:border-[#2563eb]/70
-                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#2563eb]/20
-                           backdrop-blur-sm max-w-sm flex flex-col items-center"
-              >
-                <div className="relative mb-4">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#2563eb] p-1">
-                    <img
-                      src={coPatron.image}
-                      alt={coPatron.name}
-                      className="w-full h-full object-cover rounded-full"
-                    />
-                  </div>
-                  {/* If you later want to show 'Patron' badge:
-                    <div className="absolute -top-2 -right-2 bg-[#2563eb] text-black font-bold px-3 py-1
-                                     rounded-full text-sm">
-                      {coPatron.role}
-                    </div> */}
-                </div>
-                <h3 className="text-xl font-bold text-[#2563eb] mb-2 text-center">
-                  {coPatron.name}
-                </h3>
-                <p className="text-gray-700 text-center text-sm">{coPatron.position}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-<div className="text-center mb-12">
-          <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
-            Co-Patron
-          </h2>
-          
-<div className="w-20 h-1 bg-blue-600 mb-4"></div>
-        <div className="flex flex-col items-center justify-center mb-16">
-          <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
-            {coPatrons2.map((coPatron, idx) => (
-              <div
-                key={idx}
-                className="bg-white border border-[#2563eb]/30 hover:border-[#2563eb]/70
-                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#2563eb]/20
-                           backdrop-blur-sm max-w-sm flex flex-col items-center"
-              >
-                <div className="relative mb-4">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#2563eb] p-1">
-                    <img
-                      src={coPatron.image}
-                      alt={coPatron.name}
-                      className="w-full h-full object-cover rounded-full"
-                    />
-                  </div>
-                  {/* If you later want to show 'Patron' badge:
-                    <div className="absolute -top-2 -right-2 bg-[#2563eb] text-black font-bold px-3 py-1
-                                     rounded-full text-sm">
-                      {coPatron.role}
-                    </div> */}
-                </div>
-                <h3 className="text-xl font-bold text-[#2563eb] mb-2 text-center">
-                  {coPatron.name}
-                </h3>
-                <p className="text-gray-700 text-center text-sm">{coPatron.position}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
-            Chairman/Convenor
-          </h2>
-          <div className="w-20 h-1 bg-blue-600 mb-4"></div>
-
-        <div className="flex flex-col items-center justify-center mb-16">
-          <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
-            {chairman.map((coPatron, idx) => (
-              <div
-                key={idx}
-                className="bg-white border border-[#2563eb]/30 hover:border-[#2563eb]/70
-                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#2563eb]/20
-                           backdrop-blur-sm max-w-sm flex flex-col items-center"
-              >
-                <div className="relative mb-4">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#2563eb] p-1">
-                    <img
-                      src={coPatron.image}
-                      alt={coPatron.name}
-                      className="w-full h-full object-cover rounded-full"
-                    />
-                  </div>
-                  {/* If you later want to show 'Patron' badge:
-                    <div className="absolute -top-2 -right-2 bg-[#2563eb] text-black font-bold px-3 py-1
-                                     rounded-full text-sm">
-                      {coPatron.role}
-                    </div> */}
-                </div>
-                <h3 className="text-xl font-bold text-[#2563eb] mb-2 text-center">
-                  {coPatron.name}
-                </h3>
-                <p className="text-gray-700 text-center text-sm">{coPatron.position}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
-            Organising Secretaries
-          </h2>
-          <div className="w-20 h-1 bg-blue-600 mb-4"></div>
-
-        <div className="flex flex-col items-center justify-center mb-16">
-          <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
-            {secretary.map((coPatron, idx) => (
-              <div
-                key={idx}
-                className="bg-white border border-[#2563eb]/30 hover:border-[#2563eb]/70
-                           transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#2563eb]/20
-                           backdrop-blur-sm max-w-sm flex flex-col items-center"
-              >
-                <div className="relative mb-4">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#2563eb] p-1">
-                    <img
-                      src={coPatron.image}
-                      alt={coPatron.name}
-                      className="w-full h-full object-cover rounded-full"
-                    />
-                  </div>
-                  {/* If you later want to show 'Patron' badge:
-                    <div className="absolute -top-2 -right-2 bg-[#2563eb] text-black font-bold px-3 py-1
-                                     rounded-full text-sm">
-                      {coPatron.role}
-                    </div> */}
-                </div>
-                <h3 className="text-xl font-bold text-[#2563eb] mb-2 text-center">
-                  {coPatron.name}
-                </h3>
-                <p className="text-gray-700 text-center text-sm">{coPatron.position}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
+        {renderSection("Chief Patrons", patrons)}
+        {renderSection("Patrons", coPatrons)}
+        {renderSection("Co-Patron", coPatrons2)}
+        {renderSection("Chairman/Convenor", chairman)}
+        {renderSection("Organising Secretaries", secretary)}
       </div>
 
       {/* === Custom Ping Animation Keyframes === */}
