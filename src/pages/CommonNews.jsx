@@ -50,7 +50,7 @@ function CommonNews() {
         <Navbar />
       </div>
 
-      <div className="bg-white min-h-screen pt-24 pb-16">
+      <div className="bg-white min-h-screen pt-24 pb-16 pt-[166px]">
         <div className="container max-w-7xl mx-auto px-5 sm:px-10 lg:px-8 relative">
           {/* Background decorative elements */}
           <div className="absolute inset-0 pointer-events-none opacity-10">

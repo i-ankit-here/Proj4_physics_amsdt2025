@@ -95,7 +95,7 @@ function AboutNews(props) {
               
               <div
                 id="news"
-                className="h-[270px] overflow-auto pr-2 scrollbar-thin scrollbar-thumb-[#2563eb]/30 scrollbar-track-black/20"
+                className="h-[512px] overflow-auto pr-2 scrollbar-thin scrollbar-thumb-[#2563eb]/30 scrollbar-track-black/20"
               >
                 <div
                   className={`space-y-4 ${isMouseOver ? "animate-none cursor-default" : "animate-wiggle"}`}
@@ -147,19 +147,7 @@ function AboutNews(props) {
                 </div>
               </div>
             </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-lg shadow-[#2563eb]/10 backdrop-blur-sm">
-              <h2 className="text-4xl font-sans font-bold text-blue-600 mb-2">
-                About INST
-              </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-[#2563eb] to-transparent mb-6"></div>
-              <div className="text-base space-y-4 text-justify">
-                {data ? (
-                  <div dangerouslySetInnerHTML={{ __html: data.about[1].description }} />
-                ) : (
-                  <div className="h-32 animate-pulse bg-gray-200/50 rounded"></div>
-                )}
-              </div>
-            </div>
+            
             {/* <Slider confid={confid} /> */}
           </div>
         </div>

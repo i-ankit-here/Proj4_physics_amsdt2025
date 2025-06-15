@@ -8,7 +8,7 @@ import AboutNews from "../components/AboutNews";
 // import SponsorShip from "../components/Sponsorship";
 import { useEffect} from "react";
 import Hero2 from "../components/Hero2";
-import Slider from "../components/Slider";
+// import Slider from "../components/Slider";
 // import SecNavbar from "../components/SecNavbar";
 import Navbar from "../components/Navbar";
 // import Speaker from "../components/Speaker";
@@ -49,7 +49,7 @@ function Home(props) {
     
       
       <Hero2 confid={props.confId}  />
-      <Slider  />
+      {/* <Slider  /> */}
       {/* <DriveLinks/>
       <VideoGallery/>
       <Slider confid={props.confId} /> */}

@@ -30,7 +30,7 @@ function OrganizingHeads(props) {
     }, [apiUrl, confid]);
    
     return (
-        <div className="bg-white min-h-screen relative overflow-hidden">
+        <div className="bg-white min-h-screen relative overflow-hidden pt-[166px]">
             {/* Background decorative elements */}
             <div className="absolute inset-0 pointer-events-none opacity-10">
                 <div className="absolute w-[800px] h-[800px] border border-[#2563eb]/10 rounded-full -right-1/4 top-1/4 transform -translate-y-1/2"></div>

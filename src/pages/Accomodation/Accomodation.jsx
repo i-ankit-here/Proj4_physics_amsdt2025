@@ -11,13 +11,13 @@ function Accommodation() {
 
   return (
     <>
-      <div className="fixed top-0 w-full z-40">
-        <Navbar />
-      </div>
+      <div className="fixed top-0 w-screen z-40"> 
+                     <Navbar />      
+                 </div>
 
       {/* <SecNavbar /> */}
 
-      <main className="bg-white pt-[58px] pb-10 min-h-screen">
+      <main className="bg-white pt-[58px] pb-10 min-h-screen pt-[250px] relative overflow-hidden">
         <div className="container max-w-7xl mx-auto px-5 sm:px-10 lg:px-8">
           <h1 className="text-3xl font-bold text-[#2563eb] mb-6 underline">
             Accommodation

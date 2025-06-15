@@ -5,7 +5,7 @@ const OrganizingHeads = () => {
     {
       name: "Prof. Binod Kumar Kanaujia",
       position: "Director, Dr B R Ambedkar National Institute of Technology Jalandhar",
-      image: "Director.jpg",
+      image: "director.jpg",
       role: "Chief Patron",
     },
     {
@@ -212,7 +212,7 @@ const OrganizingHeads = () => {
         </div>
         <div className="text-center mb-12">
           <h2 className="text-4xl font-black mb-4 text-[#2563eb] inline-flex items-center">
-            Chairman/Convernor
+            Chairman/Convenor
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#2563eb] to-transparent mx-auto mt-4" />
         </div>
