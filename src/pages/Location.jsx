@@ -47,8 +47,8 @@ function Location(props) {
                     <h1 className="text-4xl font-bold text-[#2563eb] mb-4">
                         How to Reach NIT Jalandhar
                     </h1>
-                    <div className="w-32 h-1 bg-gradient-to-r from-[#2563eb] to-transparent mb-8"></div>
                     
+                    <div className="w-20 h-1 bg-blue-600 mb-4"></div>
                     {data ? (
                         <div className="text-gray-700 prose prose-invert max-w-none">
                             <div dangerouslySetInnerHTML={{__html:data.description}}/>
