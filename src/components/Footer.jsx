@@ -130,8 +130,7 @@ const Footer = () => {
             <h3 className="text-3xl font-bold text-black mb-4">
               Contact Us
             </h3>
-            <div className="w-28 h-1 bg-gradient-to-r from-[#2563eb] to-transparent mb-6"></div>
-
+            <div className="w-20 h-1 bg-blue-600 mb-4"></div>
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-center">
                 <span className="inline-block w-1.5 h-1.5 bg-[#2563eb] rounded-full mr-3"></span>
