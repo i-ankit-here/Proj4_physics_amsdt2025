@@ -67,14 +67,14 @@
             <img src="nitjlogo.png" alt="AMS" className=" hidden sm:block w-36 h-36 item-center object-contain p-4" />
 
             <div className="flex-1 flex flex-col items-center text-center gap-0 pt-0">
-              <p className="lg:text-2xl md:text-xl text-xl font-medium tracking-wide text-center justify-center">
+              <p className="lg:text-2xl md:text-xl text-xl font-semibold tracking-wide text-center justify-center">
                 International Conference on Advanced Materials for Sustainable Development and Technology
               </p>
-              <p className="lg:text-xl md:text-xl -mt-2 text-xl font-bold">
-                AMSDT-2025| November 7-8, 2025| Hybrid Mode
+              <p className="lg:text-xl md:text-xl -mt-1 text-xl font-extrabold">
+                (AMSDT)-2025| November 7-8, 2025| Hybrid Mode
               </p>
               <div>
-                <h3 className="text-blue-600 font-medium -mt-2 tracking-wide text-lg">
+                <h3 className="text-blue-600 font-medium -mt-1 tracking-wide text-lg">
                   Jointly organized by
                 </h3>
                 <div className="text-blue-600 list-disc list-inside -mt-1 text-sm sm:text-base">
