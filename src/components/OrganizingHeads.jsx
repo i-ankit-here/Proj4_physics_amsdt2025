@@ -5,7 +5,7 @@ const ProfileCard = ({ person }) => (
                   transition-all duration-300 rounded-xl p-6 shadow-lg hover:shadow-[#2563eb]/20
                   backdrop-blur-sm w-72 flex flex-col items-center">
     <div className="relative mb-4">
-      <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#2563eb] p-1">
+      <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#2563eb] p-0.5">
         <img
           src={person.image}
           alt={person.name}
@@ -24,7 +24,7 @@ const OrganizingHeads = () => {
   const patrons = [
     {
       name: "Prof. Binod Kumar Kanaujia",
-      position: "Director, Dr B R Ambedkar National Institute of Technology Jalandhar",
+      position: "Director,NIT Jalandhar",
       image: "Director.jpg",
     },
     {
@@ -37,12 +37,12 @@ const OrganizingHeads = () => {
   const coPatrons = [
     {
       name: "Prof. Ajay Bansal",
-      position: "Registrar, Dr B R Ambedkar National Institute of Technology Jalandhar",
+      position: "Registrar, NIT Jalandhar",
       image: "ajaybansal.jpg",
     },
     {
       name: "Prof. Rohit Mehra",
-      position: "Dean (R&C), Dr B R Ambedkar National Institute of Technology Jalandhar",
+      position: "Dean (R&C), NIT Jalandhar",
       image: "rohitmehra.jpg",
     },
   ];
@@ -50,7 +50,7 @@ const OrganizingHeads = () => {
   const coPatrons2 = [
     {
       name: "Prof. H. M. Mittal",
-      position: "Head, Department of Physics, NIT Jalandhar",
+      position: "Head, Physics, NIT Jalandhar",
       image: "mittal.jpg",
     },
   ];
@@ -58,24 +58,24 @@ const OrganizingHeads = () => {
   const chairman = [
     {
       name: "Dr. Praveen Malik",
-      position: "Department of Physics, NIT Jalandhar",
+      position: "Physics, NIT Jalandhar",
       image: "malik.jpg",
     },
   ];
 
   const secretary = [
     {
-      name: "Dr. Abhinav Pratap Singh",
-      position: "Department of Physics, NIT Jalandhar",
+      name: "Dr. A P Singh",
+      position: "Physics, NIT Jalandhar",
       image: "abhinav.jpg",
     },
     {
-      name: "Dr Shishram Rebari",
-      position: "Department of Physics, NIT Jalandhar",
+      name: "Dr. Shishram Rebari",
+      position: "Physics, NIT Jalandhar",
       image: "Shishram.jpg",
     },
     {
-      name: "Dr Vijayakumar Shanmugam",
+      name: "Dr. V Shanmugam",
       position: "Scientist E, INST Mohali",
       image: "vijay.png",
     },
