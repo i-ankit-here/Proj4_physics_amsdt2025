@@ -78,24 +78,24 @@ const Timeline = forwardRef((props, ref) => {
                   </div>
 
                   {/* content */}
-                  <div className="bg-[white] hover:bg-[#eaf4ff] border border-[#2563eb]/30 hover:border-[#2563eb]/70 transition-all duration-300 rounded-xl p-5 shadow-md hover:shadow-[#2563eb]/20">
+                  <div className="bg-[white] hover:bg-[#eaf4ff] border border-[#2563eb]/30 hover:border-[#2563eb]/70 transition-all duration-300 rounded-xl p-5 shadow-md hover:shadow-[#2563eb]/20 text-right">
                     <h4 className="font-semibold mb-2 text-black">
                       {item.title}
                     </h4>
                   </div>
 
                   {/* date */}
-                  <div className="px-4 py-2 lg:w-48 absolute lg:top-0 lg:right-0 lg:bottom-0 lg:translate-x-full lg:flex lg:flex-col lg:mt-4 lg:py-0 lg:pl-6">
+                  <div className="px-4 py-2 lg:w-60 absolute lg:top-0 lg:right-0 lg:bottom-0 lg:translate-x-full lg:flex lg:flex-col lg:mt-4 lg:py-0 lg:pl-6">
                     {!item.extended ? (
-                      <p className="font-medium text-sm text-[#2563eb]">
+                      <p className="font-medium text-md text-[#2563eb]">
                         {formatDate(item.date)}
                       </p>
                     ) : (
                       <>
-                        <p className="font-medium text-sm text-[#2563eb]">
+                        <p className="font-medium text-md text-[#2563eb]">
                           {formatDate(item.newDate)}
                         </p>
-                        <p className="font-medium text-sm text-gray-500 line-through">
+                        <p className="font-medium text-md text-gray-500 line-through">
                           {formatDate(item.date)}
                         </p>
                       </>
@@ -123,17 +123,17 @@ const Timeline = forwardRef((props, ref) => {
                   </div>
 
                   {/* date */}
-                  <div className="px-4 py-2 lg:w-48 absolute lg:top-0 lg:left-0 lg:bottom-0 lg:-translate-x-full lg:flex lg:flex-col lg:text-right lg:mt-4 lg:py-0 lg:pr-6">
+                  <div className="px-4 py-2 lg:w-60 absolute lg:top-0 lg:left-0 lg:bottom-0 lg:-translate-x-full lg:flex lg:flex-col lg:text-right lg:mt-4 lg:py-0 lg:pr-6">
                     {!item.extended ? (
-                      <p className="font-medium text-sm text-[#2563eb]">
+                      <p className="font-medium text-md text-[#2563eb]">
                         {formatDate(item.date)}
                       </p>
                     ) : (
                       <>
-                        <p className="font-medium text-sm text-[#2563eb]">
+                        <p className="font-medium text-md text-[#2563eb]">
                           {formatDate(item.newDate)}
                         </p>
-                        <p className="font-medium text-sm text-gray-500 line-through">
+                        <p className="font-medium text-md text-gray-500 line-through">
                           {formatDate(item.date)}
                         </p>
                       </>

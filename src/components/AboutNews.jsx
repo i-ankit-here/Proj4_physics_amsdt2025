@@ -57,8 +57,8 @@ function AboutNews(props) {
         {/* Main content section - First row */}
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mb-16">
           {/* About Section - Takes 3/5 of the grid on large screens */}
-          <div className="lg:col-span-3 space-y-8">
-            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-lg shadow-[#2563eb]/10 backdrop-blur-sm">
+          <div className=" h-[360px] lg:col-span-3 space-y-8">
+            <div className=" bg-white border border-gray-200 rounded-xl p-6 shadow-lg shadow-[#2563eb]/10 backdrop-blur-sm">
               <h2 className="text-4xl font-sans font-bold text-blue-600 mb-2">
                 AMSDT-2025
               </h2>
@@ -95,7 +95,7 @@ function AboutNews(props) {
               
               <div
                 id="news"
-                className="h-[220px] overflow-auto pr-2 scrollbar-thin scrollbar-thumb-[#2563eb]/30 scrollbar-track-black/20"
+                className="h-[360px] overflow-auto pr-2 scrollbar-thin scrollbar-thumb-[#2563eb]/30 scrollbar-track-black/20"
               >
                 <div
                   className={`space-y-6 ${isMouseOver ? "animate-none cursor-default" : "animate-wiggle"}`}
