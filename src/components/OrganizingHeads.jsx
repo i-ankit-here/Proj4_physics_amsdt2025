@@ -25,7 +25,7 @@ const OrganizingHeads = () => {
     {
       name: "Prof. Binod Kumar Kanaujia",
       position: "Director, Dr B R Ambedkar National Institute of Technology Jalandhar",
-      image: "director.jpg",
+      image: "Director.jpg",
     },
     {
       name: "Prof. Akash Deep",

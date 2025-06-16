@@ -11,6 +11,7 @@ import CountdownBox from "../components/timer.jsx";
 import { useEffect} from "react";
 // import Hero2 from "../components/Hero2";
 import Slider from "../components/Slider";
+
 // import SecNavbar from "../components/SecNavbar";
 import Navbar from "../components/Navbar";
 // import Speaker from "../components/Speaker";
@@ -59,6 +60,7 @@ function Home(props) {
       {/* <Speaker confid={props.confId}  ref={ourspeakersRef}   />
       <InvitedSpeaker confid={props.confId}  ref={invitedspeakersRef}   /> */}
       <Slider />
+      
       
       {/* <Speakers /> */}
       {/* <OurEvents confid={props.confId}  /> */}
