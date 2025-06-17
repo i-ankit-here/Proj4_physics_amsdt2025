@@ -59,7 +59,7 @@ const Timeline = forwardRef((props, ref) => {
             <div className="mx-auto w-1 h-2.5 grow-0 bg-gradient-to-t from-transparent to-[#2563eb] rounded-b" />
           </div>
 
-          <ul className="relative space-y-6 pl-10 md:pl-12 lg:pl-0">
+          <ul className="relative space-y-8 pl-10 md:pl-12 lg:pl-0">
             {datesData.map((item, idx) =>
               idx % 2 === 0 ? (
                 <li
@@ -78,7 +78,7 @@ const Timeline = forwardRef((props, ref) => {
                   </div>
 
                   {/* content */}
-                  <div className="bg-[white] hover:bg-[#eaf4ff] border border-[#2563eb]/30 hover:border-[#2563eb]/70 transition-all duration-300 rounded-xl p-5 shadow-md hover:shadow-[#2563eb]/20 text-right">
+                  <div className="bg-[white] hover:bg-[#eaf4ff] border border-[#2563eb]/30 hover:border-[#2563eb]/70 transition-all duration-300 rounded-xl p-5 shadow-md hover:shadow-[#2563eb]/20 lg:text-right">
                     <h4 className="font-semibold mb-2 text-black">
                       {item.title}
                     </h4>
@@ -116,7 +116,7 @@ const Timeline = forwardRef((props, ref) => {
                   </div>
 
                   {/* content */}
-                  <div className="bg-[white] hover:bg-[#eaf4ff] border border-[#2563eb]/30 hover:border-[#2563eb]/70 transition-all duration-300 rounded-xl p-5 shadow-md hover:shadow-[#2563eb]/20">
+                  <div className=" bg-[white] hover:bg-[#eaf4ff] border border-[#2563eb]/30 hover:border-[#2563eb]/70 transition-all duration-300 rounded-xl p-5 shadow-md hover:shadow-[#2563eb]/20">
                     <h4 className="font-semibold mb-2 text-black">
                       {item.title}
                     </h4>

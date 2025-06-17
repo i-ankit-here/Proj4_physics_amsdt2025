@@ -25,6 +25,7 @@ import Speakers from "./pages/speakersfront";
 import Publications from "./pages/Publications";
 import Awards from "./pages/awards";
 import Sponsors from "./pages/Sponsors";
+import Guidelines from "./pages/Guidelines";
 
 function App() {
    const confid="682c2dbe4f0ddcc436b90e88";
@@ -37,6 +38,7 @@ function App() {
         <Route path="/" element={<Home confId={confid} />} />
         {/* <Route path="sponsorship" element={<Sponsors />} /> */}
         <Route path="tracks" element={<Tracks confid={confid}/>} />
+        <Route path="guidelines" element={<Guidelines confid={confid}/>} />
         <Route path="submission" element={<Submission confid={confid}/>} />
         {/* <Route path="events" element={<Events />} /> */}
         <Route path="location" element={<Location confid={confid}  />} />
@@ -44,7 +46,7 @@ function App() {
 
         <Route path="sponsors" element={<Sponsors confid={confid}  />} />
 
-        <Route path="accommodation" element={<Accommodation />} />
+        <Route path="accommodation" element={<Accommodation confid={confid}/>} />
         {/* <Route path="hotelslist" element={<Hotels confid={confid}/>} /> */}
         {/* <Route path="souvenir" element={<Souvenir />} /> */}
         <Route path="speakers" element={<Speakers confid={confid} />} />
