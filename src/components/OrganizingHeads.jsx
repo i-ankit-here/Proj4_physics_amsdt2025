@@ -24,7 +24,7 @@ const OrganizingHeads = () => {
   const patrons = [
     {
       name: "Prof. Binod Kumar Kanaujia",
-      position: "Director,NIT Jalandhar",
+      position: "Director, NIT Jalandhar",
       image: "Director.jpg",
     },
     {
