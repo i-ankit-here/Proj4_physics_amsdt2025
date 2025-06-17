@@ -53,12 +53,12 @@ function AboutNews(props) {
         <div className="absolute w-2 h-2 bg-[#2563eb] rounded-full right-[15%] bottom-[30%] animate-pulse"></div>
       </div>
 
-      <div className="container max-w-7xl mx-auto px-5 sm:px-10 lg:px-8 py-20 relative z-10">
+      <div className="container max-w-7xl mx-auto px-5 sm:px-10 lg:px-8 pt-20 relative z-10 ">
         {/* Main content section - First row */}
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mb-16">
           {/* About Section - Takes 3/5 of the grid on large screens */}
-          <div className=" h-[360px] lg:col-span-3 space-y-8">
-            <div className=" bg-white border border-gray-200 rounded-xl p-6 shadow-lg shadow-[#2563eb]/10 backdrop-blur-sm">
+          <div className=" lg:h-[500px] lg:col-span-3 space-y-8">
+            <div className=" lg:h-[500px] bg-white border border-gray-200 rounded-xl p-6 shadow-lg shadow-[#2563eb]/10 backdrop-blur-sm ">
               <h2 className="text-4xl font-sans font-bold text-blue-600 mb-2">
                 AMSDT-2025
               </h2>
@@ -88,14 +88,14 @@ function AboutNews(props) {
           </div>
 
           {/* News Section - Takes 2/5 of the grid on large screens */}
-          <div className=" flex-col gap-10 lg:col-span-2 ">
-            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-lg shadow-[#2563eb]/10 backdrop-blur-sm">
+          <div className=" lg:h-[500px] flex-col gap-10 lg:col-span-2 ">
+            <div className="bg-white border h-[500px] border-gray-200 rounded-xl p-6 shadow-lg shadow-[#2563eb]/10 backdrop-blur-sm">
               <h2 className="text-4xl font-sans font-bold text-blue-600 mb-2">News</h2>
               <div className="w-20 h-1 bg-blue-600 mb-4"></div>
               
               <div
                 id="news"
-                className="h-[360px] overflow-auto pr-2 scrollbar-thin scrollbar-thumb-[#2563eb]/30 scrollbar-track-black/20"
+                className="overflow-auto pr-2 scrollbar-thin scrollbar-thumb-[#2563eb]/30 scrollbar-track-black/20"
               >
                 <div
                   className={`space-y-6 ${isMouseOver ? "animate-none cursor-default" : "animate-wiggle"}`}

@@ -9,7 +9,7 @@ const TextSlider = () => {
         "NITJ has been ranked 39th in the IIRF Rankings 2024"
     ];
     const combined = sliderData.join(" \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 ");
-    console.log("Combined Text:", combined);
+    // console.log("Combined Text:", combined);
     return (
         <div className="w-full overflow-hidden whitespace-nowrap bg-blue-800 text-white text-center py-6 px-4 flex items-center">
             <div className="inline-block wave-strip">

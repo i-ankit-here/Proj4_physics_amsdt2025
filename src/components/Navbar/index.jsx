@@ -11,7 +11,8 @@
 
   const navigation = [
     { name: <IoMdHome className="h-5 w-5" />, href: "/", current: true },
-    { name: "Paper tracks", href: "/tracks", current: false },
+    { name: "Tracks", href: "/tracks", current: false },
+    { name: "Guidelines", href: "/Guidelines", current: false },
     { name: "Abstract Submission", href: "/submission", current: false },
      {
       name: "Registration",
@@ -22,8 +23,8 @@
         { name: "Registration Link", href: "/registrationlink" },
       ],
     },
-    { name: "List of Speakers", href: "/speakers", current: false },
     { name: "Publications", href: "/publications", current: false },
+    { name: "List of Speakers", href: "/speakers", current: false },
     { name: "Awards", href: "/awards", current: false },
     { name: "Sponsors", href: "/sponsors", current: false },
     {
