@@ -72,7 +72,7 @@
                 International Conference on Advanced Materials for Sustainable Development and Technology
               </p>
               
-              <p className="text-center text-xl font-extrabold mt-2 md:text-xl lg:text-xl">
+              <p className="text-center text-xl font-extrabold md:text-xl lg:text-xl">
   (AMSDT)-2025 | November 7–8, 2025 | Hybrid Mode
 </p>
               <div>
