@@ -11,7 +11,7 @@
 
   const navigation = [
     { name: <IoMdHome className="h-5 w-5" />, href: "/", current: true },
-    { name: "Paper tracks", href: "/tracks", current: false },
+    { name: "Tracks", href: "/tracks", current: false },
     { name: "Abstract Submission", href: "/submission", current: false },
      {
       name: "Registration",
