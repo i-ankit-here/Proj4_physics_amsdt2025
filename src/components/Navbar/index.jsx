@@ -125,8 +125,8 @@
                               {item.name}
                               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-200 group-hover:w-full transition-all duration-300"></div>
                             </Link>
-                            <div className="absolute left-0 hidden mt-1 w-64 origin-top-left bg-blue-900 border border-gray-200 rounded-md shadow-lg group-hover:block z-50">
-                              <div className="py-1">
+                            <div className="absolute left-0 hidden mt-0.5 w-64 origin-top-left bg-blue-900 border border-gray-200 rounded-md shadow-lg group-hover:block z-50">
+                              <div className="py-1 ">
                                 {item.subItems.map((subItem) => (
                                   <Link
                                     key={subItem.name}
