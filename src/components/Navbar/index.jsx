@@ -114,7 +114,7 @@
                   </div> */}
                   <nav className="hidden lg:flex space-x-1 mx-auto" aria-label="Global">
                     {currentNavigation.map((item) => (
-                      <div key={item.name} className="relative group">
+                      <div key={item.name} className="relative group navbar">
                         {item.subItems ? (
                           <>
                             <Link
@@ -131,7 +131,7 @@
                                   <Link
                                     key={subItem.name}
                                     to={subItem.href}
-                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-700 hover:text-blue-200"
+                                    className="block px-4 py-2 text-sm text-white hover:bg-blue-700 hover:text-blue-200"
                                   >
                                     {subItem.name}
                                   </Link>
