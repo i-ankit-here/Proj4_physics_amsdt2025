@@ -116,7 +116,7 @@
   }
 
 a, a:visited {
-  color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
   text-decoration: none !important;
 }
   a:active {
