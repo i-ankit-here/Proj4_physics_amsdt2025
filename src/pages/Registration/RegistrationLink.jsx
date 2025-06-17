@@ -38,7 +38,7 @@ function RegistrationLink() {
                                     href="https://www.nitj.ac.in/events_registration/ic_amsdt_2025/login"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="relative flex text-blue-900 items-center justify-center px-8 py-4 bg-blue-900 border border-blue-900 shadow-lg rounded-lg leading-none font-medium hover:bg-blue-900 hover:text-red-600 transition-colors duration-300"
+                                    className="relative flex text-blue-900 items-center justify-center px-8 py-4 bg-white border border-blue-900 shadow-lg rounded-lg leading-none font-medium hover:bg-blue-900 hover:text-red-600 transition-colors duration-300"
                                 >
                                     <span className="mr-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-blue-900">
