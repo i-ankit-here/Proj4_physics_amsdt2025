@@ -12,7 +12,7 @@ import { Route, Routes } from "react-router-dom";
 import CommonNews from "./pages/CommonNews";
 import './App.css'
 // import CommontemplateCommittee from "./pages/Committee/CommonTemplateCommittee";
-import Hotels from "./pages/Accomodation/Hotels";
+// import Hotels from "./pages/Accomodation/Hotels";
 // import SpeakerPage from "./pages/SpeakerPage";
 // import InvitedSpeakerPage from "./pages/InvitedSpeakersPage";
 import Submission from "./pages/Submission";
@@ -20,9 +20,13 @@ import Tracks from "./pages/Tracks";
 // import IntCommittee from "./components/commonTemplate";
 import OrganizingHeads from "./pages/Committee/OrganizingHeads";
 import AdvisoryCommittee from "./pages/Committee/AdvisoryCommittee";
-import LocalCommittee from "./pages/Committee/LocalCommittee";
+// import LocalCommittee from "./pages/Committee/LocalCommittee";
 import Speakers from "./pages/speakersfront";
 import Publications from "./pages/Publications";
+import Awards from "./pages/awards";
+import Sponsors from "./pages/Sponsors";
+import Guidelines from "./pages/Guidelines";
+
 function App() {
    const confid="682c2dbe4f0ddcc436b90e88";
   return (
@@ -34,11 +38,16 @@ function App() {
         <Route path="/" element={<Home confId={confid} />} />
         {/* <Route path="sponsorship" element={<Sponsors />} /> */}
         <Route path="tracks" element={<Tracks confid={confid}/>} />
+        <Route path="guidelines" element={<Guidelines confid={confid}/>} />
         <Route path="submission" element={<Submission confid={confid}/>} />
         {/* <Route path="events" element={<Events />} /> */}
         <Route path="location" element={<Location confid={confid}  />} />
-        <Route path="accommodation" element={<Accommodation />} />
-        <Route path="hotelslist" element={<Hotels confid={confid}/>} />
+        <Route path="awards" element={<Awards confid={confid}  />} />
+
+        <Route path="sponsors" element={<Sponsors confid={confid}  />} />
+
+        <Route path="accommodation" element={<Accommodation confid={confid}/>} />
+        {/* <Route path="hotelslist" element={<Hotels confid={confid}/>} /> */}
         {/* <Route path="souvenir" element={<Souvenir />} /> */}
         <Route path="speakers" element={<Speakers confid={confid} />} />
         {/* <Route path="invitedspeakers" element={<InvitedSpeakerPage confid={confid} />} /> */}
@@ -51,7 +60,7 @@ function App() {
         {/* <Route path="commontemplate" element={<IntCommittee />} /> */}
         <Route path="organizingheads" element={<OrganizingHeads confid={confid} />} />
         <Route path="advisorycommittee" element={<AdvisoryCommittee confid={confid} />} />    
-        <Route path="localcommittee" element={<LocalCommittee confid={confid} />} />
+        {/* <Route path="localcommittee" element={<LocalCommittee confid={confid} />} /> */}
         <Route path="publications" element={<Publications confid={confid} />} />
 
 

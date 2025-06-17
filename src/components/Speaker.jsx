@@ -29,10 +29,10 @@ const Speaker = forwardRef((props, ref) => {
   }, [apiUrl, confid]);
 
   return (
-    <div ref={ref} className="bg-black container space-y-8 lg:max-w-7xl py-16 mx-auto px-8 sm:px-10 lg:px-8 md:pb-5">
-      <h2 className="text-4xl font-sans font-bold text-center text-[#00ff4c] mb-8">Our Speakers</h2>
+    <div ref={ref} className="bg-white container space-y-8 lg:max-w-7xl py-16 mx-auto px-8 sm:px-10 lg:px-8 md:pb-5">
+      <h2 className="text-4xl font-sans font-bold text-center text-[#2563eb] mb-8">Our Speakers</h2>
       
-      <div className="w-24 h-1 bg-gradient-to-r from-[#00ff4c] to-transparent mx-auto mb-10"></div>
+      <div className="w-24 h-1 bg-gradient-to-r from-[#2563eb] to-transparent mx-auto mb-10"></div>
       
       <div className="w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-4">
@@ -45,10 +45,10 @@ const Speaker = forwardRef((props, ref) => {
                 to={speaker.ProfileLink !== "" ? speaker.ProfileLink : "/"}
                 className="group"
               >
-                <div className="relative w-full bg-[#00120a] border border-[#00ff4c]/30 hover:border-[#00ff4c] rounded-lg shadow-md hover:shadow-lg hover:shadow-[#00ff4c]/20 transition-all duration-300 flex flex-col items-center justify-center p-6 overflow-hidden backdrop-blur-sm">
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#00ff4c]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative w-full bg-[white] border border-[#2563eb]/30 hover:border-[#2563eb] rounded-lg shadow-md hover:shadow-lg hover:shadow-[#2563eb]/20 transition-all duration-300 flex flex-col items-center justify-center p-6 overflow-hidden backdrop-blur-sm">
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#2563eb]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#00ff4c]/50 mb-5 relative z-10 group-hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#00ff4c]/20">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#2563eb]/50 mb-5 relative z-10 group-hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#2563eb]/20">
                     <img
                       src={speaker.ImgLink}
                       alt={speaker.Name}
@@ -60,21 +60,21 @@ const Speaker = forwardRef((props, ref) => {
                     />
                   </div>
                   
-                  <p className="font-sans text-[18px] font-bold text-white group-hover:text-[#00ff4c] transition-colors duration-300 text-center z-10">{speaker.Name}</p>
+                  <p className="font-sans text-[18px] font-bold text-black group-hover:text-[#2563eb] transition-colors duration-300 text-center z-10">{speaker.Name}</p>
                   
                   <p className="font-sans text-[12px] font-medium text-gray-400 text-center mt-1 z-10 px-2">{speaker.Institute}</p>
                   
-                  <div className="absolute bottom-0 left-0 w-full h-1 bg-[#00ff4c]/30 group-hover:bg-[#00ff4c] transition-colors duration-300"></div>
+                  <div className="absolute bottom-0 left-0 w-full h-1 bg-[#2563eb]/30 group-hover:bg-[#2563eb] transition-colors duration-300"></div>
                 </div>
               </Link>
             ))
           ) : (
             // Loading state with skeleton cards
             Array.from({ length: 4 }).map((_, index) => (
-              <div key={index} className="w-full bg-[#00120a] border border-[#00ff4c]/10 rounded-lg flex flex-col items-center justify-center p-6">
-                <div className="w-32 h-32 rounded-full bg-[#001a0d] animate-pulse mb-4"></div>
-                <div className="h-5 w-3/4 bg-[#001a0d] animate-pulse mb-2 rounded"></div>
-                <div className="h-3 w-1/2 bg-[#001a0d] animate-pulse rounded"></div>
+              <div key={index} className="w-full bg-[white] border border-[#2563eb]/10 rounded-lg flex flex-col items-center justify-center p-6">
+                <div className="w-32 h-32 rounded-full bg-[#eaf4ff] animate-pulse mb-4"></div>
+                <div className="h-5 w-3/4 bg-[#eaf4ff] animate-pulse mb-2 rounded"></div>
+                <div className="h-3 w-1/2 bg-[#eaf4ff] animate-pulse rounded"></div>
               </div>
             ))
           )}

@@ -1,88 +1,103 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+// import { motion } from "framer-motion";
+import CountdownBox from "./timer.jsx";
 
-// import Invitation from "./common/invitation";
-import CountdownBox  from './timer.jsx'
-function Hero2(props) {
-  console.log(props);
-  
+const sliderImages = [
+  "/slider1.jpg",
+  "/slider2.jpg",
+  // "/slider3.png",
+  "/slider4.jpg",
+];
+
+function Hero2() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % sliderImages.length);
+    }, 3000); // Change every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
-      {/* <Invitation /> */}
-      <div className="text-white pb-6 sm:py-6 h-90vh">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center mt-[100px] max-w-7xl mx-auto lg:px-8 px-3 mt-[80px] lg:mt-[2px]">
-          <div className="flex flex-col items-center md:items-start justify-center z-20 py-4 gap-3">
-            <div className="w-full flex items-center justify-evenly">
-              <img src="nitjlogo.png" alt="AMS" className="w-24 h-24 object-contain" />
-              <img src="inst.png" alt="AMS" className="w-32 h-32 object-contain" />
-            </div>
-            
+      {/* Banner with background slider */}
+      <div
+        className="relative w-full flex items-center justify-between flex-wrap pt-8 min-h-screen"
+        style={{
+          backgroundImage: `url('${sliderImages[currentSlide]}')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          transition: 'background-image 1s ease-in-out'
+        }}
+      >
+        {/* Top and bottom gradient overlay */}
+    <div className="absolute inset-0 w-full h-full z-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-900 via-blue-800 to-blue-300 opacity-30"></div>
+        </div>
+    <img
+          src="nitjlogo.png"
+          alt="AMS"
+          className="hidden sm:block w-36 h-36 object-contain p-4 z-10"
+        />
 
-            <p className="lg:text-4xl md:text-3xl text-3xl leading-tight lg:leading-none tracking-wide font-medium text-white text-center md:text-left my-3">
-              International Conference on Advanced Materials for Sustainable Development and Technology
-            </p>
-<p className="lg:text-3xl md:text-3xl text-2xl leading-tight lg:leading-none tracking-wide font-bold text-white text-center md:text-left">
-              (AMSDT-2025)
-            </p>
-            {/* <h3 className="text-[#00ff4c] mx-auto md:mx-0 font-medium text-center md:text-left tracking-wide lg:text-xl">
-              <span>Jointly organized by</span>
-              <br />
-              <ul>
-              <span><li>Dr B R Ambedkar NIT Jalandhar, Punjab, India</li></span>
-              
-              <li><span>Institute of Nano Science and Technology, Mohali, Punjab, India</span>
-              </li>
+        <div className="flex-1 flex flex-col items-center text-center gap-0 z-10">
+          <p className="lg:text-3xl md:text-2xl text-xl font-medium tracking-wide text-center justify-center p-6 text-white">
+            International Conference <br /> on <br /> Advanced Materials for Sustainable Development and Technology
+          </p>
+          <p className="lg:text-xl md:text-xl -mt-5 text-xl font-bold text-white">
+            (AMSDT-2025)
+          </p>
+          <div className="px-4">
+            <h3 className="text-white font-medium tracking-wide text-lg text-center">
+              Jointly organized
+            </h3>
+            <h3 className="text-white font-medium tracking-wide text-lg text-center">
+              by
+            </h3>
+            <ul className="text-white list-disc list-inside text-left text-sm sm:text-base">
+              <li>Dr B R Ambedkar National Institute of Technology Jalandhar, Punjab, India</li>
+              <li>Institute of Nano Science and Technology, Mohali, Punjab, India</li>
             </ul>
-
-            </h3> */}
-            
-            <div className="text-center md:text-left">
-  <h3 className="text-[#00ff4c] mx-auto md:mx-0 font-medium tracking-wide lg:text-xl">
-    Jointly organized by
-  </h3>
-
-  <ul className="text-[#00ff4c] list-disc list-inside mt-2">
-    <li>Dr B R Ambedkar NIT Jalandhar, Punjab, India</li>
-    <li>Institute of Nano Science and Technology, Mohali, Punjab, India</li>
-  </ul>
-</div>
-
-            <p className="text-white text-sm sm:text-base mt-4 bg-[#00ff4c]/10 border border-[#00ff4c] rounded-md px-4 py-2 w-fit font-medium backdrop-blur-sm">
-              November 7-8, 2025 &nbsp;|&nbsp; Hybrid Mode
-            </p>
-
- <p className="text-white text-sm sm:text-base mt-4 px-4 py-2 w-fit font-medium backdrop-blur-sm">
-              Venue: Dr B R Ambedkar National Institute of Technology, Jalandhar 
-            </p>
-            
-            <div className="flex flex-wrap gap-4 mt-6 justify-center">
-             <a
-  href="https://amsdt2025.com/registrationlink"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="bg-[#00ff4c] hover:bg-[#00cc3d] text-black font-bold py-3 px-8 rounded-md transition-all inline-block"
->
-  Register Now
-</a>
-              {/* <button className="border-2 border-[#00ff4c] text-[#00ff4c] hover:bg-[#00ff4c20] font-bold py-3 px-8 rounded-md transition-all">
-                Submit Paper
-              </button> */}
-            </div>
           </div>
-          
-          <div className="max-w-2xl flex flex-col justify-center items-center relative">
-                <div className="w-full flex flex-col items-center justify-center">
-                  <div className="hidden md:flex w-[350px] h-[350px] mx-auto">
-                    <img src="molecule.png" alt="AMS" className="w-full h-full object-contain" />
-                  </div>
-                  <div className="w-full flex justify-center mt-8 md:mt-0">
-                    <CountdownBox/>
-                  </div>
-                </div>
-              </div>
+          <p className="text-sm sm:text-base mt-2 bg-white text-blue-800 border border-blue-500 rounded-md px-4 py-2 font-medium">
+            November 7-8, 2025 &nbsp;|&nbsp; Hybrid Mode
+          </p>
+          <p className="text-sm sm:text-base mt-2 px-4 py-2 font-medium text-white">
+            Venue: Dr B R Ambedkar National Institute of Technology, Jalandhar
+          </p>
+          <div className="flex flex-wrap gap-2 mt-1 justify-center">
+            <a
+              href="https://amsdt2025.com/registrationlink"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-md transition-all"
+            >
+              Register Now
+            </a>
+          </div>
+        </div>
+
+        <img
+          src="inst.png"
+          alt="INST"
+          className="hidden sm:block w-38 h-38 object-contain p-6 sm:p-8 lg:p-8 z-10"
+        />
+      </div>
+
+      {/* Main Content Section */}
+      <div className="text-gray-800 p-6 sm:py-10 bg-white pt-[384px]">
+        <div className="flex flex-col items-center text-center gap-4">
+          {/* Countdown timer */}
+          <div className="w-full flex justify-center mt-8">
+            <CountdownBox />
+          </div>
         </div>
       </div>
     </>
