@@ -33,7 +33,7 @@ function Accommodation() {
                 Participants (scholars) will be housed on a shared basis in NITJ hostels.
               </li>
               <li>
-                Post-docs, research associates, faculty members, and scientists will be accommodated in guest rooms (hostel guest house or nearby hotels) at nominal rates.
+                Post-docs, research associates, faculty members, and scientists will be accommodated in guest rooms (hostel guest house or nearby hotels).
               </li>
               <li>
                 Exact accommodation charges will be updated on the conference website soon.
