@@ -41,7 +41,7 @@ function RegistrationLink() {
                                     className="relative flex text-blue-900 items-center justify-center px-8 py-4 bg-white border border-blue-900 shadow-lg rounded-lg leading-none font-medium hover:bg-blue-900 hover:text-red-600 transition-colors duration-300"
                                 >
                                
-                                    </span>
+                                 
                                     Register for AMSDT-2025
                                 </a>
                             </div>
