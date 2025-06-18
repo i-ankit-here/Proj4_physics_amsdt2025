@@ -76,10 +76,10 @@
   (AMSDT)-2025 | November 7–8, 2025 | Hybrid Mode
 </p>
               <div>
-                <h3 className="text-blue-600 font-medium -mt-1 text-center tracking-wide text-lg">
+                <h3 className="text-blue-600 font-semibold -mt-1 text-center tracking-wide text-lg">
                   Jointly organized by
                 </h3>
-                <div className="text-blue-600 list-disc list-inside -mt-1 text-sm sm:text-base">
+                <div className="text-blue-600 list-disc list-inside font-medium -mt-1 text-md sm:text-base">
                   <ul>
                     <li>Dr B R Ambedkar National Institute of Technology Jalandhar, Punjab, India</li>
                     <li>Institute of Nano Science and Technology, Mohali, Punjab, India</li>
