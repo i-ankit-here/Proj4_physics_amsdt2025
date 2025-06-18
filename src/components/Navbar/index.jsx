@@ -71,11 +71,11 @@
               <p className="lg:text-2xl md:text-xl text-xl font-semibold tracking-wide text-center justify-center">
                 International Conference on Advanced Materials for Sustainable Development and Technology
               </p>
-              <p className="lg:text-xl md:text-xl -mt-1 text-xl font-extrabold">
+              <p className="lg:text-xl md:text-xl -mt-1 text-xl text-center font-extrabold">
                 (AMSDT)-2025| November 7-8, 2025| Hybrid Mode
               </p>
               <div>
-                <h3 className="text-blue-600 font-medium -mt-1 tracking-wide text-lg">
+                <h3 className="text-blue-600 font-medium -mt-1 text-center tracking-wide text-lg">
                   Jointly organized by
                 </h3>
                 <div className="text-blue-600 list-disc list-inside -mt-1 text-sm sm:text-base">
@@ -156,7 +156,7 @@
               </div>
 
               <Disclosure.Panel as="nav" className="lg:hidden bg-blue-900" aria-label="Global">
-                <div className="space-y-1 px-2 pb-3 pt-2">
+                <div className="space-y-1 px-2 pb-3 pt-2 navbar">
                   {currentNavigation.map((item) => (
                     <div key={item.name}>
                       {item.subItems ? (
@@ -166,7 +166,7 @@
                               <Disclosure.Button
                                 className={classNames(
                                   item.current
-                                    ? "bg-blue-700 text-blue-200"
+                                    ? "bg-blue-900 text-white"
                                     : "text-gray-700 hover:bg-blue-700 hover:text-blue-200",
                                   "block w-full rounded-md py-2 px-3 text-base font-medium text-left flex justify-between items-center"
                                 )}
@@ -195,7 +195,7 @@
                                   <Link
                                     key={subItem.name}
                                     to={subItem.href}
-                                    className="block pl-8 pr-3 py-2 text-sm font-medium text-gray-700 hover:bg-blue-700 hover:text-blue-200"
+                                    className="block pl-8 pr-3 py-2 text-sm font-medium text-gray-700 hover:bg-blue-700 hover:text-white"
                                   >
                                     {subItem.name}
                                   </Link>
@@ -209,7 +209,7 @@
                           to={item.href}
                           className={classNames(
                             item.current
-                              ? "bg-blue-700 text-blue-200"
+                              ? "bg-blue-700 text-white"
                               : "text-gray-700 hover:bg-blue-700 hover:text-blue-200",
                             "block w-full rounded-md py-2 px-3 text-base font-medium"
                           )}
