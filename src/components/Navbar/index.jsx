@@ -71,9 +71,10 @@
               <p className="lg:text-2xl md:text-xl text-xl font-semibold tracking-wide text-center justify-center">
                 International Conference on Advanced Materials for Sustainable Development and Technology
               </p>
-              <p className="lg:text-xl md:text-xl -mt-1 text-xl text-center font-extrabold">
-                (AMSDT)-2025| November 7-8, 2025| Hybrid Mode
-              </p>
+              
+              <p className="text-center text-xl font-extrabold md:text-xl lg:text-xl">
+  (AMSDT)-2025 | November 7–8, 2025 | Hybrid Mode
+</p>
               <div>
                 <h3 className="text-blue-600 font-medium -mt-1 text-center tracking-wide text-lg">
                   Jointly organized by
