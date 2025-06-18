@@ -52,6 +52,9 @@ function RegistrationLink() {
                        
             </div>
 
+ </div>
+ </div>
+
             <Footer />
         </div>
     )
