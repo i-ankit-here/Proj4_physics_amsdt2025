@@ -23,7 +23,7 @@ const Sponsors = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-black mb-2 text-[#2563eb] inline-flex items-center justify-center relative">
-                        Sponsors
+                        Sponsor
                         <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-[#2563eb]"></span>
                     </h2>
                     <div className="flex flex-col items-center justify-center mt-8 mb-16">
